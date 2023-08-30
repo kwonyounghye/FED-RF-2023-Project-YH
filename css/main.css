@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo {
+    padding: ;
+}
+.logo img {
+    width: fit-content;
+    max-width: 56px;
+
+}
+.top_tab ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.top_tab ul>li {
+    padding: 10% 7%;
+    white-space: nowrap;
+}
+
