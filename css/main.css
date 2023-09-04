@@ -31,7 +31,7 @@ header {
     white-space: nowrap;
 }
 .intro {
-    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) 1/100%;
+    background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) no-repeat right/auto 100%;
     
 }
 
