@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -29,6 +30,9 @@ header {
     padding: 10% 7%;
     white-space: nowrap;
 }
-
+.intro {
+    background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) 1/100%;
+    
+}
 
 
