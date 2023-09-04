@@ -1,0 +1,11 @@
+@keyframes intro_h1 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.intro h1 {
+    animation: intro_h1 1s ease 2;
+}

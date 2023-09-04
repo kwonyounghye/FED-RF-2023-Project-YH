@@ -8,14 +8,35 @@ body {
 li {
     list-style: none;
 }
+/* @media (min-width: 521px) and (max-width: 940px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+@media (min-width: 471px) and (max-width: 520px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 470px) {
+    h1 {
+        font-size: 30px;
+    }
+} */
 header {
-    position: sticky;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
     
 }
 .logo {
-    padding: ;
+    padding: 0 24px;
+    line-height: 75px;
 }
 .logo img {
     width: fit-content;
@@ -23,16 +44,32 @@ header {
 
 }
 .top_tab ul {
+    margin: 0;
     display: flex;
     justify-content: flex-end;
+    
 }
 .top_tab ul>li {
     padding: 10% 7%;
     white-space: nowrap;
 }
 .intro {
-    background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) no-repeat right/auto 100%;
-    
+    height: 800px;
+    margin-left: 10%;
+    background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) no-repeat top right 20%/auto 100%;
+}
+.intro h1 {
+    font-size: 60px;
+    margin-top: 150px;
+    white-space: nowrap;
+    animation: name duration timing-function delay iteration-count direction fill-mode;;
+}
+.intro h3 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.intro img {
+    width: 200px;
 }
 
 
