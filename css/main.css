@@ -1,4 +1,11 @@
 @charset "utf-8";
+:root {
+    --h1-size: 60px;
+    --h2-size: 50px;
+    --h3-size: 40px;
+    --h4-size: 30px;
+    --h5-size: 20px;
+}
 
 body {
     width: 100%;
@@ -59,17 +66,28 @@ header {
     background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) no-repeat top right 20%/auto 100%;
 }
 .intro h1 {
-    font-size: 60px;
+    font-size: var(--h1-size);
     margin-top: 150px;
     white-space: nowrap;
-    animation: name duration timing-function delay iteration-count direction fill-mode;;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;; */
 }
 .intro h3 {
-    font-size: 40px;
+    font-size: var(--h3-size);
     font-weight: lighter;
 }
 .intro img {
     width: 200px;
 }
+.content1_1, .content2_1, .content3_1, .content4_1, .content5_1, .content6_1 {
+    font-size: var(--h2-size);
+    text-align: center;
+}
+.content1_2, .content2_2, .content3_2, .content4_2, .content5_2, .content6_2 {
+    font-size: var(--h5-size);
+    text-align: center;
+    color: #555;
+    line-height: 40px;
+}
+
 
 
