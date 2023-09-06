@@ -11,6 +11,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    color: #333;
+
 }
 li {
     list-style: none;
@@ -32,44 +34,71 @@ li {
 } */
 header {
     width: 100%;
-    height: 65px;
+    height: 50px;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     background: #fff;
     border-bottom: 1px solid #dfdfdf;
-    
 }
 .logo {
     padding: 0 24px;
-    line-height: 75px;
+    display: flex;
+    align-items: center;
 }
 .logo img {
     width: fit-content;
     max-width: 56px;
-
+}
+.top_tab {
+    display: flex;
+    /* justify-content: flex-end; */
 }
 .top_tab ul {
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    
+    padding: 0;
+    float: left;
+    /* display: flex; */
+    font-size: 12px;
+    font-weight: bold;
 }
-.top_tab ul>li {
-    padding: 10% 7%;
+.top_tab .top_bar {
+    width: 250px;
+}
+.top_tab .top_bar > li {
+    padding: 6.55%;
+}
+.top_tab .member {
+    width: 150px;
+}
+.top_tab .member > li {
+    margin: 5%;
+    padding: 6%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 100px;
+    height: 18px;
+}
+.top_tab ul li {
+    float: left;
     white-space: nowrap;
+}
+.top_tab .top_bar > li:hover {
+    color: #ffe529;
 }
 .intro {
     height: 800px;
     margin-left: 10%;
-    background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png) no-repeat top right 20%/auto 100%;
+    background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png)
+        no-repeat top right 20% / auto 100%;
 }
+
 .intro h1 {
     font-size: var(--h1-size);
-    margin-top: 150px;
+    margin-top: 100px;
     white-space: nowrap;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode;; */
+    animation: intro1 .5s ease-in-out 2.5s;
 }
 .intro h3 {
     font-size: var(--h3-size);
@@ -77,17 +106,31 @@ header {
 }
 .intro img {
     width: 200px;
+    margin-top: 450px;
 }
-.content1_1, .content2_1, .content3_1, .content4_1, .content5_1, .content6_1 {
+section {
+    margin-top: 100px;
+}
+.content1_1,
+.content2_1,
+.content3_1,
+.content4_1,
+.content5_1,
+.content6_1 {
     font-size: var(--h2-size);
     text-align: center;
 }
-.content1_2, .content2_2, .content3_2, .content4_2, .content5_2, .content6_2 {
+.content1_2,
+.content2_2,
+.content3_2,
+.content4_2,
+.content5_2,
+.content6_2 {
     font-size: var(--h5-size);
     text-align: center;
     color: #555;
     line-height: 40px;
 }
+.content1>div {
 
-
-
+}
