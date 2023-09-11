@@ -104,7 +104,11 @@ header {
     font-size: var(--h1-size);
     margin-top: 100px;
     white-space: nowrap;
-    animation: intro1 .5s ease-in-out 2.5s 2;
+}
+.intro h1 span{
+    display: inline-block;
+    animation: intro1 .5s ease-in-out 2.5s 4 alternate;
+
 }
 .intro h3 {
     font-size: var(--h3-size);
