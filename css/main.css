@@ -12,10 +12,15 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-
+    list-style: none;
 }
 li {
     list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+
 }
 /* @media (min-width: 521px) and (max-width: 940px) {
     h1 {
@@ -88,17 +93,18 @@ header {
     color: #ffe529;
 }
 .intro {
-    height: 800px;
+    height: 670px;
     margin-left: 10%;
     background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png)
-        no-repeat top right 20% / auto 100%;
+        no-repeat top right 20%/auto 85vh;
+    
 }
 
 .intro h1 {
     font-size: var(--h1-size);
     margin-top: 100px;
     white-space: nowrap;
-    animation: intro1 .5s ease-in-out 2.5s;
+    animation: intro1 .5s ease-in-out 2.5s 2;
 }
 .intro h3 {
     font-size: var(--h3-size);
@@ -106,7 +112,7 @@ header {
 }
 .intro img {
     width: 200px;
-    margin-top: 450px;
+    margin-top: 310px;
 }
 section {
     margin-top: 100px;
@@ -131,6 +137,16 @@ section {
     color: #555;
     line-height: 40px;
 }
-.content1>div {
-
+section>button {
+    position: relative;
+    left: 50%; 
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #555;
+    border-radius: 15px;
+    transform: translateX(-50%);  
+}
+.content5>img {
+    object-fit: ;
 }
