@@ -12,13 +12,26 @@ function loadFn() {
     let ani_text = '';
     // for of문으로 한 글자씩 순회하기
     let num = 0;
+    console.log(ani_txt.length);
     for(let x of ani_txt) {
-        ani_text += `<span style="animation-delay:${0.1*num}s">${x}</span>`;
+        if(x=='1') ani_text += '<br>';
+
+        if(num===11)
+            ani_text += `<b>${x}</b>`;
+        else
+            ani_text += `<span style="animation-delay:${0.1*num}s">${x}</span>`;
+
         console.log('x:', x);   
         num++;    
     }
 
     intro_ani.innerHTML = ani_text;
+
+    // 얼마후 마지막 b태그(+글자)에 클래스"on"주기
+    setTimeout(() => {
+        qs('.intro1 b').classList.add('on');
+    }, 2000);
+
     
     
 }
