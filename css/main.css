@@ -107,14 +107,13 @@ header {
 }
 .intro h1 span{
     display: inline-block;
-    animation: intro1 .5s ease-in-out 2.5s 1 alternate;
+    animation: intro1 .5s ease 2.5s 1 alternate;
 }
 .intro h1 b.on{
     display: inline-block;
     transform: rotate(720deg);
     transform-origin: center 60%;
-    transition: transform 1s linear;
-
+    transition: transform 1.5s linear .2s;
 }
 .intro h3 {
     font-size: var(--h3-size);
@@ -158,5 +157,5 @@ section>button {
     transform: translateX(-50%);  
 }
 .content5>img {
-    object-fit: ;
+    object-fit: 
 }
