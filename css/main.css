@@ -5,6 +5,7 @@
     --h3-size: 40px;
     --h4-size: 30px;
     --h5-size: 20px;
+    --h6-size: 10px;
 }
 
 body {
@@ -113,7 +114,7 @@ header {
     display: inline-block;
     transform: rotate(720deg);
     transform-origin: center 60%;
-    transition: transform 1.5s linear .2s;
+    transition: transform 1.5s linear .1s;
 }
 .intro h3 {
     font-size: var(--h3-size);
@@ -156,6 +157,19 @@ section>button {
     border-radius: 15px;
     transform: translateX(-50%);  
 }
-.content5>img {
-    object-fit: 
+.content2 {
+    position: relative;
+}
+.content2_1 {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-size: var(--h3-size);
+    
+}
+.content2_2 {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    font-size: var(--h5-size);
 }

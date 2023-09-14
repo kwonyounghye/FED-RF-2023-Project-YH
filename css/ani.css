@@ -9,3 +9,15 @@
 .intro1 {
     transition-delay: 0s;
 }
+
+@keyframes content2_1 {
+    from {
+        display: block;
+    }
+    to {
+        display: none;
+    }
+}
+.content2_1 {
+    animation: content2_1 1s linear 0 1 forwards;
+}
