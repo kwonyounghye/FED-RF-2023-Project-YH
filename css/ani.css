@@ -21,3 +21,131 @@
 .content2_1 {
     animation: content2_1 1s linear 0 1 forwards;
 }
+.content3 {
+    /* 1. 화면 고정 필수 (fixed) */
+    position: fixed;
+    /* 2. 화면과 같은 크기 설정 */
+    width: 100vw;
+    height: 100vh;
+    /* 3. 스크롤 셋팅 */
+    overflow: auto;
+    /* 4. 원근 설정 */
+    perspective: 60vh;
+}
+/* preserve-3d 적용범위박스 + 높이값설정박스 */
+.slide2 {
+    position: relative;
+    height: 300vh;
+
+     /* 
+        [ 입체로 설정하기 ]
+        - 입체로 설정할 요소의 부모박스에
+        아래와 같이 설정해준다!
+        (부모는 싸고 있는 요소 또는 상위요소)
+        transform-style: preserve-3d
+        - 기본값은 flat : 2D
+        - preserve-3d : 3D
+    */
+    /* 원근 설정과 연결되는 3D설정! */
+    transform-style: preserve-3d;
+}
+/* 큐브 */
+.slide2_1 {
+    position: absolute;
+    top: calc(50vh - var(--box-height)/2);
+    left: calc(50vw - var(--box-width)/2);
+    width: var(--box-width);
+    height: var(--box-height);
+
+    /* 하위 span을 위한 3d 설정 */
+    transform-style: preserve-3d;
+
+    /* 입체를 잘 보이게 하기 위해 약간 회전함 */
+    /* transform: rotateY(30deg); */
+    /* outline: 2px solid red; */
+}
+/* 또 하나의 큐브 */
+.slide2_2 {
+    top: calc(150vh - var(--box-height)/2);
+
+}
+/* 큐브 각면 공통 */
+.slide2_1 span {
+    position: absolute;
+    /* 앱솔루트는 자동 block! */
+    width: 100%;
+    height: 100%;
+    /* 투명도 */
+    opacity: .8;
+    outline: 1px solid gray;
+}
+/* 1번 */
+.slide2_1 span:nth-child(1) {
+    background: url(../images/book1.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: translateZ(var(--z-size));
+}
+/* 2번 */
+.slide2_1 span:nth-child(2) {
+    background: url(../images/book2.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*1)) translateZ(var(--z-size));
+}
+/* 3번 */
+.slide2_1 span:nth-child(3) {
+    background: url(../images/book3.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*2)) translateZ(var(--z-size));
+}
+/* 4번 */
+.slide2_1 span:nth-child(4) {
+    background: url(../images/book4.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*3)) translateZ(var(--z-size));
+}
+/* 5번 */
+.slide2_1 span:nth-child(5) {
+    background: url(../images/book5.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*4)) translateZ(var(--z-size));
+}
+/* 6번 */
+.slide2_1 span:nth-child(6) {
+    background: url(../images/book6.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*5)) translateZ(var(--z-size));
+}
+/* 7번 */
+.slide2_1 span:nth-child(7) {
+    background: url(../images/book7.jpg) no-repeat center/cover;
+    /* 화면방향 : z축 */
+    transform: rotateY(calc(40deg*6)) translateZ(var(--z-size));
+}
+/* 큐브 회전 클래스 */
+.rotate {
+    /* 애니메이션 */
+    animation: rotate-ani 10s linear infinite;
+    /* 애니메이션 멈춤 상태 */
+    /* animation-play-state: paused; */
+
+}
+
+
+/* 큐브 회전 키프레임 */
+@keyframes rotate-ani {
+    to {
+        transform: rotateY(-360deg);
+        /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
+    }
+}
+
+  /* 
+            x축 양의 방향으로 10도에서 출발
+            양의 방향 360도+10도=370도
+            음의 방향 -360도+10도=-350도
+            ____________________________
+
+            y축 양의 방향으로 30도에서 출발
+            양의 방향 360도+30도=390도
+            음의 방향 -360도+30도=-330도
+        */

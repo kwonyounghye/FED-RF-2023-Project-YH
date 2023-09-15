@@ -28,16 +28,29 @@ a {
         font-size: 50px;
     }
 }
-@media (min-width: 471px) and (max-width: 520px) {
-    h1 {
-        font-size: 40px;
-    }
-}
 @media (max-width: 470px) {
     h1 {
         font-size: 30px;
     }
 } */
+@media (min-width: 471px) and (max-width: 520px) {
+    h1 {
+        font-size: 40px;
+    }
+    .content2_1 {
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        font-size: var(--h3-size);
+        
+    }
+    .content2_2 {
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        font-size: var(--h5-size);
+    }
+}
 header {
     width: 100%;
     height: 50px;
@@ -162,14 +175,23 @@ section>button {
 }
 .content2_1 {
     position: absolute;
-    top: 0px;
+    top: 100px;
     left: 30px;
-    font-size: var(--h3-size);
+    font-size: var(--h2-size);
     
 }
 .content2_2 {
     position: absolute;
-    top: 130px;
-    left: 30px;
-    font-size: var(--h5-size);
+    top: 250px;
+    left: 70px;
+    font-size: var(--h4-size);
+}
+.content2 button {
+    display: none;
+}
+.content2:hover button {
+    position: absolute;
+    bottom: 100px;
+    background-color: #ffffff00;
+    display: block;
 }
