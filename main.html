@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 파비콘 : 탭메뉴 출력 아이콘 -->
     <title>밀리의 서재</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.millie.co.kr/favicon/android-icon.png" >
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.millie.co.kr/favicon/android-icon.png">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/ani.css">
+    <!-- JS -->
     <script src="./js/ani.js"></script>
     <script src="./js/3D_rotate.js"></script>
-    <script src="./js/smoothScroll23.js"></script>
+    <!-- 부드러운 스크롤 JS -->
+    <!-- <script src="./js/smoothScroll23.js"></script> -->
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <a href="#"><img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/full-logo.f9246fa0ca04c7cef80a5d0f5409f0be.png" alt="logo"></a>
+            <a href="#"><img
+                    src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/full-logo.f9246fa0ca04c7cef80a5d0f5409f0be.png"
+                    alt="logo"></a>
         </div>
         <nav class="top_tab">
             <ul class="top_bar">
@@ -39,9 +46,9 @@
         </section>
         <section class="content1">
             <h2 class="content1_1">당신을 기다리는<br>
-            15만 권의 도서</h2>
+                15만 권의 도서</h2>
             <p class="content1_2">첫 달 무료 구독을 통해<br>
-            어떤 도서가 있는지 확인해보세요</p>
+                어떤 도서가 있는지 확인해보세요</p>
             <div class="slide1-1">
                 <img src="./images/book1.jpg" alt="">
             </div>
@@ -50,62 +57,75 @@
         </section>
         <section class="content2">
             <h2 class="content2_1">나만의 공간을 아름답게<br>
-            채워주는 오브제북</h2>
+                채워주는 오브제북</h2>
             <p class="content2_2">이미지와 사운드로 극대화된<br>
-            책의 감성을 오롯이 느껴보세요.</p>
+                책의 감성을 오롯이 느껴보세요.</p>
             <!-- muted - 안드로이드 자동재생 조건, playsinline - 아이폰 자동재생 조건 -->
             <video autoplay width="100%" height="100%" loop muted playsinline controls>
                 <!-- type 속성을 생략하면 지원되지 않는 유형의 소스가 여러 개 있는 경우 성능에 영향을 줄 수 있습니다. -->
-                <source src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/objectbook.mp4" frameborder="0" type="video/mp4"></source>
+                <source src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/objectbook.mp4" frameborder="0"
+                    type="video/mp4">
+                </source>
             </video>
-            <button><a href="https://www.millie.co.kr/v3/objetBook/5/45?tab=intro&nav_hidden=y&title_hidden=y&gnb_hidden=y"> 오브제북 보러가기 ＞</a></button>
+            <button><a
+                    href="https://www.millie.co.kr/v3/objetBook/5/45?tab=intro&nav_hidden=y&title_hidden=y&gnb_hidden=y">
+                    오브제북 보러가기 ＞</a></button>
         </section>
         <section class="content3">
             <h2 class="content3_1">싹 다 무제한<br>
-            9,900원</h2>
+                9,900원</h2>
             <p class="content3_2">10년치 베스트셀러<br>
-            신간 오디오북 장르 소설까지</p>
-            <div class="slide2">
-                <div class="slide2-1 rotate">
-                <strong>지금 서점 베스트 셀러</strong>
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                신간 오디오북 장르 소설까지</p>
+            <div class="content3_3">
+                <div class="slide2">
+                    <div class="slide2_1 rotate">
+                        <span>지금 서점 베스트 셀러</span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
                 </div>
-                <div class="slide2_2 rotate">
-                <strong class="content3_3">한 달 이내 출간된 책</strong>
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <div class="slide2">
+                    <div class="slide2_2 rotate">
+                        <span>한 달 이내 출간된 책</span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
                 </div>
-                <div class="slide2_3 rotate">
-                <strong class="content3_4">오디오북 BEST</strong>
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                </div>
-                <div class="slide2_4 rotate">
-                <strong class="content3_5">밀리 독점 오리지널 로맨스</strong>
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <div class="slide2">
+                    <div class="slide2_3 rotate">
+                        <span>오디오북 BEST</span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="slide2_4 rotate">
+                    <span class="content3_5">밀리 독점 오리지널 로맨스</span>
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div> -->
+            <!-- </div> -->
         </section>
         <section>
             <h2 class="content4_1">관심 분야에 있는 책도<br>
                 딱 골라드려요</h2>
-                <p class="content4_2">검색어 순위를 통해 뽑은<br>
+            <p class="content4_2">검색어 순위를 통해 뽑은<br>
                 인기 분야 책들을 확인해보세요</p>
         </section>
         <section class="content5">
             <h2 class="content5_1">당신이 끝까지 읽을 책을<br>
                 알려주는 완독지수</h2>
-                <p class="content5_2">600만 밀리 회원이 먼저 읽고<br>
+            <p class="content5_2">600만 밀리 회원이 먼저 읽고<br>
                 다 읽을 확률과 예상 시간을 알려드려요</p>
+                <div class="content5_3">
+                    <img class="content5_3_1" src="./images/reading-index.png" alt="완독지수">
+                    <img class="content5_3_2" src="./images/reading-card01.png" alt="홀릭">
+                    <img class="content5_3_3" src="./images/reading-card02.png" alt="마니아">
+                    <img class="content5_3_4" src="./images/reading-card03.png" alt="밀리 픽">
+                    <img class="content5_3_5" src="./images/reading-card04.png" alt="히든">
+                </div>
         </section>
         <section>
             <h2 class="content6_1">언제든 해지 가능!<br>
                 첫 달 무료로 가볍게</h2>
-                <p class="content6_2">상황에 맞게 원하는 요금제를<br>
+            <p class="content6_2">상황에 맞게 원하는 요금제를<br>
                 자유롭게 선택하세요</p>
-                <img src="./images/reading-index.png" alt="완독지수">
-                <img src="./images/reading-card01.png" alt="홀릭">
-                <img src="./images/reading-card02.png" alt="마니아">
-                <img src="./images/reading-card03.png" alt="밀리 픽">
-                <img src="./images/reading-card04.png" alt="히든">
         </section>
         <section>
 
@@ -115,4 +135,5 @@
     </main>
     <footer></footer>
 </body>
+
 </html>

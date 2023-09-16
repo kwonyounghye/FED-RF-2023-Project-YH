@@ -6,6 +6,11 @@
     --h4-size: 30px;
     --h5-size: 20px;
     --h6-size: 10px;
+       /* 큐브 공통 크기 */
+       --box-width: 150px;
+       --box-height: 200px;
+       /* z축 거리 */
+       --z-size: 30vh;
 }
 
 body {
@@ -178,13 +183,14 @@ section>button {
     top: 100px;
     left: 30px;
     font-size: var(--h2-size);
-    
+    z-index: 1;
 }
 .content2_2 {
     position: absolute;
     top: 250px;
     left: 70px;
     font-size: var(--h4-size);
+    z-index: 1;
 }
 .content2 button {
     display: none;
@@ -194,4 +200,34 @@ section>button {
     bottom: 100px;
     background-color: #ffffff00;
     display: block;
+    z-index: 1;
+}
+.content5_3 {
+    position: relative;
+    
+}
+.content5_3_1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);  
+}
+.content5_3_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content5_3_3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content5_3_4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.content5_3_5 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
