@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/ani.css">
     <!-- JS -->
-    <script src="./js/ani.js"></script>
+    <script src="./js/ani.js" defer></script>
     <script src="./js/3D_rotate.js"></script>
     <!-- 부드러운 스크롤 JS -->
-    <!-- <script src="./js/smoothScroll23.js"></script> -->
+    <script src="./js/smoothScroll23.js"></script>
 </head>
 
 <body>
@@ -45,20 +45,22 @@
             </div>
         </section>
         <section class="content1">
-            <h2 class="content1_1">당신을 기다리는<br>
+            <h2 class="content1_1 scroll hide-el">
+                당신을 기다리는<br>
                 15만 권의 도서</h2>
-            <p class="content1_2">첫 달 무료 구독을 통해<br>
+            <p class="content1_2  scroll hide-el">
+                첫 달 무료 구독을 통해<br>
                 어떤 도서가 있는지 확인해보세요</p>
-            <div class="slide1-1">
-                <img src="./images/book1.jpg" alt="">
+            <div class="slide1_1">
+                <img src="./images/book1.jpg">
             </div>
-            <div class="slide1-2"></div>
-            <div class="slide1-3"></div>
+            <div class="slide1_2"></div>
+            <div class="slide1_3"></div>
         </section>
         <section class="content2">
-            <h2 class="content2_1">나만의 공간을 아름답게<br>
+            <h2 class="content2_1 scroll hide-el">나만의 공간을 아름답게<br>
                 채워주는 오브제북</h2>
-            <p class="content2_2">이미지와 사운드로 극대화된<br>
+            <p class="content2_2 scroll hide-el">이미지와 사운드로 극대화된<br>
                 책의 감성을 오롯이 느껴보세요.</p>
             <!-- muted - 안드로이드 자동재생 조건, playsinline - 아이폰 자동재생 조건 -->
             <video autoplay width="100%" height="100%" loop muted playsinline controls>
@@ -72,9 +74,9 @@
                     오브제북 보러가기 ＞</a></button>
         </section>
         <section class="content3">
-            <h2 class="content3_1">싹 다 무제한<br>
+            <h2 class="content3_1 scroll hide-el">싹 다 무제한<br>
                 9,900원</h2>
-            <p class="content3_2">10년치 베스트셀러<br>
+            <p class="content3_2 scroll hide-el">10년치 베스트셀러<br>
                 신간 오디오북 장르 소설까지</p>
             <div class="content3_3">
                 <div class="slide2">
@@ -119,6 +121,7 @@
                     <img class="content5_3_3" src="./images/reading-card02.png" alt="마니아">
                     <img class="content5_3_4" src="./images/reading-card03.png" alt="밀리 픽">
                     <img class="content5_3_5" src="./images/reading-card04.png" alt="히든">
+                    <img class="content5_3_6" src="./images/reading-tooltip.png" alt="완독 자료">
                 </div>
         </section>
         <section>
@@ -126,12 +129,51 @@
                 첫 달 무료로 가볍게</h2>
             <p class="content6_2">상황에 맞게 원하는 요금제를<br>
                 자유롭게 선택하세요</p>
+            <div class="content6_3">
+                <p class="content6_3_1">전자책 정기구독</p>
+                <p class="content6_3_2">월 9,900원</p>
+                <p class="content6_3_3">118,800원<br>연 99,000원
+                </p>
+                <p class="content6_3_4">밀리에서 제공하는 콘텐츠를 무제한으로</p>
+            </div>
+            <div class="content6_4">
+                <p class="content6_4_1">종이책 정기구독</p>
+                <p class="content6_4_2">월 15,900원</p>
+                <p class="content6_4_3">202,800원<br>연 183,000원
+                </p>
+                <p class="content6_4_4">밀리의 모든 콘텐츠를 무제한으로 보고 2달에 1번 종이책+전자책 배송까지</p>
+            </div>
+            <div class="content6_5">
+                <div class="content6_5_1">
+                    <img src="./images/price01.png" alt="금액">
+                        <p>무료 체험 기간 동안 해지해도 금액이 청구되지 않아요</p>
+                        <hr>
+                </div>
+                <div class="content6_5_2">
+                    <img src="./images/price02.png" alt="결제">
+                        <p>유료 결제되어도 사용 이력이 없으면 즉시 환불해드려요</p>
+                </div>
+            </div>
         </section>
         <section>
-
+            <h2 class="content7_1">세계 최초 채팅형 전자책, 챗북</h2>
+            <p class="content7_2">채팅하듯 술술 읽히는 채팅형 독서 콘텐츠<br>이제 어려운 인문서도 재미있게 읽어보세요!</p>
+            <img src="./images/" alt="">
         </section>
-        <section></section>
-        <section></section>
+        <section>
+            <h2 class="content8_1">나를 위한 추천, 밀리 피드</h2>
+            <p class="content8_2">책 고르기, 이제 밀리에 맡기세요!<br>매일매일 취향에 맞는 책을 추천해드려요</p>
+            <img src="" alt="">
+        </section>
+        <section>
+            <h2 class="content9_1">자주 묻는 질문</h2>
+            <div class="content9_2">
+                <div class="content9_2_1">안쓰면 정말 환불해 주나요?</div>
+                <div class="content9_2_1">안쓰면 정말 환불해 주나요?</div>
+                <div class="content9_2_1">안쓰면 정말 환불해 주나요?</div>
+                <div class="content9_2_1">안쓰면 정말 환불해 주나요?</div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>

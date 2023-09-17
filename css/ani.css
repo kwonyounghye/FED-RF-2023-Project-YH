@@ -34,9 +34,9 @@
     /* position: fixed; */
     /* 2. 화면과 같은 크기 설정 */
     width: 100vw;
-    height: 30vh;
+    height: 45vh;
     /* 3. 스크롤 셋팅 */
-    /* overflow: auto; */
+    overflow: auto;
     /* 4. 원근 설정 */
     perspective: 100vh;
 }
@@ -85,7 +85,7 @@
     width: 100%;
     height: 100%;
     /* 투명도 */
-    opacity: .8;
+    opacity: .7;
     outline: 1px solid gray;
 }
 
@@ -95,8 +95,6 @@
     white-space: nowrap;
     line-height: 200px;
     font-weight: bold;
-    
-    
     font-size: var(--h5-size);
 }
 /* 2번 */
@@ -157,8 +155,6 @@
     white-space: nowrap;
     line-height: 200px;
     font-weight: bold;
-    
-    
     font-size: var(--h5-size);
 }
 /* 2번 */
@@ -287,3 +283,40 @@
             양의 방향 360도+30도=390도
             음의 방향 -360도+30도=-330도
         */
+
+
+section {
+    height: 100%;
+  }
+  /* 스크롤액션박스 */
+  .scroll{
+    /* position: absolute; */
+    /* top: 200vh;
+    right: 5vw; */
+    /* width: 30vw; */
+    /* height: ; */
+    border: 1px solid #000;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+  }
+  
+  /* 스크롤 등장 초기화 클래스1 */
+  h2, p {
+    transform: translateY(100%);
+    /* opacity: 0; */
+    transition: 1.2s ease-in-out;
+  }
+  /* 스크롤 등장 클래스 .on */
+  h2.on, p.on{
+    transform: translateY(30%);
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+
+
