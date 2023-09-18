@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 :root {
     --h1-size: 60px;
     --h2-size: 50px;
@@ -19,6 +20,7 @@ body {
     padding: 0;
     color: #333;
     list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 li {
     list-style: none;
@@ -28,6 +30,7 @@ a {
     text-decoration: none;
 
 }
+
 /* @media (min-width: 521px) and (max-width: 940px) {
     h1 {
         font-size: 50px;
@@ -42,14 +45,14 @@ a {
     h1 {
         font-size: 40px;
     }
-    .content2_1 {
+    .mtitle2 {
         position: absolute;
         top: 0px;
         left: 30px;
         font-size: var(--h3-size);
         
     }
-    .content2_2 {
+    .stitle2 {
         position: absolute;
         top: 130px;
         left: 30px;
@@ -78,6 +81,8 @@ header {
 .top_tab {
     display: flex;
     /* justify-content: flex-end; */
+    background-color: #fff;
+    z-index: 9;
 }
 .top_tab ul {
     margin: 0;
@@ -111,11 +116,12 @@ header {
 .top_tab .top_bar > li:hover {
     color: #ffe529;
 }
+/* banner */
 .intro {
     height: 670px;
     margin-left: 10%;
     background: url(https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png)
-        no-repeat top right 20%/auto 85vh;
+        no-repeat top right 20%/auto 70vh;
     
 }
 
@@ -142,24 +148,38 @@ header {
     width: 200px;
     margin-top: 310px;
 }
+/* content */
 section {
     margin-top: 100px;
 }
-.content1_1,
-.content2_1,
-.content3_1,
-.content4_1,
-.content5_1,
-.content6_1 {
+.title {
+    margin: 40px;
+}
+.mtitle1,
+.mtitle2,
+.mtitle3,
+.mtitle4,
+.mtitle5,
+.mtitle6,
+.mtitle7,
+.mtitle8,
+.mtitle9
+ {
+    margin: 40px;
     font-size: var(--h2-size);
     text-align: center;
+
 }
-.content1_2,
-.content2_2,
-.content3_2,
-.content4_2,
-.content5_2,
-.content6_2 {
+.stitle1,
+.stitle2,
+.stitle3,
+.stitle4,
+.stitle5,
+.stitle6,
+.stitle7,
+.stitle8
+ {
+    margin: 40px;
     font-size: var(--h5-size);
     text-align: center;
     color: #555;
@@ -178,16 +198,16 @@ section>button {
 .content2 {
     position: relative;
 }
-.content2_1 {
+.mtitle2 {
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 30px;
     font-size: var(--h2-size);
     z-index: 1;
 }
-.content2_2 {
+.stitle2 {
     position: absolute;
-    top: 250px;
+    top: 210px;
     left: 70px;
     font-size: var(--h4-size);
     z-index: 1;
@@ -202,42 +222,109 @@ section>button {
     display: block;
     z-index: 1;
 }
-.content5_3 {
+.index_img {
     position: relative;
     margin: 10%;
 }
 .content5 img {
     scale: 70%;
 }
-.content5_3_1 {
+.index_img1 {
     position: relative;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);  
 }
-.content5_3_2 {
+.index_img2 {
     position: absolute;
     top: 0;
     left: 0;
 }
-.content5_3_3 {
+.index_img3 {
     position: absolute;
     top: 0;
     right: 0;
 }
-.content5_3_4 {
+.index_img4 {
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.content5_3_5 {
+.index_img5 {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-.content5_3_6 {
+.index_img6 {
     /* position: relative; */
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: 0;
     transform: translateX(-50%);  
+}
+.content6 {
+    background-color: #ffe529;
+
+}
+.payment {
+    display: flex;
+
+}
+.payment_bx {
+    margin: 5%;
+    padding: 32px;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+.payment_bx1 {
+    font-size: var(--h5-size);
+}
+.payment_bx2 {
+    font-size: var(--h4-size);
+    font-weight: bold;
+}
+.payment_bx3 {
+    font-size: var(--h5-size);
+    font-weight: 100;
+}
+.payment_bx4 {
+    font-size: var(--h6-size);
+    color: #555;
+    font-weight: bold;
+}
+.payment_txt {
+    margin-top: 50px;
+    padding: 32px;
+    width: 300px;
+    height: 300px;
+    font-weight: bold;
+}
+.payment_txt img {
+    width: 72px;
+    height: 72px;
+    margin-right: 24px;
+}
+.payment_txt1 {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+    display: flex;   
+}
+.payment_txt2 {
+    display: flex;
+    margin-top: 50px;
+}
+.qa>* {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: var(--h5-size);
+    font-weight: bold;
+    
+}
+.content9 {
+    background-color: #ffe529;
+    font-size: var(--h6-size);
 }
