@@ -175,37 +175,37 @@
 }
 /* 2번 */
 .slide2_2 span:nth-child(2) {
-    background: url(../images/book1.jpg) no-repeat center/cover;
+    background: url(../images/book7.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*1)) translateZ(150px);
 }
 /* 3번 */
 .slide2_2 span:nth-child(3) {
-    background: url(../images/book2.jpg) no-repeat center/cover;
+    background: url(../images/book8.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*2)) translateZ(150px);
 }
 /* 4번 */
 .slide2_2 span:nth-child(4) {
-    background: url(../images/book3.jpg) no-repeat center/cover;
+    background: url(../images/book9.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*3)) translateZ(150px);
 }
 /* 5번 */
 .slide2_2 span:nth-child(5) {
-    background: url(../images/book4.jpg) no-repeat center/cover;
+    background: url(../images/book10.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*4)) translateZ(150px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(6) {
-    background: url(../images/book5.jpg) no-repeat center/cover;
+    background: url(../images/book11.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*5)) translateZ(150px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(7) {
-    background: url(../images/book6.jpg) no-repeat center/cover;
+    background: url(../images/book12.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*6)) translateZ(150px);
 }
@@ -241,37 +241,37 @@
 }
 /* 2번 */
 .slide2_3 span:nth-child(2) {
-    background: url(../images/book1.jpg) no-repeat center/cover;
+    background: url(../images/book13.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*1)) translateZ(150px);
 }
 /* 3번 */
 .slide2_3 span:nth-child(3) {
-    background: url(../images/book2.jpg) no-repeat center/cover;
+    background: url(../images/book14.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*2)) translateZ(150px);
 }
 /* 4번 */
 .slide2_3 span:nth-child(4) {
-    background: url(../images/book3.jpg) no-repeat center/cover;
+    background: url(../images/book15.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*3)) translateZ(150px);
 }
 /* 5번 */
 .slide2_3 span:nth-child(5) {
-    background: url(../images/book4.jpg) no-repeat center/cover;
+    background: url(../images/book16.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*4)) translateZ(150px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(6) {
-    background: url(../images/book5.jpg) no-repeat center/cover;
+    background: url(../images/book17.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*5)) translateZ(150px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(7) {
-    background: url(../images/book6.jpg) no-repeat center/cover;
+    background: url(../images/book18.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
     transform: rotateY(calc(60deg*6)) translateZ(150px);
 }

@@ -69,8 +69,9 @@ header {
     top: 0;
     display: flex;
     justify-content: space-between;
-    background: #fff;
+    background-color: #fff;
     border-bottom: 1px solid #dfdfdf;
+    z-index: 9;
 }
 .logo {
     padding: 0 24px;
@@ -188,6 +189,11 @@ section {
     color: #555;
     line-height: 40px;
 }
+.slide1_1, 
+.slide1_2, 
+.slide1_3 {
+    overflow: hidden;
+} 
 section>button {
     position: relative;
     left: 50%; 
@@ -203,7 +209,7 @@ section>button {
 }
 .mtitle2 {
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 30px;
     font-size: var(--h2-size);
     z-index: 1;
@@ -228,6 +234,7 @@ section>button {
 .index_img {
     position: relative;
     margin: 10%;
+    margin-top: 0;
 }
 .content5 img {
     scale: 70%;
@@ -239,23 +246,25 @@ section>button {
 }
 .index_img2 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 10%;
 }
 .index_img3 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10%;
+    right: 10%;
 }
 .index_img4 {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 10%;
+    bottom: 20%;
+    z-index: 9;
 }
 .index_img5 {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 10%;
+    bottom: 20%;
+    z-index: 9;
 }
 .index_img6 {
     /* position: relative; */
@@ -333,13 +342,17 @@ section>button {
     margin-right: 24px;
 }
 .payment_txt1 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #fff;
     display: flex;   
 }
 .payment_txt2 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+.content7>img {
+    margin: 0 auto;
+    display: block;
 }
 .qa {
     padding: 40px;
