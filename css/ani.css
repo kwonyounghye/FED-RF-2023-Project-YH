@@ -106,7 +106,7 @@
     line-height: 200px;
     font-weight: bold;
     font-size: var(--h5-size);
-    transform: rotateY(0deg) translateY(-55%);
+    transform: rotateY(0deg) translateY(-30%);
     
     animation: rotate-ani2 10s linear infinite;
 }
@@ -114,37 +114,37 @@
 .slide2_1 span:nth-child(2) {
     background: url(../images/book1.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(150px);
+    transform: rotateY(calc(60deg*1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_1 span:nth-child(3) {
     background: url(../images/book2.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(150px);
+    transform: rotateY(calc(60deg*2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_1 span:nth-child(4) {
     background: url(../images/book3.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(150px);
+    transform: rotateY(calc(60deg*3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_1 span:nth-child(5) {
     background: url(../images/book4.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(150px);
+    transform: rotateY(calc(60deg*4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_1 span:nth-child(6) {
     background: url(../images/book5.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(150px);
+    transform: rotateY(calc(60deg*5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_1 span:nth-child(7) {
     background: url(../images/book6.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(150px);
+    transform: rotateY(calc(60deg*6)) translateZ(200px);
 }
 
 /* 큐브 */
@@ -169,7 +169,7 @@
     line-height: 200px;
     font-weight: bold;
     font-size: var(--h5-size);
-    transform: rotateY(0deg) translateY(-55%);
+    transform: rotateY(0deg) translateY(-30%);
     
     animation: rotate-ani2 10s linear infinite;
 }
@@ -177,37 +177,37 @@
 .slide2_2 span:nth-child(2) {
     background: url(../images/book7.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(150px);
+    transform: rotateY(calc(60deg*1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_2 span:nth-child(3) {
     background: url(../images/book8.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(150px);
+    transform: rotateY(calc(60deg*2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_2 span:nth-child(4) {
     background: url(../images/book9.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(150px);
+    transform: rotateY(calc(60deg*3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_2 span:nth-child(5) {
     background: url(../images/book10.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(150px);
+    transform: rotateY(calc(60deg*4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(6) {
     background: url(../images/book11.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(150px);
+    transform: rotateY(calc(60deg*5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(7) {
     background: url(../images/book12.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(150px);
+    transform: rotateY(calc(60deg*6)) translateZ(200px);
 }
 /* 큐브 */
 .slide2_3 {
@@ -230,50 +230,45 @@
     white-space: nowrap;
     line-height: 200px;
     font-weight: bold;
-    
-    
     font-size: var(--h5-size);
-
-    transform: rotateY(0deg) translateY(-55%);
-    
+    transform: rotateY(0deg) translateY(-30%);
     animation: rotate-ani2 10s linear infinite;
-    
 }
 /* 2번 */
 .slide2_3 span:nth-child(2) {
     background: url(../images/book13.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(150px);
+    transform: rotateY(calc(60deg*1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_3 span:nth-child(3) {
     background: url(../images/book14.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(150px);
+    transform: rotateY(calc(60deg*2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_3 span:nth-child(4) {
     background: url(../images/book15.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(150px);
+    transform: rotateY(calc(60deg*3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_3 span:nth-child(5) {
     background: url(../images/book16.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(150px);
+    transform: rotateY(calc(60deg*4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(6) {
     background: url(../images/book17.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(150px);
+    transform: rotateY(calc(60deg*5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(7) {
     background: url(../images/book18.jpg) no-repeat center/cover;
     /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(150px);
+    transform: rotateY(calc(60deg*6)) translateZ(200px);
 }
 
 /* 큐브 회전 키프레임 */
@@ -285,7 +280,7 @@
 }
 @keyframes rotate-ani2 {
     to {
-        transform: rotateY(360deg) translateY(-55%);
+        transform: rotateY(360deg) translateY(-30%);
         /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
     }
 }
@@ -295,7 +290,6 @@
     animation: rotate-ani 10s linear infinite;
     /* 애니메이션 멈춤 상태 */
     /* animation-play-state: paused; */
-
 }
 
 
@@ -315,18 +309,7 @@
 section {
     height: 100%;
   }
-  /* 스크롤액션박스 */
-  .scroll{
-    /* position: absolute; */
-    /* top: 200vh;
-    right: 5vw; */
-    /* width: 30vw; */
-    /* height: ; */
-    /* border: 1px solid #000; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center; */
-  }
+
   
   /* 스크롤 등장 초기화 클래스1 */
 .hide-el {
@@ -339,8 +322,99 @@ section {
     transform: translateY(30%);
     opacity: 1;
   }
-  
-  
+@keyframes show1 {
+    0% {
+        scale: 0;
+    }
+    20% {
+        scale: .7;
+    }
+    50% {
+        scale: .5;
+    }
+    90% {
+        scale: .7;
+    }
+}
+.index_img2 {
+    animation: show1 .5s linear 0s 1;
+}
+@keyframes show2 {
+    0% {
+        scale: 0;
+    }
+    20% {
+        scale: .7;
+    }
+    50% {
+        scale: .5;
+    }
+    90% {
+        scale: .7;
+    }
+}
+.index_img3 {
+    animation: show2 .5s linear .5s 1;
+}
+@keyframes show3 {
+    0% {
+        scale: 0;
+    }
+    20% {
+        scale: .7;
+    }
+    50% {
+        scale: .5;
+    }
+    90% {
+        scale: .7;
+    }
+}
+.index_img4 {
+    animation: show3 .5s linear 1s 1;
+}
+@keyframes show4 {
+    0% {
+        scale: 0;
+    }
+    20% {
+        scale: .7;
+    }
+    50% {
+        scale: .5;
+    }
+    90% {
+        scale: .7;
+    }
+}
+.index_img5 {
+    animation: show4 .5s linear 1.5s 1;
+}
+@keyframes chating {
+    0% {
+        height: 0;
+    }
+    10% {
+        height: 20px;
+    }
+    30% {
+        height: 50px;
+    }
+    50% {
+        height: 80px;
+    }
+    70% {
+        height: 110px;
+    }
+}
+.content7>img {
+    transition: chating .5s linear;
+    aspect-ratio: 1080/900;
+    height: 40px;
+    overflow: hidden;
+    width: 1080px;
+    object-fit: cover;
+}  
   
   
   
