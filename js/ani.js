@@ -1,4 +1,4 @@
-
+import {startSS,setPos} from './smoothScroll20.js'; 
 // DOM 함수 객체 //////////////
 const domFn = {
     // 요소선택함수 ////////
@@ -21,8 +21,6 @@ const domFn = {
 window.addEventListener('DOMContentLoaded', loadFn);
 
 
-// 부드러운 스크롤 호출
-startSS();
 
 function loadFn() {
     console.log('로딩중');
@@ -196,3 +194,15 @@ function moveWoman() {
     if(scTop==0) woman.style.top = '-20%';
     
 } ////////// moveWoman /////////////
+
+
+
+
+  // 0-1. 스크롤 바 트랙을 잡고 마우스로 위치 이동시 위치값 반영
+  domFn.addEvt(window,'mouseup',()=>{
+      setPos(window.scrollY);
+  });
+  // 0-2. 키보드 방향키 이동시 위치값 반영
+  domFn.addEvt(window,'keyup',()=>{
+      setPos(window.scrollY);
+  });
