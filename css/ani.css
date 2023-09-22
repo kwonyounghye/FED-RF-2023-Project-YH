@@ -410,7 +410,7 @@ section {
 .content7>img {
     transition: chating .5s linear;
     aspect-ratio: 1080/900;
-    height: 40px;
+    /* height: 40px; */
     overflow: hidden;
     width: 1080px;
     object-fit: cover;
