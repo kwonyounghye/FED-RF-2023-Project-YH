@@ -190,6 +190,7 @@ function moveWoman() {
     // // 3. 떨어지는 여자에 적용하기
     woman.style.top = wTop + 'px';
 
+    
     // // 4. 맨 위일 때 윗쪽으로 숨기기
     if(scTop==0) woman.style.top = '-20%';
     
