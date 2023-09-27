@@ -194,6 +194,11 @@ section {
 .slide1_3 {
     overflow: hidden;
 } 
+.slide1_1 {
+      /* 원근설정 */
+      perspective: 100vh;
+      
+}
 section>button {
     position: relative;
     left: 50%; 
