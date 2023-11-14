@@ -3,30 +3,31 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
+/* 최대사이즈 1024px 이하 시작 */
+@media screen and (max-width:1024px) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    width: 10px;
+    height: 10px;
+  }
+} 
+/* 최대사이즈 1024px 이하 끝 */
+
+/* 최대사이즈 512px 이하 시작 */
+@media screen and (max-width:512px) {
+  .App-logo {
+    width: 10px;
+    height: 10px;
   }
 }
-
+/* 최대사이즈 512px 이하 끝 */
 .App-header {
-  background-color: #282c34;
+  background-color: #6f9065;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
