@@ -1,0 +1,6 @@
+.ham {
+    width: 40px;
+    height: 25px;
+    /* outline: 1px solid red; */
+    cursor: pointer;
+}

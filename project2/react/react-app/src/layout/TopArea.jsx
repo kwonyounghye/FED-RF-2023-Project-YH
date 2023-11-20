@@ -3,7 +3,9 @@
     /* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
 }
+import { Logo } from "../modules/Logo";
 import { hamData } from "../data/hamburger";
+import { Hamburger } from "../modules/Hamburger";
 
 // GNB 데이터 가져오기
 export function TopArea() {
@@ -25,7 +27,7 @@ export function TopArea() {
                         <li>
                             <Logo />
                         </li>
-                        <li>
+                        <li className="ham">
                             {/* after: 메뉴 나타나기 */}
                             <Hamburger />
                         </li>
