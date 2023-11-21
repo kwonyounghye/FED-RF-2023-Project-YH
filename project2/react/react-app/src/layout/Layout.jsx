@@ -5,9 +5,9 @@ import { MainArea } from "./MainArea";
 import { TopArea } from "./TopArea";
 
 // Context API 불러오기
-import { dcCon } from "../modules/dcContext";
+// import { dcCon } from "../modules/dcContext";
 import { useNavigate } from "react-router-dom";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, createContext } from "react";
 
 export function Layout() {
 
@@ -29,10 +29,10 @@ export function Layout() {
   //  리턴 코드 //////////////////////////
     return (
       // 담은 것이 여러개일지라도 다 전달됨
-      <dcCon.Provider value={{chgPage}}> 
-      <TopArea />
-      <MainArea />
-      <FooterArea />
-      </dcCon.Provider>
+      <createContext.Provider value={{chgPage}}> 
+        <TopArea />
+        <MainArea />
+        <FooterArea />  
+      </createContext.Provider>
     );
 } ////////// Layout 컴포넌트 ///////////////////

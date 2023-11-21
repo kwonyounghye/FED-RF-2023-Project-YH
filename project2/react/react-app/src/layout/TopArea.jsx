@@ -4,7 +4,7 @@
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
 }
 import { Logo } from "../modules/Logo";
-import { hamData } from "../data/hamburger";
+// import { hamData } from "../data/hamburger";
 import { Hamburger } from "../modules/Hamburger";
 
 // GNB 데이터 가져오기

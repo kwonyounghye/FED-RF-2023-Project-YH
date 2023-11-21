@@ -1,4 +1,4 @@
-export function ContactSub() {
+export function About() {
     return (
         <>
             

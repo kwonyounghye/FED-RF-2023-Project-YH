@@ -1,4 +1,4 @@
-export function MenuSub() {
+export function Contact() {
     return (
         <>
             
