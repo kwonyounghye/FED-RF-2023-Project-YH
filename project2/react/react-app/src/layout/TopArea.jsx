@@ -3,12 +3,12 @@
     /* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
 }
+import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
-// import { hamData } from "../data/hamburger";
-import { Hamburger } from "../modules/Hamburger";
+import { hamData } from "../data/hamburger";
 
 // GNB 데이터 가져오기
-export function TopArea() {
+export function TopArea(props) {
     // props.cat - 카테고리명(메뉴 데이터 선택용)
     const makeList = (data) => {
                             // i를 유일키로 셋팅
@@ -29,7 +29,7 @@ export function TopArea() {
                         </li>
                         <li className="ham">
                             {/* after: 메뉴 나타나기 */}
-                            <Hamburger />
+                        <span></span> <span></span> <span></span>
                         </li>
                     </ul>
             </header>

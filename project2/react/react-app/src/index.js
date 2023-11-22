@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { Layout } from "./components/layout/Layout";
 import './index.css';
 import { TopArea } from './layout/TopArea';
 
-// import $ from 'jquery';
-// import 'jquery-ui-dist/jquery-ui';
+import $ from 'jquery';
+import 'jquery-ui-dist/jquery-ui';
 import "./css/main.css";
 import { Layout } from "./layout/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
-import { Menu } from "./pages/Menu";
+import { Menu } from "./modules/Hamburger";
 
 /********************************************* 
     [ 리액트 라우터 ]
@@ -48,6 +48,33 @@ import { Menu } from "./pages/Menu";
 // 레이아웃 컴포넌트를 라우터에 입혀서 화면에
 // 출력해야하기 때문에 스스로 내보내기를 셋팅해야하는 것!
 export default function App() {
+    // 랜더링 후 실행구역 ////////////
+    useEffect(()=>{
+      // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
+      $('.ham').click(e=>{
+        // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
+        $('.mbox').fadeToggle(400);
+  
+        // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
+        $(e.currentTarget).toggleClass('on');
+        // e.target과 e.currentTarget은 다르다!
+        // 후자가 햄버거 버튼 자신임!
+        // console.log(e.currentTarget)
+  
+        // 3. 비디오 재생/멈춤 : 대상 - .bgm
+        // get(0)은 비디오컬렉션임! -> 제이쿼리용
+        const vid = $('.bgm').get(0);
+        vid.paused? vid.play() : vid.pause();
+        // console.log(vid.paused);
+        // paused 속성 : 동영상 멈춤일때 true 리턴
+        // play() 메서드 : 동영상 재생 메서드
+        // pause() 메서드 : 동영상 정지 메서드
+  
+      }); //////// click ////////
+      
+      // 랜더링구역 한번만 실행 : 옵션 []
+    },[]); ////////// useEffect //////////////
+  
   return (
     <BrowserRouter>
       <Routes>

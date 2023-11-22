@@ -1,7 +1,7 @@
 // GNB 페이지별 메뉴 데이터??
 export const hamburger = {
-    "main":[
-    "about",
-    "menu",
-    "contact"]
+    "main":["ABOUT","MENU","CONTACT"],
+    "about":[],
+    "menu":[],
+    "contact":[]
 }; //////////// hamburger //////////////////

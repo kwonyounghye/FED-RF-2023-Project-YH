@@ -5,7 +5,6 @@ import { MainArea } from "./MainArea";
 import { TopArea } from "./TopArea";
 
 // Context API 불러오기
-// import { dcCon } from "../modules/dcContext";
 import { useNavigate } from "react-router-dom";
 import { useLayoutEffect, createContext } from "react";
 
