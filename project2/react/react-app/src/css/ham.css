@@ -1,0 +1,41 @@
+.inbox {
+    width: 1920px;
+    max-width: 100%;
+    /* 1920px보다 작을땐 100%를 유지함! */
+    margin: 0 auto;
+    /* 마영오 - 중앙정렬 */
+}
+.mbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;/* 처음에 안보임 */
+}
+/* 가상요소로 반투명배경 */
+.mbox::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6f9065;
+}
+/* 메뉴중앙박스 */
+.mlist{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    display: flex;/* 플렉스박스 */
+    z-index: 1;/* 반투명배경보다 위 */
+}
+
+.mlist div:nth-child(1) {
+    font-size: 30px;
+}

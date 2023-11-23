@@ -8,7 +8,7 @@ import { yhCon } from "../modules/yhContext";
 
 // Context API 불러오기
 import { useNavigate } from "react-router-dom";
-import { useLayoutEffect, createContext } from "react";
+import { useLayoutEffect } from "react";
 
 export function Layout() {
 

@@ -5,13 +5,13 @@ import './index.css';
 
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui';
-import { TopArea } from './layout/TopArea';
-import "./css/main.css";
 import { Layout } from "./layout/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
 import { Menu } from './pages/Menu';
+import "./css/main.css";
+import "./css/ham.css"
 
 /********************************************* 
     [ 리액트 라우터 ]

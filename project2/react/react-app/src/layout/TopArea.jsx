@@ -5,7 +5,7 @@
 
 import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
-import { hamSub } from "../data/hamSub";
+import { Ham } from "../modules/Ham";
 
 // GNB 데이터 가져오기
 export function TopArea(props) {
@@ -13,19 +13,19 @@ export function TopArea(props) {
     return (
         <>
         <div id="top_area">
-            <header className="top_area head">
-                    <ul>
-                        <li>
-                            <Link to='about'>
-
-                            <Logo />
-                            </Link>
-                        </li>
-                        <li className="ham">
+            <header className="top_area inbox">
+                        <div>
+                            <a href="#">
+                                {/* <Link to='about'> */}
+                                <Logo />
+                                {/* </Link> */}
+                            </a>
+                        </div>
+                        <div className="ham">
                             {/* after: 메뉴 나타나기 */}
                         <span></span> <span></span> <span></span>
-                        </li>
-                    </ul>
+                        </div>
+                        <Ham />
             </header>
         </div>
         </>
