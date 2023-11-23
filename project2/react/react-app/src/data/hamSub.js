@@ -1,7 +1,7 @@
 // GNB 페이지별 메뉴 데이터??
-export const hamburger = {
+export const hamSub = {
     "main":["ABOUT","MENU","CONTACT"],
     "about":[],
     "menu":[],
     "contact":[]
-}; //////////// hamburger //////////////////
+}; //////////// hamSub //////////////////

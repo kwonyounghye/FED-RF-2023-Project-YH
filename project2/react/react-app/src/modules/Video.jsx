@@ -1,4 +1,4 @@
-export const Video() {
+export function Video() {
     return (
         <>
             <div className="banner">

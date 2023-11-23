@@ -5,20 +5,11 @@
 }
 import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
-import { hamData } from "../data/hamburger";
+import { hamSub } from "../data/hamSub";
 
 // GNB 데이터 가져오기
 export function TopArea(props) {
-    // props.cat - 카테고리명(메뉴 데이터 선택용)
-    const makeList = (data) => {
-                            // i를 유일키로 셋팅
-        return hamData[data].map((v,i) => {
-            <li key={i}>
-                {/* 주소: ~~.html#{v} */}
-                <a href={"#"+v}>{v}</a>
-            </li>
-        })
-    }; /////////////// makeList /////////////
+  
     return (
         <>
         <div id="top_area">

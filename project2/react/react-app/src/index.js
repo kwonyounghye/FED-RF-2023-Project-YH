@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Layout } from "./components/layout/Layout";
 import './index.css';
-import { TopArea } from './layout/TopArea';
 
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui';
+import { TopArea } from './layout/TopArea';
 import "./css/main.css";
 import { Layout } from "./layout/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
-import { Menu } from "./modules/Hamburger";
+import { Menu } from './pages/Menu';
 
 /********************************************* 
     [ 리액트 라우터 ]
@@ -64,7 +63,7 @@ export default function App() {
         // 3. 비디오 재생/멈춤 : 대상 - .bgm
         // get(0)은 비디오컬렉션임! -> 제이쿼리용
         const vid = $('.bgm').get(0);
-        vid.paused? vid.play() : vid.pause();
+        vid.paused ? vid.play() : vid.pause();
         // console.log(vid.paused);
         // paused 속성 : 동영상 멈춤일때 true 리턴
         // play() 메서드 : 동영상 재생 메서드
