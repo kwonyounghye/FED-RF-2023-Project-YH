@@ -1,8 +1,8 @@
 // 상단영역 공통 컴포넌트
-{
+
     /* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
-}
+
 import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
 import { hamSub } from "../data/hamSub";
@@ -16,7 +16,10 @@ export function TopArea(props) {
             <header className="top_area head">
                     <ul>
                         <li>
+                            <Link to='about'>
+
                             <Logo />
+                            </Link>
                         </li>
                         <li className="ham">
                             {/* after: 메뉴 나타나기 */}
