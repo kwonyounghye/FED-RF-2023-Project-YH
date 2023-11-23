@@ -4,6 +4,8 @@ import { FooterArea } from "./FooterArea";
 import { MainArea } from "./MainArea";
 import { TopArea } from "./TopArea";
 
+import { yhCon } from "../modules/yhContext";
+
 // Context API 불러오기
 import { useNavigate } from "react-router-dom";
 import { useLayoutEffect, createContext } from "react";
@@ -28,10 +30,10 @@ export function Layout() {
   //  리턴 코드 //////////////////////////
     return (
       // 담은 것이 여러개일지라도 다 전달됨
-      <createContext.Provider value={{chgPage}}> 
+      <yhCon.Provider value={{chgPage}}> 
         <TopArea />
         <MainArea />
         <FooterArea />  
-      </createContext.Provider>
+      </yhCon.Provider>
     );
 } ////////// Layout 컴포넌트 ///////////////////
