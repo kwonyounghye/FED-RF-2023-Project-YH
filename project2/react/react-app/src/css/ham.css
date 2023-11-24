@@ -1,3 +1,9 @@
+@import url(./main.css);
+
+a {
+    text-decoration: none;
+    color: #000;
+}
 .inbox {
     width: 1920px;
     max-width: 100%;
@@ -27,15 +33,20 @@
 }
 /* 메뉴중앙박스 */
 .mlist{
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    
+    left: 35%;
     transform: translate(-50%, -50%);
-    display: flex;/* 플렉스박스 */
     z-index: 1;/* 반투명배경보다 위 */
 }
-
+.mlist div {
+    font-size: 50px;
+    margin: 10%;
+    font-style: none;
+    text-align: right;
+}
 .mlist div:nth-child(1) {
-    font-size: 30px;
+    font-size: 50px;
+
 }

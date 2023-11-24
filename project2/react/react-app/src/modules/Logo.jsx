@@ -27,23 +27,21 @@ export const Logo = (props) => {
              borderRadius: "50%", 
              cursor:"pointer"
          },
-         bottom: {
-             height: "80px",
-         },
+     
      };
  
      // 이미지 스타일 변경 객체
      const myStyleImg = {
          top: "45px",
-         bottom: "80px",
      };
  
     return (
-        <h1 style={myStyle[props.logoStyle]}
+        <div className="logo" style={myStyle[props.logoStyle]}
         onClick={() =>  
         // 컨텍스트 API 함수 호출
         myCon.chgPage('/')}>
-        <img src={img.logo} className="App-logo" alt="logo" />
-        </h1>
+            <img src={img.logo} className="logo_img" alt="logo" />
+ 
+        </div>
     );
 }; //////////// Logo ///////////

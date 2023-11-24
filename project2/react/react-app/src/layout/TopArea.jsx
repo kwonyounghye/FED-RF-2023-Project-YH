@@ -14,12 +14,10 @@ export function TopArea(props) {
         <>
         <div id="top_area">
             <header className="top_area inbox">
-                        <div>
-                            <a href="#">
+                        <div className="logo">
                                 {/* <Link to='about'> */}
                                 <Logo />
                                 {/* </Link> */}
-                            </a>
                         </div>
                         <div className="ham">
                             {/* after: 메뉴 나타나기 */}
