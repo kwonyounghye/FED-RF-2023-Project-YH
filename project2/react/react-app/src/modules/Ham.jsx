@@ -3,14 +3,14 @@ import { yhCon } from "./yhContext";
 import { hamSub } from "../data/hamSub";
 
 
-export function Ham(yhCon) {
+export function Ham() {
      // 컨텍스트 사용
   const myCon = useContext(yhCon);
   // pCon에 Provider value 속성에 공개한 변수/함수를 사용함!
 
   // 메뉴 이동 처리함수 ///
   const goPage = (txt) => {
-    myCon.chgPgName(txt);
+    myCon.chgPage(txt);
     // 전체박스 숨기기
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
