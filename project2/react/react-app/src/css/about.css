@@ -1,8 +1,17 @@
 .about {
+    display: flex;
+    position: relative;
 }
 .intro1 {
 }
 .intro1 img {
+}
+.contant1 {
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    font-size: 10vw;
+    color: #6f9065;
 }
 .introduce {
     width: 100%;
@@ -65,6 +74,17 @@
 /* .intro2 {
     position: relative;
 } */
+.contant2 {
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    
+    font-size: 10vw;
+    color: #d6d4c6;
+    font-style: 1px solid #6f9065;
+    z-index: 9;
+    
+}
 .intro2 img {
     position: absolute;
     right: 0%;
