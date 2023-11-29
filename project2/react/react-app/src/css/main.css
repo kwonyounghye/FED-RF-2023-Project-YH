@@ -22,7 +22,7 @@ header {
 /* 1-1.로고 */
 
 .logo_img {
-    width: 100px;
+    width: 120px;
     cursor: pointer;
 }
 /* 햄버거버튼 */
@@ -62,4 +62,7 @@ header {
 /* 3번막대 : 중앙이동+반시계방향45도회전 */
 .ham.on span:nth-child(3) {
     transform: rotate(-45deg) translate(5px);
+}
+.ham.on:hover {
+    transform:  rotate(360deg);
 }

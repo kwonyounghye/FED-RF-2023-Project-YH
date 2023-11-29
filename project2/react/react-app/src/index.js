@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './index.css';
 
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui';
@@ -11,7 +10,8 @@ import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
 import { Menu } from './pages/Menu';
 import "./css/main.css";
-import "./css/ham.css"
+import "./css/ham.css";
+import "./css/about.css";
 
 /********************************************* 
     [ 리액트 라우터 ]

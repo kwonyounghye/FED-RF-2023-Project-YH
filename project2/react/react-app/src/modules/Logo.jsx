@@ -17,26 +17,9 @@ export const Logo = (props) => {
      // 예) goNav('/') -> 첫페이지 이동
      // 이동 주소는 대소문자 구분없음!
  
-     
-     // 객체형 스타일 적용
-     const myStyle = {
-         top: { 
-             width: "45px", 
-             height: "45px", 
-             marginRight: "30px", 
-             borderRadius: "50%", 
-             cursor:"pointer"
-         },
-     
-     };
- 
-     // 이미지 스타일 변경 객체
-     const myStyleImg = {
-         top: "45px",
-     };
- 
+
     return (
-        <div className="logo" style={myStyle[props.logoStyle]}
+        <div className="logo"
         onClick={() =>  
         // 컨텍스트 API 함수 호출
         myCon.chgPage('/')}>
