@@ -1,4 +1,5 @@
 import { MenuImg } from "../modules/MenuImg";
+import "../css/menu.css";
 export function Menu() {
     return (
     <>

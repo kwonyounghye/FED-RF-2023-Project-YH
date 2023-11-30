@@ -1,0 +1,41 @@
+h2 {
+    margin: 5%;
+    text-align: center;
+    font-size: 50px;
+}
+.menu {
+    position: relative;
+}
+.menu1 img {
+    width: 50%;
+    aspect-ratio: 4/5;
+}
+.menu2 img{
+    width: 50%;
+    aspect-ratio: 4/5;
+    position: absolute;
+    top: 70%;
+    right: 0%;    
+} 
+.menu3 img{
+    width: 50%;
+    aspect-ratio: 4/5;
+    position: absolute;
+    left: 0%;
+    top: 99%;
+} 
+.menu4 img{
+    width: 50%;
+    aspect-ratio: 4/5;
+    position: absolute;
+    top: 169%;
+    right: 0%;
+} 
+.menu5 img{
+    width: 50%;
+    aspect-ratio: 4/5;
+    position: absolute;
+    top: 198%;
+    left: 0%;
+
+} 

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
 import { Ham } from "../modules/Ham";
 
+
 // GNB 데이터 가져오기
 export function TopArea(props) {
   
