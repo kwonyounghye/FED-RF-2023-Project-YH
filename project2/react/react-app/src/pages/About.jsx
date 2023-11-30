@@ -20,7 +20,6 @@ export function About() {
                     <div className="introduce">
                         <ul className="introduce_ani">
                             <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
-                    
                             <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
                             <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
                         </ul>

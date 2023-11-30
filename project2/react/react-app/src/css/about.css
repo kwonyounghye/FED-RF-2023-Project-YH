@@ -1,5 +1,5 @@
 .about {
-    /* position: relative; */
+    position: relative;
     height: 1200px;
 }
 .layout1 {
@@ -17,11 +17,12 @@
     aspect-ratio: 4/5;
 }
 .contant1 {
-    position: absolute;
-    
-    right: 30%;
+    position: absolute;    
+    right: 50%;
     top: 90%;
-    font-size: 7vw;
+    font-size: 50vw;
+    white-space: nowrap;
+    overflow: hidden;
     vertical-align: middle;
     color:  #d6d4c6;
     text-shadow: 0px 0px 5px #6f9065;
@@ -30,25 +31,25 @@
     position: absolute;
     top:50%;
     width: 100%;
-    font-size: 5vw;
+    font-size: 2.5vw;
     overflow: hidden;
-    position: sticky;
     z-index: 99;
     background: #6f9065;
-    color:  #d6d4c6;
+    color:  #fff;
 }
 .introduce_ani {
-    width: 400%;
+    width: 330%;
     white-space: nowrap;
     display: flex;
-    margin-left: -50%;
-    animation: introduce1 10s linear infinite;
+    animation: introduce1 15s linear infinite;
 }
 .introduce_ani li {
     white-space: nowrap;
-    width: 50%;
+    width: 110%;
     position: relative;
     list-style: none;
+    margin-left: 10%;
+
     
 }
 /* .introduce_ani li:nth-child(2) {
@@ -64,30 +65,25 @@
         left: 100%;
     } */
     to{
-        margin-left: -190%;
+        margin-left: -253.5%;
     }
 }
-@keyframes introduce2 {
-    /* 0% {
-        left: -100%;
-    } */
+/* @keyframes introduce2 {
+  
     to {
 
         left: -80%;
     }
-    
-    /* 100%{
-        left: -100%;
-    } */
-}
-.introduce_ani li:first-child {
-    margin-right: 10%;
-}
+
+} */
+
 .contant2 {
     /* position: absolute; */
     /* top: 50%; */
     left: 40%;
-    font-size: 7vw;
+    font-size: 50vw;
+    white-space: nowrap;
+    overflow: hidden;
     color: #6f9065;
     z-index: 9;
     
