@@ -30,7 +30,7 @@
     position: absolute;
     top:50%;
     width: 100%;
-    font-size: 70px;
+    font-size: 5vw;
     overflow: hidden;
     position: sticky;
     z-index: 99;
@@ -38,35 +38,33 @@
     color:  #d6d4c6;
 }
 .introduce_ani {
-    width: 200%;
+    width: 400%;
     white-space: nowrap;
     display: flex;
+    margin-left: -50%;
+    animation: introduce1 10s linear infinite;
 }
-.introduce_ani li:nth-child(1) {
+.introduce_ani li {
     white-space: nowrap;
-    width: 200%;
+    width: 50%;
     position: relative;
-    left: 80%;
     list-style: none;
-    animation: introduce1 20s linear infinite;
     
 }
-.introduce_ani li:nth-child(2) {
-    width: 200%;
+/* .introduce_ani li:nth-child(2) {
+    width: 30%;
     position: relative;
     white-space: nowrap;
-    left: 80%;
     list-style: none;
-    animation: introduce2 20s linear infinite;
     
-}
+} */
 /* 흐르는 글자 키프레임 */
 @keyframes introduce1 {
     /* from {
         left: 100%;
     } */
     to{
-        left: -80%;
+        margin-left: -190%;
     }
 }
 @keyframes introduce2 {

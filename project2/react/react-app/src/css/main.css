@@ -35,6 +35,13 @@ header {
     cursor: pointer;
     /* 손가락모양 */
     z-index: 99999;/* .gbx보다위! */
+    transition: .4s;
+    /* outline: 2px solid red; */
+}
+.ham.on:hover{
+    transform: rotate(360deg);
+    transform-origin: 75% 50%;
+
 }
 .ham span {
     width: 100%;
