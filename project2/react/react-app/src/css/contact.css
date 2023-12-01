@@ -1,0 +1,18 @@
+
+.contact {
+    margin: 0 auto;
+    
+    margin: 10%;
+}
+.contant {
+    font-size: 30px;
+    text-align: center;
+}
+.layout {
+    margin: 10%;
+    display: flex;
+    font-size: 20px;
+}
+section {
+    margin: 5%;
+}

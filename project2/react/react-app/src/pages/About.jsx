@@ -1,4 +1,5 @@
 import { Layout } from "../layout/Layout";
+
 import "../css/about.css";
 
 export function About() {
