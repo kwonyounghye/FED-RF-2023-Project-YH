@@ -2,53 +2,68 @@
     position: relative;
     height: 1200px;
 }
-.layout1 {
-    display: flex;
+body {
+    height: 500vh;
+
 }
 .intro1 {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width:50%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 .intro1 img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 4/5;
+    width: 30%;
+}
+
+.intro2 {
+    margin-top: 20%;
+    text-align: right;
+}
+.intro2 img {
+    width: 50%;
+
 }
 .contant1 {
-    position: absolute;    
-    right: 50%;
-    top: 90%;
-    font-size: 50vw;
+    position: fixed;    
+    left:0%;
+    top: 10%;
+    font-size: 20vw;
     white-space: nowrap;
     overflow: hidden;
     vertical-align: middle;
     color:  #d6d4c6;
     text-shadow: 0px 0px 5px #6f9065;
+    padding-left: 50%;
 }
 .introduce {
-    position: absolute;
-    top:50%;
+    position: fixed;
+    top:60%;
     width: 100%;
     font-size: 2.5vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 99;
+    padding: 5vw 0;
     background: #6f9065;
     color:  #fff;
 }
 .introduce_ani {
-    width: 330%;
     white-space: nowrap;
     display: flex;
-    animation: introduce1 15s linear infinite;
+    position: relative;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    animation: introduce1 8s linear infinite;
 }
 .introduce_ani li {
     white-space: nowrap;
-    width: 110%;
+    flex-shrink: 0;
+    width: 120%;
     position: relative;
     list-style: none;
-    margin-left: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
+    outline: 2px dashed red;
 
     
 }
@@ -61,11 +76,8 @@
 } */
 /* 흐르는 글자 키프레임 */
 @keyframes introduce1 {
-    /* from {
-        left: 100%;
-    } */
     to{
-        margin-left: -253.5%;
+        left: -120%;
     }
 }
 /* @keyframes introduce2 {
@@ -77,24 +89,16 @@
 
 } */
 
-.contant2 {
-    /* position: absolute; */
-    /* top: 50%; */
-    left: 40%;
-    font-size: 50vw;
+.contant2 {    
+    position: fixed;    
+    left:0%;
+    top: 40%;
+    font-size: 20vw;
     white-space: nowrap;
     overflow: hidden;
-    color: #6f9065;
-    z-index: 9;
+    vertical-align: middle;
+    color:  #d6d4c6;
+    text-shadow: 0px 0px 5px #6f9065;
+    padding-left: 100%;
     
-}
-.intro2 {
-    width:50%;
-}
-.intro2 img {
-    width: 100%;
-    height: 100%;
-
-    aspect-ratio: 4/5;
-
 }

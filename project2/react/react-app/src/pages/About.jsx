@@ -1,8 +1,36 @@
-import { Layout } from "../layout/Layout";
+
 
 import "../css/about.css";
+import { useEffect } from "react";
+
+import $ from 'jquery';
 
 export function About() {
+
+    let tgEle1;
+    let tgEle2;
+    let winW = window.innerWidth;
+
+    const scrollFn = () => {
+        let scTop = $(window).scrollTop();
+        console.log(scTop);
+
+        if(scTop< winW/2)
+        tgEle1.css({left:-scTop+'px'})
+
+        if(scTop<winW/2*1.2)
+        tgEle2.css({left:-scTop*1.5+'px'})
+    }
+
+    useEffect(()=>{
+        tgEle1 = $('.contant1');
+        tgEle2 = $('.contant2');
+        $(window).scroll(scrollFn);
+
+    },[]);
+
+
+    // 리턴코드 ////////////////////////////
     return (
         <>
                 <div className="about">
@@ -12,8 +40,7 @@ export function About() {
                             <img src="../../images/intro1.jpg" />
                         </div>
                         <div className="contant1">
-                            pomme
-                            <br />
+                            pomme 
                             사과
                         </div>
                     </div>
@@ -22,13 +49,11 @@ export function About() {
                         <ul className="introduce_ani">
                             <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
                             <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
-                            <li>폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.       </li>
                         </ul>
                     </div>
                     <div className="layout2">
                         <div className="contant2">
                             verte
-                            <br />
                             녹색
                         </div>
                         <div className="intro2">
