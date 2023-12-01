@@ -11,8 +11,12 @@
 .layout {
     margin: 10%;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     font-size: 20px;
 }
 section {
-    margin: 5%;
+    margin: 1%;
+}
+.map {
 }
