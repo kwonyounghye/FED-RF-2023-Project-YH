@@ -15,16 +15,16 @@ export function About() {
         let scTop = $(window).scrollTop();
         console.log(scTop);
 
-        if(scTop< winW/2)
-        tgEle1.css({left:-scTop+'px'})
+        if(scTop< winW/1.4*2.8)
+        tgEle1.css({left:-scTop*0.5+'px'})
 
-        if(scTop<winW/2*1.2)
-        tgEle2.css({left:-scTop*1.5+'px'})
+        if(scTop<winW/1*2.4)
+        tgEle2.css({left:-scTop*0.7+'px'})
     }
 
     useEffect(()=>{
-        tgEle1 = $('.contant1');
-        tgEle2 = $('.contant2');
+        tgEle1 = $('.content1');
+        tgEle2 = $('.content2');
         $(window).scroll(scrollFn);
 
     },[]);
@@ -39,7 +39,7 @@ export function About() {
                             {/* 이미지1 */}
                             <img src="../../images/intro1.jpg" />
                         </div>
-                        <div className="contant1">
+                        <div className="content1">
                             pomme 
                             사과
                         </div>
@@ -52,7 +52,7 @@ export function About() {
                         </ul>
                     </div>
                     <div className="layout2">
-                        <div className="contant2">
+                        <div className="content2">
                             verte
                             녹색
                         </div>

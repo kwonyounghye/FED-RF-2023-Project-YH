@@ -13,12 +13,16 @@ html,body {
     left: 0;
     right: 0;
     width: 100%;
+    
 }
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    background: #d6d4c6;
+    position: relative;
+    z-index: 999;
 }
 /* 1-1.로고 */
 
@@ -73,6 +77,14 @@ header {
 .ham.on span:nth-child(3) {
     transform: rotate(-45deg) translate(5px);
 }
+.ham.on {
+    animation: right 1s ease-out ;
+
+}
+@keyframes right {
+    to { right: 100%}
+    
+ }
 .ham.on:hover {
     transform:  rotate(360deg);
 }

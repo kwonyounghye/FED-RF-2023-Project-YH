@@ -4,7 +4,7 @@ export function Contact() {
     return (
         <>
             <div className="contact">
-                <div className="contant">
+                <div className="content">
                     {/* 설명 */}
                     ❕케이크 및 디저트 예약, 단체 주문, 대관 문의❕
                 </div>
@@ -18,17 +18,29 @@ export function Contact() {
                     <section>
                         <address>
                             {/* 주소 */}
+                            주소
+                            <br />
                             381, World Cup buk-ro, Mapo-gu Seoul, Korea
                             <br />
                             서울 마포구 월드컵북로 381 지층
                             <br />
                             경의중앙수색역 1번 출구에서 840m
                         </address>
-                        {/* 전화번호 */}
-                        <span>전화번호 : 02-306-3392</span>
                         <br />
+
+                        {/* 전화번호 */}
+                        <span>
+                            전화번호
+                            <br />
+                            02-306-3392
+                        </span>
+                        <br />
+                        <br />
+
                         {/* 영업시간 */}
                         <span>
+                            영업시간
+                            <br />
                             월 08:00 - 21:00
                             <br />
                             화 08:00 - 21:00
@@ -42,6 +54,8 @@ export function Contact() {
                             토 08:00 - 21:00
                             <br />일 정기휴무 (매주 일요일)
                         </span>
+                        <br />
+
                         {/* 버튼1 */}
                         <div>
                             <a href="https://www.instagram.com/pommesvertess/">
