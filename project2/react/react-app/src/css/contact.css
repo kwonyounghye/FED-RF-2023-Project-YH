@@ -1,12 +1,12 @@
 
 .contact {
     margin: 0 auto;
-    
     margin: 10%;
 }
 .content {
-    font-size: 30px;
+    font-size: 3vw;
     text-align: center;
+    white-space: nowrap;
 }
 .layout {
     margin: 10%;

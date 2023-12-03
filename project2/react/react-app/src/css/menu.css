@@ -9,10 +9,12 @@ h2 {
 .menu1 img {
     width: 50%;
     aspect-ratio: 4/5;
+    cursor: pointer;
 }
 .menu2 img{
     width: 50%;
     aspect-ratio: 4/5;
+    cursor: pointer;
     position: absolute;
     top: 70%;
     right: 0%;    
@@ -20,6 +22,7 @@ h2 {
 .menu3 img{
     width: 50%;
     aspect-ratio: 4/5;
+    cursor: pointer;
     position: absolute;
     left: 0%;
     top: 99%;
@@ -27,6 +30,7 @@ h2 {
 .menu4 img{
     width: 50%;
     aspect-ratio: 4/5;
+    cursor: pointer;
     position: absolute;
     top: 169%;
     right: 0%;
@@ -34,6 +38,7 @@ h2 {
 .menu5 img{
     width: 50%;
     aspect-ratio: 4/5;
+    cursor: pointer;
     position: absolute;
     top: 198%;
     left: 0%;

@@ -19,7 +19,7 @@ export function About() {
         tgEle1.css({left:-scTop*0.5+'px'})
 
         if(scTop<winW/1*2.4)
-        tgEle2.css({left:-scTop*0.7+'px'})
+        tgEle2.css({left:-scTop*0.9+'px'})
     }
 
     useEffect(()=>{
@@ -58,7 +58,11 @@ export function About() {
                         </div>
                         <div className="intro2">
                             {/* 이미지2 */}
-                            <img src="../../images/intro2.jpg" width='50%' />
+                            <img src="../../images/intro2.jpg" />
+                        </div>
+                        <div className="intro3">
+                            {/* 이미지3 */}
+                            {/* <img src="../../images/intro3.jpg" /> */}
                         </div>
                     </div>
                 </div>
