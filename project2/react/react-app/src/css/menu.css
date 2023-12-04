@@ -5,6 +5,8 @@ h2 {
 }
 .menu {
     position: relative;
+    background: #6f9065;
+
 }
 .menu1 img {
     width: 50%;
@@ -16,7 +18,7 @@ h2 {
     aspect-ratio: 4/5;
     cursor: pointer;
     position: absolute;
-    top: 70%;
+    top: 50%;
     right: 0%;    
 } 
 .menu3 img{
@@ -32,7 +34,7 @@ h2 {
     aspect-ratio: 4/5;
     cursor: pointer;
     position: absolute;
-    top: 169%;
+    top: 149%;
     right: 0%;
 } 
 .menu5 img{

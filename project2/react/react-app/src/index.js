@@ -13,6 +13,7 @@ import { Menu } from './pages/Menu';
 import "./css/main.css";
 import "./css/ham.css";
 import "./css/about.css";
+import "./css/menu.css";
 
 /********************************************* 
     [ 리액트 라우터 ]

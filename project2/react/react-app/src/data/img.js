@@ -12,15 +12,5 @@ export const img = {
         "./images/intro2.jpg",
         "./images/intro3.jpg",
     ],
-    "menu": [
-        "./images/menu1.jpg",
-        "./images/menu2.jpg", 
-        "./images/menu3.jpg",
-        "./images/menu4.jpg",
-        "./images/menu5.jpg"
-    ],
-    
-
-
 
 }

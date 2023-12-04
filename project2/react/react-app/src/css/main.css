@@ -78,7 +78,7 @@ header {
     transform: rotate(-45deg) translate(5px);
 }
 .ham.on {
-    animation: right 1s ease-out ;
+    animation: right 1s ease-out;
 
 }
 @keyframes right {
