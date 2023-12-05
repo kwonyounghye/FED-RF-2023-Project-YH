@@ -5,7 +5,7 @@ export function Menu() {
     <>
     <h2>Best Menu</h2>
     {/* 이미지 나열 */}
-    <MenuList />
+    <MenuList menu="menu" />
     </>
     )
 };

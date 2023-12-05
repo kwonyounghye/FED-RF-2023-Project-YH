@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { yhCon } from "./yhContext";
 import { hamSub } from "../data/hamSub";
+import { img } from "../data/img";
 
 
 export function Ham() {
@@ -15,8 +16,9 @@ export function Ham() {
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
 
-//     // props.cat - 카테고리명(메뉴 데이터 선택용)
-//     const makeList = (data) => {
+
+  //     // props.cat - 카테고리명(메뉴 데이터 선택용)
+  //     const makeList = (data) => {
 //       // i를 유일키로 셋팅
 // return hamSub[data].map((v,i) => {
 // <li key={i}>
@@ -30,10 +32,13 @@ export function Ham() {
     <>
 
       <div className="mbox">
+        <div className="preview">
+          <img src="./../../images/menu1.jpg" alt="menu1" />
+        </div>
         <nav className="mlist">
-             <div><a href="#" onClick={()=>{goPage('About')}}>About</a></div>     
-             <div><a href="#" onClick={()=>{goPage('Menu')}}>Menu</a></div>     
-             <div><a href="#" onClick={()=>{goPage('Contact')}}>Contact</a></div>     
+             <div className="nav1"><a href="#" onClick={()=>{goPage('About')}}>About</a></div>     
+             <div className="nav2"><a href="#" onClick={()=>{goPage('Menu')}}>Menu</a></div>     
+             <div className="nav3"><a href="#" onClick={()=>{goPage('Contact')}}>Contact</a></div>     
         </nav>
       </div>
     </>

@@ -1,3 +1,2 @@
-export const video = [
-  './images/tree.mp4'
-];
+export const video = 
+  {'main':'./images/tree.mp4'}

@@ -56,13 +56,21 @@ export function About() {
                             verte
                             녹색
                         </div>
+                        <div className="intro4">
+                            {/* 이미지4 */}
+                            <img src="../../images/main3.jpg" />
+                        </div>
                         <div className="intro2">
                             {/* 이미지2 */}
                             <img src="../../images/intro2.jpg" />
                         </div>
                         <div className="intro3">
                             {/* 이미지3 */}
-                            {/* <img src="../../images/intro3.jpg" /> */}
+                            <img src="../../images/intro3.jpg" />
+                        </div>
+                        <div className="intro5">
+                            {/* 이미지5 */}
+                            <img src="../../images/main5.jpg" />
                         </div>
                     </div>
                 </div>
