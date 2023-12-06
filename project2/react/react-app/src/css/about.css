@@ -17,9 +17,6 @@
     position: relative;
     height: 500vh;
 }
-body {
-
-}
 .intro1 {
     position: relative;
     z-index: 1;
@@ -63,7 +60,7 @@ img {
 .content1 {
     position: fixed;    
     left:0%;
-    top: 20%;
+    bottom: 50%;
     font-size: 15vw;
     white-space: nowrap;
     overflow: hidden;

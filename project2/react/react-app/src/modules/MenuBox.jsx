@@ -1,5 +1,4 @@
-// import { menu } from "../data/menu";
-import { MenuList } from "./MenuList";
+import '../css/menu_box.css';
 
 export function MenuBox(props) {
     

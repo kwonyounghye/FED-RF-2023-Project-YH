@@ -9,7 +9,11 @@ export function MenuList(props) {
     // props.cat - 카테고리명 -> 데이터 선택 객체 속성명
 
     // 선택 데이터 : 카테고리에 해당하는 데이터를 가져옴!
-    const selData = menu[props.menu];
+    // 원본데이터가 객체이므로 map을 쓰기위해 
+    // Object.keys()로 속성값 배열변환한다!
+    const selData = Object.keys(menu);
+    console.log('원본데이터:',menu);
+    console.log('변환데이터:',selData);
     // 메뉴박스 보이기 함수
     const showBox = (name, img) => {
         console.log("메뉴: ", name, img);
@@ -22,16 +26,18 @@ export function MenuList(props) {
             menubox.fadeOut(300);
         }); //////////// click /////////////
     }; /////////// showBox 함수 /////////////
-    // const selImg = img.menu[props.cat];
+
     return (
         <>
             {selData.map((v,i) => (
                 <div className="menulist" key={i}>
                     <a href="#" className={v}>
-                        <img src={v.img} alt={v.name} />
+                        <img src={menu[v].img} alt={menu[v].name} />
                     </a>
                 </div>
             ))}
+
+            <MenuBox />
         </>
     );
 }
