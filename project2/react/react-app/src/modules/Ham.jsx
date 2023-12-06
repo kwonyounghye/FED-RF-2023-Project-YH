@@ -1,7 +1,10 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { yhCon } from "./yhContext";
 import { hamSub } from "../data/hamSub";
 import { img } from "../data/img";
+
+
+import $ from "jquery";
 
 
 export function Ham() {
@@ -27,6 +30,24 @@ export function Ham() {
 // </li>
 // })
 // }; /////////////// makeList /////////////
+
+  useEffect(()=>{
+
+    const tgEle = $('.preview');
+
+    $('.mlist a').hover(
+      function(){ // over
+        let txt = $(this).text().toLowerCase();
+        console.log(txt);
+        tgEle.addClass(txt+'-menu');
+      },
+      function(){ // out
+        let txt = $(this).text().toLowerCase();
+        tgEle.removeClass(txt+'-menu');
+      });
+  },[]); /////////// useEffect //////////
+
+
   // 코드 리턴 //////////////////////
   return (
     <>
