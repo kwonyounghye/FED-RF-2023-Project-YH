@@ -32,14 +32,12 @@ export function Ham() {
     <>
 
       <div className="mbox">
-        <div className="preview">
-          <img src="./../../images/menu1.jpg" alt="menu1" />
-        </div>
         <nav className="mlist">
              <div className="nav1"><a href="#" onClick={()=>{goPage('About')}}>About</a></div>     
              <div className="nav2"><a href="#" onClick={()=>{goPage('Menu')}}>Menu</a></div>     
              <div className="nav3"><a href="#" onClick={()=>{goPage('Contact')}}>Contact</a></div>     
         </nav>
+        <div className="preview"></div>
       </div>
     </>
   );

@@ -24,14 +24,16 @@ export function MenuList(props) {
         menubox.fadeIn(300);
         close.click(() => {
             menubox.fadeOut(300);
-        }); //////////// click /////////////
+        }); //////////// click //////
+        menuimg.html(`<img src="${img}" alt="${name}">`);
+        menutxt.text(name);
     }; /////////// showBox 함수 /////////////
 
     return (
         <>
             {selData.map((v,i) => (
                 <div className="menulist" key={i}>
-                    <a href="#" className={v}>
+                    <a href="#" className={v} onClick={(e)=>{e.preventDefault();showBox(menu[v].name,menu[v].img)}}>
                         <img src={menu[v].img} alt={menu[v].name} />
                     </a>
                 </div>

@@ -25,7 +25,7 @@ export function Layout() {
      // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
      $(".ham").click((e) => {
          // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
-         $(".mbox").fadeToggle(400);
+         $(".mbox").toggleClass('on');
 
          // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
          $(e.currentTarget).toggleClass("on");
