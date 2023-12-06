@@ -1,53 +1,42 @@
 h2 {
-    margin: 5%;
+    padding: 5%;
+    margin: 0;
     text-align: center;
     font-size: 50px;
-}
-.menulist {
-    height: 400%;
-    background: #d6d4c6;
-
-    position: relative;
+    /* background: #d6d4c6; */
 }
 .menu {
+    background: #d6d4c6;
+    line-height: 0;
+}
+.menu>div {
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    
+}
+.menu3 img {
+    vertical-align: top !important;
+    
 
 }
-.menu1 img {
-    width: 50%;
-    aspect-ratio: 4/5;
-    cursor: pointer;
+.menu a {
+    display: block;
 }
-.menu2 img{
-    width: 50%;
-    aspect-ratio: 4/5;
+.menu img {
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 0%;    
-} 
-.menu3 img{
-    width: 50%;
-    aspect-ratio: 4/5;
-    cursor: pointer;
-    position: absolute;
-    left: 0%;
-    top: 99%;
-} 
-.menu4 img{
-    width: 50%;
-    aspect-ratio: 4/5;
-    cursor: pointer;
-    position: absolute;
-    top: 149%;
-    right: 0%;
-} 
-.menu5 img{
-    width: 50%;
-    aspect-ratio: 4/5;
-    cursor: pointer;
-    position: absolute;
-    top: 198%;
-    left: 0%;
-    /* bottom: 0; */
+    vertical-align: bottom;
+    object-fit: cover;
+}
 
-} 
+.menu img:hover {
+    scale: 1.3;
+    transition: scale 1s;
+}
+
+/* .menu5 {
+    float: right;
+} */

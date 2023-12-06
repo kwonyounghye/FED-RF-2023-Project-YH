@@ -4,12 +4,7 @@ a {
     text-decoration: none;
     color: #000;
 }
-.inbox {
-    max-width: 100%;
-    /* 1920px보다 작을땐 100%를 유지함! */
-    margin: 0 auto;
-    /* 마영오 - 중앙정렬 */
-}
+
 .mbox{
     position: fixed;
     top: 0;
@@ -31,26 +26,27 @@ a {
 .mlist{
     position: absolute;
     top: 0;
-    right: -30%;
+    right: -35%;
     width: 30%;
     height: 100%;
     background-color: #6f9065;
-    font-size: 50px;
+    font-size: 4vw;
     box-sizing: border-box;
     padding-top: 20vh;
     transition: right 1s;
+    text-align: center;
 }
 
 .mbox.on .mlist{
     right: 0;
     transition: none;
- }
+}
 
 .mlist div{
-    padding-right: 5vw;
+    padding: 0 5vw;
     box-sizing: border-box;
-    text-align: right;
-    line-height: 10vh;
+    line-height: 20vh;
+    text-align: center;
 }
 
 

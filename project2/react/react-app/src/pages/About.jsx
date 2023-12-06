@@ -14,12 +14,13 @@ export function About() {
     const scrollFn = () => {
         let scTop = $(window).scrollTop();
         console.log(scTop);
+// *뒤: 나오는 시간
+        if(scTop< winW/0.5*1.8)
+        // 속도
+        tgEle1.css({left:-scTop*0.2+'px'})
 
-        if(scTop< winW/1.4*2.8)
-        tgEle1.css({left:-scTop*0.5+'px'})
-
-        if(scTop<winW/1*2.4)
-        tgEle2.css({left:-scTop*0.9+'px'})
+        if(scTop<winW/0.9*2.0)
+        tgEle2.css({left:-scTop*0.5+'px'})
     }
 
     useEffect(()=>{
@@ -41,7 +42,6 @@ export function About() {
                         </div>
                         <div className="content1">
                             pomme 
-                            사과
                         </div>
                     </div>
                     {/* 위치 고정 설명 */}
@@ -54,7 +54,6 @@ export function About() {
                     <div className="layout2">
                         <div className="content2">
                             verte
-                            녹색
                         </div>
                         <div className="intro4">
                             {/* 이미지4 */}

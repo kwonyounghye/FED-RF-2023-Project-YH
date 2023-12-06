@@ -7,20 +7,21 @@
     width: 80vw;
     height: 80vh;
     text-align: center;
-    background: #000;
-    display: none;
     z-index: 99999;
+    background: #6f9065;
+    display: none;
 }
 .menutxt {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 90%;
+    left: 12%;
     transform-origin: left top;
     transform: rotate(-90deg);
-    font-size: 30px;
+    font-size: 7vw;
 }
 .menuimg {
-    width: 100%;
+    float: right;
+    width: 80%;
     height: 100%;
 }
 .menuimg img{
@@ -30,14 +31,11 @@
 }
 .close{
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 3%;
+    right: 0%;
+    transform: translateX(-60%);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     font-size: 50px;
-    line-height: 50px;
     border: none;
     background-color: transparent;
     z-index: 1;
