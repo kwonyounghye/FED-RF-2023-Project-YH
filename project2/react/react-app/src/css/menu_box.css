@@ -1,0 +1,14 @@
+.menubox {
+    position: absolute;
+    top: 50vh;
+    right: 50vw;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    background: #000;
+}
+.menutxt {
+    font-size: 30px;
+}
+.menuimg {
+}
