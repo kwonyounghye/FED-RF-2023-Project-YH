@@ -31,13 +31,15 @@ export function MenuList(props) {
 
     return (
         <>
-            {selData.map((v,i) => (
-                <div className="menulist" key={i}>
-                    <a href="#" className={v} onClick={(e)=>{e.preventDefault();showBox(menu[v].name,menu[v].img)}}>
-                        <img src={menu[v].img} alt={menu[v].name} />
-                    </a>
-                </div>
-            ))}
+            <div className="menulist">
+                {selData.map((v,i) => (
+                    <div className="menu">
+                        <a href="#"  key={i} className={v} onClick={(e)=>{e.preventDefault();showBox(menu[v].name,menu[v].img)}}>
+                            <img src={menu[v].img} alt={menu[v].name} />
+                        </a>
+                    </div>
+                ))}
+            </div>
 
             <MenuBox />
         </>
