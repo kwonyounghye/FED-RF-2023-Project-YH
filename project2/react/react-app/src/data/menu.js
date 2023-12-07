@@ -6,19 +6,19 @@ export const menu = {
         img: "./images/menu1.jpg",
     },
     menu2: {
-        name: "stollen",
+        name: "Salt bread",
         img: "./images/menu2.jpg",
     },
     menu3: {
-        name: "stollen",
+        name: "Canulet",
         img: "./images/menu3.jpg",
     },
     menu4: {
-        name: "stollen",
+        name: "Leven Cookies",
         img: "./images/menu4.jpg",
     },
     menu5: {
-        name: "stollen",
+        name: "mini cookie",
         img: "./images/menu5.jpg",
     },
 }

@@ -1,6 +1,25 @@
+import { useContext, useEffect } from "react";
 import "../css/contact.css";
+import $ from "jquery";
+import { yhCon } from "../modules/yhContext";
 
 export function Contact() {
+         // 컨텍스트 사용
+//   const myCon = useContext(yhCon);
+    useEffect(()=> {
+        const content = $('.content');
+        const layout = $('.layout');
+        content.fadeIn(300).addClass('on');
+        
+        layout.fadeIn(500).addClass('on');
+
+        // function() {
+        //     let tgEle = $('.preview');
+        //     $('.content').addClass.add("on");
+            
+        // }
+        
+    })
     return (
         <>
             <div className="contact">

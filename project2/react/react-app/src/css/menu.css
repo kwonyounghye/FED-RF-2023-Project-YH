@@ -1,13 +1,18 @@
+
 h2 {
     padding: 5%;
     margin: 0;
     text-align: center;
-    font-size: 50px;
+    font-size: 5vw;
+    font-family: 'Smythe';
+    letter-spacing: .5vw;
+
     /* background: #d6d4c6; */
 }
 .menu {
     background: #d6d4c6;
     line-height: 0;
+
 }
 .menu>div {
     width: 50%;
