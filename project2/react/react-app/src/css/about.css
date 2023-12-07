@@ -18,13 +18,13 @@
     opacity: 0.5;
 }
   /* 스크롤 등장 초기화 클래스1 */
-  .hide-el {
+  .scroll {
     /* transform: translateY(100%); */
-    opacity: 1;
+    /* opacity: 1; */
     /* transition: 1.2s ease-in-out; */
   }
   /* 스크롤 등장 클래스 .on */
-.hide-el.on{
+.scroll.on{
     /* transform: translateY(30%); */
     opacity: 1;
   }

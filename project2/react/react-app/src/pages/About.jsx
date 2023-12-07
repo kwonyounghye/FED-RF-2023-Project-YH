@@ -57,8 +57,8 @@ const domFn = {
 }; ////////////// domFn 객체 ///////////////////////////
 
         // 1. 대상선정 : 
-        // 스크롤 등장 대상: .hide-el
-        const scAct = domFn.qsa(".hide-el");
+        // 스크롤 등장 대상: .scroll
+        const scAct = domFn.qsa(".scroll");
         console.log('대상: ', scAct);
         
         // 2. 전체 window에 스크롤 이벤트 셋팅하기
@@ -150,7 +150,7 @@ const domFn = {
                     <div className="layout1">
                         <div className="intro1">
                             {/* 이미지1 */}
-                            <img src="../../images/intro1.jpg" className="hide-el" />
+                            <img src="../../images/intro1.jpg" className="scroll" />
                         </div>
                         <div className="content1">
                             pomme 
@@ -169,19 +169,19 @@ const domFn = {
                         </div>
                         <div className="intro4">
                             {/* 이미지4 */}
-                            <img src="../../images/main3.jpg" className="hide-el" />
+                            <img src="../../images/main3.jpg" className="scroll" />
                         </div>
                         <div className="intro2">
                             {/* 이미지2 */}
-                            <img src="../../images/intro2.jpg" className="hide-el" />
+                            <img src="../../images/intro2.jpg" className="scroll" />
                         </div>
                         <div className="intro3">
                             {/* 이미지3 */}
-                            <img src="../../images/intro3.jpg" className="hide-el" />
+                            <img src="../../images/intro3.jpg" className="scroll" />
                         </div>
                         <div className="intro5">
                             {/* 이미지5 */}
-                            <img src="../../images/main5.jpg" className="hide-el" />
+                            <img src="../../images/main5.jpg" className="scroll" />
                         </div>
                     </div>
                 </div>
