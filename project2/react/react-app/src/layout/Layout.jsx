@@ -45,7 +45,9 @@ export function Layout() {
   // 라우터 이동객체 설정 -> 컨텍스트 API 사용!
   const goNav = useNavigate();
   // 라우터 이동함수 : pgName - 페이지이름 / param - 전달값
-  const chgPage = useCallback((pgName,param) => goNav(pgName,param),[]);
+  const chgPage = useCallback((pgName) =>{ goNav(pgName)
+    console.log(5555);
+  },[]);
    /****************************************
      [ 컨텍스트 API 공유값 설정 ]
      1. chgPage함수 : 라우터 이동 기능

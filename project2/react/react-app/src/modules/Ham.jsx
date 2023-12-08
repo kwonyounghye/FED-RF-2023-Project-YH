@@ -5,16 +5,19 @@ import { img } from "../data/img";
 
 
 import $ from "jquery";
+import { useNavigate } from "react-router-dom";
 
 
 export function Ham() {
      // 컨텍스트 사용
   const myCon = useContext(yhCon);
   // pCon에 Provider value 속성에 공개한 변수/함수를 사용함!
+  const goNav = useNavigate();
 
   // 메뉴 이동 처리함수 ///
   const goPage = (txt) => {
-    myCon.chgPage(txt);
+    console.log(txt.toLowerCase(),'333333');
+    goNav(txt.toLowerCase());
     // 전체박스 숨기기
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
@@ -54,9 +57,9 @@ export function Ham() {
 
       <div className="mbox">
         <nav className="mlist">
-             <div className="nav1"><a href="#" onClick={()=>{goPage('About')}}>About</a></div>     
-             <div className="nav2"><a href="#" onClick={()=>{goPage('Menu')}}>Menu</a></div>     
-             <div className="nav3"><a href="#" onClick={()=>{goPage('Contact')}}>Contact</a></div>     
+             <div className="nav1"><a href="#" onClick={(e)=>{e.preventDefault();goPage('About')}}>About</a></div>     
+             <div className="nav2"><a href="#" onClick={(e)=>{e.preventDefault();goPage('Menu')}}>Menu</a></div>     
+             <div className="nav3"><a href="#" onClick={(e)=>{e.preventDefault();goPage('Contact')}}>Contact</a></div>     
         </nav>
         <div className="preview"></div>
       </div>

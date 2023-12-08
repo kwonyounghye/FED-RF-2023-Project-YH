@@ -150,7 +150,7 @@ const domFn = {
                     <div className="layout1">
                         <div className="intro1">
                             {/* 이미지1 */}
-                            <img src="../../images/intro1.jpg" className="scroll" />
+                            <img src="./images/intro1.jpg" className="scroll" />
                         </div>
                         <div className="content1">
                             pomme 
@@ -169,19 +169,19 @@ const domFn = {
                         </div>
                         <div className="intro4">
                             {/* 이미지4 */}
-                            <img src="../../images/main3.jpg" className="scroll" />
+                            <img src="./images/main3.jpg" className="scroll" />
                         </div>
                         <div className="intro2">
                             {/* 이미지2 */}
-                            <img src="../../images/intro2.jpg" className="scroll" />
+                            <img src="./images/intro2.jpg" className="scroll" />
                         </div>
                         <div className="intro3">
                             {/* 이미지3 */}
-                            <img src="../../images/intro3.jpg" className="scroll" />
+                            <img src="./images/intro3.jpg" className="scroll" />
                         </div>
                         <div className="intro5">
                             {/* 이미지5 */}
-                            <img src="../../images/main5.jpg" className="scroll" />
+                            <img src="./images/main5.jpg" className="scroll" />
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
-
-import $ from 'jquery';
-import 'jquery-ui-dist/jquery-ui';
+import $ from "jquery";
+import "jquery-ui-dist/jquery-ui";
 import { Layout } from "./layout/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
-import { Menu } from './pages/Menu';
+import { Menu } from "./pages/Menu";
 import "./css/main.css";
 import "./css/ham.css";
 import "./css/about.css";
@@ -49,27 +48,28 @@ import "./css/menu.css";
 // 레이아웃 컴포넌트를 라우터에 입혀서 화면에
 // 출력해야하기 때문에 스스로 내보내기를 셋팅해야하는 것!
 export default function App() {
-    
-  return (
-    <BrowserRouter>
-      <Routes>
-        {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
-        <Route path="/" element={<Layout />}>
-          {/* 하위 라우트 셋팅 
+    return (
+        // <BrowserRouter>
+        <HashRouter>
+            <Routes>
+                {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정! */}
+                <Route path="/" element={<Layout />}>
+                    {/* 하위 라우트 셋팅 
           - path대신 index만 쓰면 첫페이지로 로딩함! 
           -> path는 Layout의 Link to="/" 에 해당하는 셋팅*/}
-          <Route index element={<Main />} />
-          <Route path="about" element={<About />} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+                    <Route index element={<Main />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="menu" element={<Menu />} />
+                    <Route path="contact" element={<Contact />} />
+                </Route>
+            </Routes>
+        </HashRouter>
+        // </BrowserRouter>
+    );
 } ///////////// App 컴포넌트 ///////////////////
 
 // 최상위 컴포넌트 출력
 // 먼저 root 객체 만들고
-const root = ReactDOM.createRoot(document.querySelector('#root'));
+const root = ReactDOM.createRoot(document.querySelector("#root"));
 // render 메서드로 출력
 root.render(<App />);
