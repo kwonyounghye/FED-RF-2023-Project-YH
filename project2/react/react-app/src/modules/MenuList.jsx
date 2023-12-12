@@ -34,7 +34,7 @@ export function MenuList(props) {
             <div className="menu">
                 {selData.map((v,i) => (
                     <div className={v}  key={i}>
-                        <a href="#" onClick={(e)=>{e.preventDefault();showBox(menu[v].name,menu[v].img)}}>
+                        <a href="#" onClick={(e)=>{e.preventDefault(); showBox(menu[v].name,menu[v].img)}}>
                             <img src={menu[v].img} alt={menu[v].name} />
                         </a>
                     </div>

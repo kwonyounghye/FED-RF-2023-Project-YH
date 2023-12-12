@@ -21,6 +21,18 @@ export function Ham() {
     // 전체박스 숨기기
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
+    useEffect(()=>{
+    // const mbox = $('.mbox');
+    // $('.ham').onClick(
+    //   function() {
+    //     mbox.addClass('.on');
+        
+    //   },
+    //   function() {
+    //     mbox.addClass('.off');
+        
+      }
+      );
 
 
   //     // props.cat - 카테고리명(메뉴 데이터 선택용)
@@ -34,7 +46,6 @@ export function Ham() {
 // })
 // }; /////////////// makeList /////////////
 
-  useEffect(()=>{
 
     const tgEle = $('.preview');
 
