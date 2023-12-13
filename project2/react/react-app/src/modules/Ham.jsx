@@ -16,20 +16,21 @@ export function Ham() {
 
   // 메뉴 이동 처리함수 ///
   const goPage = (txt) => {
-    console.log(txt.toLowerCase(),'333333');
+    // console.log(txt.toLowerCase(),'333333');
     goNav(txt.toLowerCase());
-    // 전체박스 숨기기
+    // // 전체박스 숨기기
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
     useEffect(()=>{
-    // const mbox = $('.mbox');
-    // $('.ham').onClick(
-    //   function() {
-    //     mbox.addClass('.on');
+    const mbox = $('.mbox');
+    $('.ham').click(
+      function() {
+        mbox.addClass('.on');
         
-    //   },
-    //   function() {
-    //     mbox.addClass('.off');
+      },)
+      $('.ham.on').click(
+      function() {
+        mbox.addClass('.off');
         
       }
       );
