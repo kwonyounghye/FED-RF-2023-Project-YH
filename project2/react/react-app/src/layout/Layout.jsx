@@ -22,20 +22,30 @@ export function Layout() {
 
  // 랜더링 후 실행구역 ////////////
  useEffect(() => {
-     // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
-     $(".ham").click((e) => {
-         // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
-         $(".mbox").toggleClass('on');
+   // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
+   $(".ham").click((e) => {
+     // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
+     $(".mbox").toggleClass('on');
+          
+     // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
+     $(e.currentTarget).toggleClass("on");
+     
+     
+     
+     // e.target과 e.currentTarget은 다르다!
+     // 후자가 햄버거 버튼 자신임!
+     // console.log(e.currentTarget)
+    }); ////////// click /////////////
+    
+    $('.ham on').click((e) => {
 
-         // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
-         $(e.currentTarget).toggleClass("on");
-         // e.target과 e.currentTarget은 다르다!
-         // 후자가 햄버거 버튼 자신임!
-         // console.log(e.currentTarget)
-        }); ////////// click /////////////
+        $(".mbox").removeClass('on');
+        $(".mbox").toggleClass('off');
+ 
+      })
         // 렌더링구역 한번만 실행 : 옵션 []
-    }, []); //////////// useEffect //////////
-
+      }, []); //////////// useEffect //////////
+      
   // 랜더링 후 실행구역 /////////////////////
   useLayoutEffect(()=>{
     // 페이지 이동 시 스크롤 위치 상단이동
@@ -46,7 +56,6 @@ export function Layout() {
   const goNav = useNavigate();
   // 라우터 이동함수 : pgName - 페이지이름 / param - 전달값
   const chgPage = useCallback((pgName) =>{ goNav(pgName)
-    console.log(5555);
   },[]);
    /****************************************
      [ 컨텍스트 API 공유값 설정 ]

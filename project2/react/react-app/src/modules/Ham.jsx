@@ -22,18 +22,14 @@ export function Ham() {
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
     useEffect(()=>{
-    const mbox = $('.mbox');
-    $('.ham').click(
-      function() {
-        mbox.addClass('.on');
+      const mbox = $('.mbox');
+      // $('.ham on').click(
+        // function() {
+        console.log('나가');
+      //   mbox.addClass('off');
         
-      },)
-      $('.ham.on').click(
-      function() {
-        mbox.addClass('.off');
-        
-      }
-      );
+      // }
+      // );
 
 
   //     // props.cat - 카테고리명(메뉴 데이터 선택용)
