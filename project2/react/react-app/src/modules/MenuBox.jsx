@@ -6,7 +6,10 @@ export function MenuBox(props) {
         <>
         <div className="menubox" menu={props.menu}>
             {/* 닫기버튼 */}
-            <button className="close">×</button>
+            <button className="close">
+                <span></span>
+                <span></span>
+            </button>
             <div className="style">
                 <div className="menutxt"></div>
             </div>

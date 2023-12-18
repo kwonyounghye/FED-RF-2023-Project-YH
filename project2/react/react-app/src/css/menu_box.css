@@ -58,6 +58,7 @@
     /* transform: translateX(-60%); */
     border-radius: 50%;
     font-size: 50px;
+    font-weight: lighter;
     border: none;
     background-color: transparent;
     z-index: 1;
@@ -69,4 +70,12 @@
     1px 0px #fff,
     -1px 0px #fff; */
 
+}
+.close span {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    display: block;
+    background: #000;
+    transform: rotate(45deg);
 }

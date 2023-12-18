@@ -33,28 +33,21 @@ header {
 /* 1-1.로고 */
 
 .logo_img {
-    width: 120px;
+    width: 10vh;
     cursor: pointer;
     z-index: 9;
 }
 /* 햄버거버튼 */
 .ham {
     /* 부모는? .top-area */
-    width: 40px;
-    height: 25px;
     cursor: pointer;
     z-index: 999;/* .gbx보다위! */
     transition: .4s;
     /* outline: 2px solid red; */
 }
-.ham.on:hover{
-    transform: rotate(360deg);
-    transform-origin: 75% 50%;
-
-}
 .ham span {
-    width: 100%;
-    height: 5px;
+    width: 30px;
+    height: 2px;
     margin: 5px;
     display: block;
     background: #000;
@@ -69,7 +62,7 @@ header {
 
 /* 1번막대 : 중앙이동+시계방향45도회전 */
 .ham.on span:nth-child(1) {
-    transform: rotate(45deg) translate(7px);
+    transform: rotate(45deg) translate(5px);
 }
 
 /* 2번막대 : left위치 중앙이동+width는0 */
@@ -79,19 +72,22 @@ header {
 
 /* 3번막대 : 중앙이동+반시계방향45도회전 */
 .ham.on span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px);
+    transform: rotate(-45deg) translate(5px);
 }
 .ham.on {
-    animation: right 1s ease-out;
-
+    animation: right 1s ease-in-out;
+    
 }
 @keyframes right {
     to { right: 100%}
     
- }
-.ham.on:hover {
-    transform:  rotate(360deg);
 }
+.ham.on:hover{
+    transform: rotate(360deg);
+    /* transform-origin: 75% 50%; */
+
+}
+
 
 /* .main {
 }
