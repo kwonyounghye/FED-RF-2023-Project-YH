@@ -58,27 +58,31 @@ export function Contact() {
 
                         {/* 영업시간 */}
                         <span>
-                            영업시간
+                            영업시간(테이블 마감 & 라스트 오더)
                             <br />
-                            월 08:00 - 21:00
+                            월 08:00 - 22:00(21:30)
                             <br />
-                            화 08:00 - 21:00
+                            화 08:00 - 22:00(21:30)
                             <br />
-                            수 08:00 - 21:00
+                            수 08:00 - 22:00(21:30)
                             <br />
-                            목 08:00 - 21:00
+                            목 08:00 - 22:00(21:30)
                             <br />
-                            금 08:00 - 21:00
+                            금 08:00 - 22:00(21:30)
                             <br />
-                            토 08:00 - 21:00
-                            <br />일 정기휴무 (매주 일요일)
+                            토 08:00 - 21:00(20:30)
+                            <br />일 & 공휴일 정기휴무
                         </span>
+                        <br />
                         <br />
 
                         {/* 버튼1 */}
-                        <div>
+                        <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                                <img href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+                                <img  src="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+                            </a> 
+                            <a href="https://www.instagram.com/pommesvertess/">
+                                <img  src="https://www.youtube.com/s/desktop/e4d15d2c/img/favicon_32x32.png" />
                             </a>
                         </div>
                         {/* 버튼2 */}

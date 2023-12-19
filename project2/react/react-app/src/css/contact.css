@@ -55,3 +55,8 @@ address {
     width: 30vw;
     height: 30vh;
 }
+.icon img {
+  width: 100px;
+  height: 100px;
+  
+}

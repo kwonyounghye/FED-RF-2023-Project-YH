@@ -56,7 +56,7 @@
     top: 3%;
     right: 1%;
     /* transform: translateX(-60%); */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     font-size: 50px;
     font-weight: lighter;
     border: none;
@@ -69,6 +69,7 @@
     0px -1px #fff,
     1px 0px #fff,
     -1px 0px #fff; */
+    /* border: 1px solid #000; */
 
 }
 .close span {
@@ -78,4 +79,10 @@
     display: block;
     background: #000;
     transform: rotate(45deg);
+}
+.close span:first-child {
+    transform: rotate(45deg) translate(2px) translateY(2px);
+}
+.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(2px) translateY(-3px);
 }
