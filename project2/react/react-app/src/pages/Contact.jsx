@@ -3,6 +3,7 @@ import "../css/contact.css";
 import $ from "jquery";
 import { yhCon } from "../modules/yhContext";
 
+
 export function Contact() {
          // 컨텍스트 사용
 //   const myCon = useContext(yhCon);
@@ -79,7 +80,7 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                                <img  src="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+                            <FontAwesomeIcon icon="fa-brands fa-instagram" />
                             </a> 
                             <a href="https://www.instagram.com/pommesvertess/">
                                 <img  src="https://www.youtube.com/s/desktop/e4d15d2c/img/favicon_32x32.png" />
