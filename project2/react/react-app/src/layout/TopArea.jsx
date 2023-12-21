@@ -1,34 +1,52 @@
 // 상단영역 공통 컴포넌트
 
-    /* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
+/* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
 
 import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
 import { Ham } from "../modules/Ham";
-
+import $ from 'jquery';
+import { useEffect } from "react";
 
 // GNB 데이터 가져오기
 export function TopArea(props) {
-  
-    return (
-        <>
-        <div id="top_area">
-            <header className="top_area inbox">
-                        <div className="logo">
-                                {/* <Link to='about'> */}
-                                <Logo />
-                                {/* </Link> */}
-                        </div>
-                        <div className="ham">
-                            {/* after: 메뉴 나타나기 */}
-                        <span></span> <span></span> <span></span>
-                        </div>
-                        <Ham />
-            </header>
-        </div>
-        </>
-    );
+    let prot = 0;
+useEffect(()=>{
+    $('.ham').on('click',(e)=>{
+        if(prot)return;
+        prot = 1;
+        let sts = $(e.currentTarget).is('.on');
+        console.log(33333,sts);
+        setTimeout(()=>prot=0,1000);
+    })
+},[]);
+
+  return (
+    <>
+      <div id="top_area">
+        <header className="top_area inbox">
+          <div className="logo">
+            {/* <Link to='about'> */}
+            <Logo />
+            {/* </Link> */}
+          </div>
+          <div
+            className="ham"
+            onClick={(e) => {
+              setTimeout(()=>{
+                  $('.preview').attr("class", "preview");
+              },1000);
+            }}
+          >
+            {/* after: 메뉴 나타나기 */}
+            <span></span> <span></span> <span></span>
+          </div>
+          <Ham />
+        </header>
+      </div>
+    </>
+  );
 }
 /* 
             map()을 사용하여 태그를 생성할 때

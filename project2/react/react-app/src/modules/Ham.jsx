@@ -46,16 +46,17 @@ export function Ham() {
 
     const tgEle = $('.preview');
 
-    $('.mlist a').hover(
+    $('.mlist a').on('mouseenter',
       function(){ // over
         let txt = $(this).text().toLowerCase();
         console.log(txt);
+        tgEle.attr('class','preview');
         tgEle.addClass(txt+'-menu');
-      },
-      function(){ // out
-        let txt = $(this).text().toLowerCase();
-        tgEle.removeClass(txt+'-menu');
       });
+      // function(){ // out
+      //   let txt = $(this).text().toLowerCase();
+      //   tgEle.removeClass(txt+'-menu');
+      // });
   },[]); /////////// useEffect //////////
 
 
