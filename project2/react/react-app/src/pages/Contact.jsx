@@ -80,7 +80,7 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                            <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                            {/*<FontAwesomeIcon icon="fa-brands fa-instagram" />*/}
                             </a> 
                             <a href="https://www.instagram.com/pommesvertess/">
                                 <img  src="https://www.youtube.com/s/desktop/e4d15d2c/img/favicon_32x32.png" />

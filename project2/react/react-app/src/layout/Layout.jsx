@@ -25,7 +25,16 @@ export function Layout() {
    // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
    $(".ham").click((e) => {
      // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
-     $(".mbox").toggleClass('on');
+     if($(e.target).is('.on')){
+       $(".mbox").addClass('on');
+       $(".mbox").removeClass('off');
+       
+      }else{
+       $(".mbox").addClass('off');
+       $(".mbox").removeClass('on');
+
+     }
+
           
      // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
      $(e.currentTarget).toggleClass("on");
@@ -37,12 +46,6 @@ export function Layout() {
      // console.log(e.currentTarget)
     }); ////////// click /////////////
     
-    $('.ham on').click((e) => {
-
-        $(".mbox").removeClass('on');
-        $(".mbox").toggleClass('off');
- 
-      })
         // 렌더링구역 한번만 실행 : 옵션 []
       }, []); //////////// useEffect //////////
       
