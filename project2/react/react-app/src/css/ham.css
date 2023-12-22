@@ -12,7 +12,7 @@ a {
     width: 100vw;
     height: 100vh;
     z-index: 99;
-    transition: left 1s 1s;
+    transition: left 1s;
     overflow: hidden;
 }
 .mbox.on{
@@ -20,17 +20,17 @@ a {
     transition: left 1s;
 
 }
-.mbox.off {
+/* .mbox.off {
     left:100%;
     transition: left 1s;
-}
+} */
 
 
 /* 메뉴중앙박스 */
 .mlist{
     position: absolute;
     top: 0;
-    right: -35%;
+    right:0;
     width: 30%;
     height: 100%;
     background-color: #6f9065;
@@ -40,13 +40,12 @@ a {
     text-align: center;
     font-family: 'Smythe';
     letter-spacing: .5vw;
-    transition: right 1s;
+    /* transition: right 1s; */
 }
 
-.mbox.on .mlist{
-    right: 0;
-    transition: none;
-}
+/* .mbox.on .mlist{
+    right: -35%;
+} */
 
 .mlist div{
     padding: 0 5vw;
@@ -59,25 +58,24 @@ a {
 .preview {
     position: absolute;
     top: 0;
-    left: -70%;
+    left: 0;
     width: 70%;
     height: 100%;
     background-color: #6f9065;
-    transition: left 1s;  
+    /* transition: left 1s;   */
 }
 .preview.about-menu{
-     background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;
- }
+    background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;
+}
 .preview.menu-menu{
-     background: #6f9065 url(../../public/images/menu8.jpg) no-repeat center/cover;
- }
+    background: #6f9065 url(../../public/images/menu8.jpg) no-repeat center/cover;
+}
 .preview.contact-menu{
-     background: #6f9065 url(../../public/images/main4.jpg) no-repeat center/cover;
- }
- .mbox.on .preview{
-    left: 0;
-    transition: none;
- }
+    background: #6f9065 url(../../public/images/main4.jpg) no-repeat center/cover;
+}
+/* .mbox.on .preview{
+    left: -70%;
+ } */
  .preview img {
      width: 70%;
     height: 100%;

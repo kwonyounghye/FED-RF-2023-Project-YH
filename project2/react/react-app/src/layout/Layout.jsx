@@ -22,29 +22,51 @@ export function Layout() {
 
  // 랜더링 후 실행구역 ////////////
  useEffect(() => {
-   // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
    $(".ham").click((e) => {
-     // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
-     if($(e.target).is('.on')){
-       $(".mbox").addClass('on');
-       $(".mbox").removeClass('off');
-       
-      }else{
-       $(".mbox").addClass('off');
-       $(".mbox").removeClass('on');
+    $(e.target).toggleClass('on')
+    $('.mbox').toggleClass('on')
+   })
+ 
+   // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
+  //  $(".ham").click((e) => {
+  //    // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
+  //    if($(e.target).is('.on')){
 
-     }
+  //     if($(".mbox").is('.off')) {
+  //       $(".mbox").addClass('on');
+  //      $(".mbox").removeClass('off');}
+  //       else {
+  //         $(".mbox").addClass('off');
+          
+  //       }
+        
+     
+       
+  //     }else{
+
+      
+  //       if($(".mbox").is('.off')) {
+  //         $(".mbox").removeClass('off');
+  //         $(".mbox").addClass('on');
+  //       }
+  //         else {
+  //           $(".mbox").addClass('on');
+            
+  //           }
+
+
+    //  }
 
           
      // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
-     $(e.currentTarget).toggleClass("on");
+    //  $(e.currentTarget).toggleClass("on");
      
      
      
      // e.target과 e.currentTarget은 다르다!
      // 후자가 햄버거 버튼 자신임!
      // console.log(e.currentTarget)
-    }); ////////// click /////////////
+    // }); ////////// click /////////////
     
         // 렌더링구역 한번만 실행 : 옵션 []
       }, []); //////////// useEffect //////////
