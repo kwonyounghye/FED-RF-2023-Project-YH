@@ -23,9 +23,18 @@ export function Layout() {
  // 랜더링 후 실행구역 ////////////
  useEffect(() => {
    $(".ham").click((e) => {
-    $(e.target).toggleClass('on')
-    $('.mbox').toggleClass('on')
-   })
+    if($('.ham').toggleClass('on')) {
+      $('.mbox').toggleClass('on')
+    }
+  })
+    $('.mlist>div').click(()=>{
+      setTimeout(() => {
+        $('.preview').addClass('off')
+      }, 3000);
+      
+
+    })
+    
  
    // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
   //  $(".ham").click((e) => {

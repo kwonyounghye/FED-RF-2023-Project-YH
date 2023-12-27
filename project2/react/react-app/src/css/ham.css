@@ -62,7 +62,7 @@ a {
     width: 70%;
     height: 100%;
     background-color: #6f9065;
-    /* transition: left 1s;   */
+    transition: 1s;
 }
 .preview.about-menu{
     background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;
@@ -73,9 +73,9 @@ a {
 .preview.contact-menu{
     background: #6f9065 url(../../public/images/main4.jpg) no-repeat center/cover;
 }
-/* .mbox.on .preview{
+.preview.off {
     left: -70%;
- } */
+}
  .preview img {
      width: 70%;
     height: 100%;

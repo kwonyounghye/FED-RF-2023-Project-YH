@@ -25,7 +25,6 @@ export function Ham() {
       const mbox = $('.mbox');
       // $('.ham on').click(
         // function() {
-        console.log('나가');
       //   mbox.addClass('off');
         
       // }
