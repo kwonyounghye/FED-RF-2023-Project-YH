@@ -11,16 +11,16 @@ import { useEffect } from "react";
 
 // GNB 데이터 가져오기
 export function TopArea(props) {
-    let prot = 0;
-useEffect(()=>{
-    $('.ham').on('click',(e)=>{
-        if(prot)return;
-        prot = 1;
-        let sts = $(e.currentTarget).is('.on');
-        console.log(33333,sts);
-        setTimeout(()=>prot=0,1000);
-    })
-},[]);
+//     let prot = 0;
+// useEffect(()=>{
+//     $('.ham').on('click',(e)=>{
+//         if(prot)return;
+//         prot = 1;
+//         let sts = $(e.currentTarget).is('.on');
+//         console.log(33333,sts);
+//         setTimeout(()=>prot=0,1000);
+//     })
+// },[]);
 
   return (
     <>
@@ -33,11 +33,11 @@ useEffect(()=>{
           </div>
           <div
             className="ham"
-            onClick={(e) => {
-              setTimeout(()=>{
-                  $('.preview').attr("class", "preview");
-              },1000);
-            }}
+            // onClick={(e) => {
+            //   setTimeout(()=>{
+            //       $('.preview').attr("class", "preview");
+            //   },1000);
+            // }}
           >
             {/* after: 메뉴 나타나기 */}
             <span></span> <span></span> <span></span>

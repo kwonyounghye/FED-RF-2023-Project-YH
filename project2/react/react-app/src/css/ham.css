@@ -43,9 +43,11 @@ a {
     /* transition: right 1s; */
 }
 
-/* .mbox.on .mlist{
-    right: -35%;
-} */
+.mlist.on{
+    right: 0;
+    transition: right 1s;
+
+} 
 
 .mlist div{
     padding: 0 5vw;
@@ -64,6 +66,13 @@ a {
     background-color: #6f9065;
     transition: 1s;
 }
+.preview.on {
+    left: 0;
+}
+.preview.off {
+    left: -170%;
+    transition: left 1s;
+}
 .preview.about-menu{
     background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;
 }
@@ -72,9 +81,6 @@ a {
 }
 .preview.contact-menu{
     background: #6f9065 url(../../public/images/main4.jpg) no-repeat center/cover;
-}
-.preview.off {
-    left: -70%;
 }
  .preview img {
      width: 70%;

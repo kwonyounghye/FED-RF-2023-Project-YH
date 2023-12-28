@@ -22,8 +22,78 @@ export function Ham() {
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
     useEffect(()=>{
-      const mbox = $('.mbox');
-      // $('.ham on').click(
+
+  $(".ham").click(() => {
+    $('.ham').toggleClass('on')
+    $('.mbox').toggleClass('on')
+  
+  $('.mlist a').on('mouseenter',
+  function(){ // over
+    const tgEle = $('.preview');
+    let txt = $(this).text().toLowerCase();
+    console.log(txt);
+    tgEle.attr('class','preview');
+    tgEle.addClass(txt+'-menu');
+    
+  })
+  $('.mlist>div').click(()=>{
+    // setTimeout(() => {
+      $('.preview').addClass('off');
+      $('.mlist').addClass('off');
+      // $('.mbox').toggleClass('on')
+      // }, 1000);
+      // $('.preview').removeClass('off')
+      // $('.mlist').removeClass('off')
+    });
+   
+   
+ })
+
+  // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
+ //  $(".ham").click((e) => {
+ //    // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
+ //    if($(e.target).is('.on')){
+
+ //     if($(".mbox").is('.off')) {
+ //       $(".mbox").addClass('on');
+ //      $(".mbox").removeClass('off');}
+ //       else {
+ //         $(".mbox").addClass('off');
+         
+ //       }
+       
+    
+      
+ //     }else{
+
+     
+ //       if($(".mbox").is('.off')) {
+ //         $(".mbox").removeClass('off');
+ //         $(".mbox").addClass('on');
+ //       }
+ //         else {
+ //           $(".mbox").addClass('on');
+           
+ //           }
+
+
+   //  }
+
+         
+    // 2. 햄버거버튼에 클래스 'on' 넣기/빼기
+   //  $(e.currentTarget).toggleClass("on");
+    
+    
+    
+    // e.target과 e.currentTarget은 다르다!
+    // 후자가 햄버거 버튼 자신임!
+    // console.log(e.currentTarget)
+   // }); ////////// click /////////////
+   
+       // 렌더링구역 한번만 실행 : 옵션 []
+
+
+       // $('.ham on').click(
         // function() {
       //   mbox.addClass('off');
         
@@ -43,15 +113,7 @@ export function Ham() {
 // }; /////////////// makeList /////////////
 
 
-    const tgEle = $('.preview');
-
-    $('.mlist a').on('mouseenter',
-      function(){ // over
-        let txt = $(this).text().toLowerCase();
-        console.log(txt);
-        tgEle.attr('class','preview');
-        tgEle.addClass(txt+'-menu');
-      });
+   
       // function(){ // out
       //   let txt = $(this).text().toLowerCase();
       //   tgEle.removeClass(txt+'-menu');
