@@ -16,10 +16,10 @@ export function About() {
     const scrollFn = () => {
         let scTop = $(window).scrollTop();
         console.log(scTop);
-// 위치 * 나오는 시간
-        if(scTop< winW/0.3)
+// 위치 * 크기비율 -> 움질일 범위
+        if(scTop< winW/0.35)
         // 속도
-        tgEle1.css({left:-scTop*0.2+'px'})
+        tgEle1.css({left:-scTop*0.26+'px'})
 
         if(scTop<winW/0.7*2.0)
         tgEle2.css({left:-scTop*0.5+'px'})

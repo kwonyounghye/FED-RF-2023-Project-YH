@@ -41,7 +41,7 @@ export function Ham() {
         tgEle.addClass(txt+'-menu');
         
       })
-      $('.mlist>div').click(()=>{
+      $('.mlist a').click((e)=>{
         // setTimeout(() => {
           $('.preview').addClass('off');
           // $('.mbox').toggleClass('on')
