@@ -22,33 +22,36 @@ export function Ham() {
     document.querySelector('.ham').click();
   }; //////// goPage 메서드 ///////////
     useEffect(()=>{
+      // $('.ham').click((e)=>{
+      //   $(e.target).is('.on');
 
-  $(".ham").click(() => {
-    $('.ham').toggleClass('on')
-    $('.mbox').toggleClass('on')
-  
-  $('.mlist a').on('mouseenter',
-  function(){ // over
-    const tgEle = $('.preview');
-    let txt = $(this).text().toLowerCase();
-    console.log(txt);
-    tgEle.attr('class','preview');
-    tgEle.addClass(txt+'-menu');
-    
-  })
-  $('.mlist>div').click(()=>{
-    // setTimeout(() => {
-      $('.preview').addClass('off');
-      $('.mlist').addClass('off');
-      // $('.mbox').toggleClass('on')
-      // }, 1000);
-      // $('.preview').removeClass('off')
-      // $('.mlist').removeClass('off')
-    });
-   
-   
- })
-
+      // })
+      $(".ham").click(() => {
+        $('.ham').toggleClass('on')
+        if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
+        console.log(!$('.mbox').hasClass('on'))
+        $('.mbox').toggleClass('on')
+      
+      $('.mlist a').on('mouseenter',
+      function(){ // over
+        const tgEle = $('.preview');
+        let txt = $(this).text().toLowerCase();
+        console.log(txt);
+        // tgEle.attr('class','preview');
+        tgEle.addClass(txt+'-menu');
+        
+      })
+      $('.mlist>div').click(()=>{
+        // setTimeout(() => {
+          $('.preview').addClass('off');
+          // $('.mbox').toggleClass('on')
+          // }, 1000);
+          // $('.preview').removeClass('off')
+          // $('.mlist').removeClass('off')
+        });
+       
+       
+     })
   // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
  //  $(".ham").click((e) => {
  //    // 1. 전체메뉴 박스 : .mbox -> 보이기/숨기기
