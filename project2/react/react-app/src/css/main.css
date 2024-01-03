@@ -9,25 +9,23 @@
 html,body {
     margin: 0 auto;
     background:  #fff;
+    position: relative;
     /* background:  #d6d4c6; */
 }
 
-.top-area{
-    position: fixed;
-    top: 50%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    
+#top_area{
+    position: sticky;
+    top: 0;    
+    z-index: 99;
+    background: #fff;
 }
+
 header {
     position: relative;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    background: #ffffffc7;
-    z-index: 99;
 
 }
 /* 1-1.로고 */
@@ -94,11 +92,10 @@ header {
 }
 
 
-/* .main {
+main {
+    overflow-y: hidden;
 }
-.banner {
-    
-} */
+
 main video {
     width: 100%;
     height: 100vh;

@@ -30,8 +30,15 @@
   }
 .about {
     position: relative;
-    height: 500vw;
-    background: #d6d4c6;
+    height: 400vw;
+    background-image: linear-gradient(
+        to bottom,
+        #d6d4c6,
+        #d6d4c6
+        /* #d6d4c680 */
+        /* #d6d4c683, */
+
+      );
 }
 .intro1 {
     position: relative;

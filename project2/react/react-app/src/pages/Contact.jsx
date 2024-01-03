@@ -2,6 +2,9 @@ import { useContext, useEffect } from "react";
 import "../css/contact.css";
 import $ from "jquery";
 import { yhCon } from "../modules/yhContext";
+import React from "react";
+import {faYoutube} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export function Contact() {
@@ -80,10 +83,11 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                            {/*<FontAwesomeIcon icon="fa-brands fa-instagram" />*/}
+                            {/* <FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
                             </a> 
                             <a href="https://www.instagram.com/pommesvertess/">
-                                <img  src="https://www.youtube.com/s/desktop/e4d15d2c/img/favicon_32x32.png" />
+                            {/* <FontAwesomeIcon icon="fa-brands fa-youtube" />                                 */}
+                            <FontAwesomeIcon icon={faYoutube} />
                             </a>
                         </div>
                         {/* 버튼2 */}
