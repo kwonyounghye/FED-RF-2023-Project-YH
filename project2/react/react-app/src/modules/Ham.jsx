@@ -37,7 +37,7 @@ export function Ham() {
         const tgEle = $('.preview');
         let txt = $(this).text().toLowerCase();
         console.log(txt);
-        // tgEle.attr('class','preview');
+        tgEle.attr('class','preview');
         tgEle.addClass(txt+'-menu');
         
       })
