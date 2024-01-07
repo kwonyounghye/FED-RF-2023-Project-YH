@@ -3,7 +3,7 @@ import "../css/contact.css";
 import $ from "jquery";
 import { yhCon } from "../modules/yhContext";
 import React from "react";
-import { faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -83,13 +83,12 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                            {/* <FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
+                            <FontAwesomeIcon icon={faInstagram} className="insta" style={{ fontSize:"3vw"}} />
                             </a> 
                             <a href="https://www.instagram.com/pommesvertess/">
-                            {/* <FontAwesomeIcon icon="fa-brands fa-youtube" />                                 */}
                             <FontAwesomeIcon icon={faYoutube} style={{
                                 color:'#f00',
-                                fontSize:'50px'}}/>
+                                fontSize:'3vw'}}/>
                             </a>
                         </div>
                         {/* 버튼2 */}

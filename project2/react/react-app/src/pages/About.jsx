@@ -3,7 +3,7 @@
 import "../css/about.css";
 import { useEffect } from "react";
 // DOM 함수 모듈
-import { setPos } from "../data/smoothScroll20";
+// import { setPos } from "../data/smoothScroll20";
 
 import $ from 'jquery';
 
@@ -130,13 +130,13 @@ const domFn = {
         
         
           // 0-1. 스크롤 바 트랙을 잡고 마우스로 위치 이동시 위치값 반영
-          domFn.addEvt(window,'mouseup',()=>{
-              setPos(window.scrollY);
-          });
-          // 0-2. 키보드 방향키 이동시 위치값 반영
-          domFn.addEvt(window,'keyup',()=>{
-              setPos(window.scrollY);
-          });
+        //   domFn.addEvt(window,'mouseup',()=>{
+        //       setPos(window.scrollY);
+        //   });
+        //   // 0-2. 키보드 방향키 이동시 위치값 반영
+        //   domFn.addEvt(window,'keyup',()=>{
+        //       setPos(window.scrollY);
+        //   });
     },[]);
 
 

@@ -55,6 +55,10 @@ a {
     line-height: 20vh;
     text-align: center;
 }
+.mlist div:hover {
+    font-style: italic;
+    text-transform: uppercase;
+}
 
 
 .preview {

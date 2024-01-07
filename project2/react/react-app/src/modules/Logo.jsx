@@ -4,7 +4,7 @@ import React from "react";
 import { img } from "../data/img";
 import { yhCon } from "./yhContext";
 import { useContext } from "react";
-export const Logo = (props) => {
+export const Logo = () => {
      // 컨텍스트 API 사용하기
      const myCon = useContext(yhCon);
 

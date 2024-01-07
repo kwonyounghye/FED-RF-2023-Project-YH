@@ -13,7 +13,7 @@
     text-align: center;
     white-space: nowrap;
     transform: translateY(100%);
-    transition: .5s ease-in ;
+    transition: .3s ease-in-out .1s;
     opacity: 0;
 
   }
@@ -34,7 +34,7 @@
     opacity: 0;
     
     transform: translateY(-10%);
-    transition: .5s ease-in 1s;
+    transition: .3s ease-in-out .5s;
   }
   /* 스크롤 등장 클래스 .on */
   .layout.on{
@@ -59,4 +59,10 @@ address {
   width: 100px;
   height: 100px;
   
+}
+.insta {
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 10%;
+  margin-right: 5%;
 }
