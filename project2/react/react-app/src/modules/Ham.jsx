@@ -26,6 +26,7 @@ export function Ham() {
       //   $(e.target).is('.on');
 
       // })
+     
       $(".ham").click(() => {
         $('.ham').toggleClass('on')
         if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
