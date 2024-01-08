@@ -41,13 +41,12 @@ header {
     cursor: pointer;
     z-index: 999;/* .gbx보다위! */
     transition: .4s;
-    height: 36px;
     /* outline: 2px solid red; */
 }
 .ham span {
-    width: 30px;
-    height: 2px;
-    margin: 5px;
+    width: 5vh;
+    height: .5vh;
+    margin: 1vh;
     display: block;
     background: #000;
     /* 트랜지션 */
@@ -61,7 +60,7 @@ header {
 
 /* 1번막대 : 중앙이동+시계방향45도회전 */
 .ham.on span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px) translateX(8px);
+    transform: rotate(45deg) translateY(0.5vh) translateX(0.5vh);
 }
 
 /* 2번막대 : left위치 중앙이동+width는0 */
@@ -71,10 +70,12 @@ header {
 
 /* 3번막대 : 중앙이동+반시계방향45도회전 */
 .ham.on span:nth-child(3) {
-    transform: rotate(-45deg) translateX(-4px) translateY(3px);
+    transform: rotate(-45deg) translateX(0.5vh) translateY(-0.5vh);
 }
 .ham.on {
     animation: right 1s ease-in-out;
+    cursor: pointer;
+
     /* border: 1px solid #000; */
 
     

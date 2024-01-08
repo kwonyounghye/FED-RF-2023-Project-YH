@@ -12,7 +12,7 @@ a {
     width: 100vw;
     height: 100vh;
     z-index: 99;
-    transition: left 1s;
+    transition: left 1.5s;
     overflow: hidden;
 }
 .mbox.on{
@@ -45,7 +45,7 @@ a {
 
 .mlist.on{
     right: 0;
-    transition: right 1s;
+    /* transition: right 1.5s; */
 
 } 
 
@@ -55,9 +55,12 @@ a {
     line-height: 20vh;
     text-align: center;
 }
-.mlist div:hover {
+
+.mlist div a:hover{
     font-style: italic;
     text-transform: uppercase;
+    cursor: pointer;
+
 }
 
 
@@ -77,7 +80,7 @@ a {
     position:fixed;
     /* left: auto; */
     transform:translateX(-300%);
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 .preview.about-menu{
     background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;

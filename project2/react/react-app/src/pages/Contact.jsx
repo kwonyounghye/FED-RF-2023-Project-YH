@@ -3,33 +3,33 @@ import "../css/contact.css";
 import $ from "jquery";
 import { yhCon } from "../modules/yhContext";
 import React from "react";
-import { faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export function Contact() {
-         // 컨텍스트 사용
-//   const myCon = useContext(yhCon);
-    useEffect(()=> {
+    // 컨텍스트 사용
+    //   const myCon = useContext(yhCon);
+    useEffect(() => {
         const content = $('.content');
         const layout = $('.layout');
         content.fadeIn(300).addClass('on');
-        
+
         layout.fadeIn(500).addClass('on');
 
         // function() {
         //     let tgEle = $('.preview');
         //     $('.content').addClass.add("on");
-            
+
         // }
-        
+
     })
     return (
         <>
             <div className="contact">
                 <div className="content">
                     {/* 설명 */}
-                    ❕케이크 및 디저트 예약, 단체 주문, 대관 문의❕
+                    ❕케이크 및 디저트 예약, 선물 포장, 단체 주문 &<br /> 대관 문의는 전화나 인스타 DM으로 연락바랍니다❕
                 </div>
                 <div className="layout">
                     <section>
@@ -83,12 +83,13 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                            <FontAwesomeIcon icon={faInstagram} className="insta" style={{ fontSize:"3vw"}} />
-                            </a> 
-                            <a href="https://www.instagram.com/pommesvertess/">
-                            <FontAwesomeIcon icon={faYoutube} style={{
-                                color:'#f00',
-                                fontSize:'3vw'}}/>
+                                <FontAwesomeIcon icon={faInstagram} className="insta" style={{ fontSize: "5vh", cursor: "pointer" }} />
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=0_iSKCXU8cE">
+                                <FontAwesomeIcon icon={faYoutube} style={{
+                                    color: '#f00', cursor: "pointer",
+                                    fontSize: '5vh'
+                                }} />
                             </a>
                         </div>
                         {/* 버튼2 */}

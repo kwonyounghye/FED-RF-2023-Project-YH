@@ -36,9 +36,9 @@ export function Ham() {
       function(){ // over
         const tgEle = $('.preview');
         let txt = $(this).text().toLowerCase();
-        console.log(txt);
         tgEle.attr('class','preview');
         tgEle.addClass(txt+'-menu');
+        console.log('data:',hamSub.main);
         
       })
       $('.mlist a').click((e)=>{
@@ -49,7 +49,7 @@ export function Ham() {
           // $('.preview').removeClass('off')
           // $('.mlist').removeClass('off')
         });
-       
+        // $('.mlist a').on('mouseover',function(){$(this).fadeOut(100).fadeIn(500)} );
        
      })
   // 햄버거 버튼 클릭시 전체 메뉴 보이기/숨기기
