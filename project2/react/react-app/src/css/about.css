@@ -81,8 +81,8 @@
 
 .content1 {
     position: fixed;    
-    left:0%;
-    bottom: 50%;
+    left:0vw;
+    bottom: 50vw;
     font-size: 15vw;
     white-space: nowrap;
     overflow: hidden;
@@ -97,7 +97,7 @@
 .content2 {    
     position: fixed;    
     left:0vw;
-    top: 65%;
+    top: 65vw;
     font-size: 15vw;
     white-space: nowrap;
     overflow: hidden;
