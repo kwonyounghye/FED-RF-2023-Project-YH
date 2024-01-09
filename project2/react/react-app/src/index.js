@@ -9,9 +9,7 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Main } from "./pages/Main";
 import { Menu } from "./pages/Menu";
-import "./css/main.css";
 import "./css/ham.css";
-import "./css/about.css";
 import "./css/menu.css";
 
 /********************************************* 

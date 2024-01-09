@@ -16,6 +16,7 @@ h2 {
     flex-wrap: wrap;
     background: #d6d4c6;
     line-height: 0;
+    min-height: calc(100vh - 62px - 97px);
 
 }
 .menu>div {

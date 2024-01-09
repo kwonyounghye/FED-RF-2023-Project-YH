@@ -3,14 +3,11 @@
 /* <FontAwesomeIcon icon="fa-solid fa-bars" /> // menu
 <FontAwesomeIcon icon="fa-solid fa-xmark" /> // x */
 
-import { Link } from "react-router-dom";
 import { Logo } from "../modules/Logo";
 import { Ham } from "../modules/Ham";
-import $ from 'jquery';
-import { useEffect } from "react";
 
 // GNB 데이터 가져오기
-export function TopArea(props) {
+export function TopArea() {
 //     let prot = 0;
 // useEffect(()=>{
 //     $('.ham').on('click',(e)=>{

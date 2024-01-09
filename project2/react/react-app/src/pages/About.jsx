@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import $ from "jquery";
 import {about} from '../data/about';
 
+
 export function About() {
     let tgEle1;
     let tgEle2;

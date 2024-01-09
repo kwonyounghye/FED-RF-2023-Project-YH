@@ -41,12 +41,13 @@ export function Ham() {
         let txt = $(this).text().toLowerCase();
         tgEle.attr('class','preview');
         tgEle.addClass(txt+'-menu');
-        const selData = Object.keys(hamMenu);
+        const selData = hamMenu[txt];
 
         console.log('원본data:',hamMenu);
         console.log('변환data:', selData);
+        console.log('선택클래스:', `.${txt}-menu`);
         selData.map(()=>{
-          
+          $(`.${txt}-menu`).css({background:`url(${selData}) no-repeat center/cover`})
           console.log('이미지 링크: ', txt)
         })    
         
