@@ -124,6 +124,7 @@ export function Ham() {
       //   let txt = $(this).text().toLowerCase();
       //   tgEle.removeClass(txt+'-menu');
       // });
+      
   },[]); /////////// useEffect //////////
 
 
