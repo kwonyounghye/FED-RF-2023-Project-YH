@@ -7,7 +7,7 @@ export function Video(props) {
                 <video src={video[props.vsrc]} 
                 autoPlay muted
                 // 반복재생
-                // loop 
+                loop 
                 playsInline></video>
             </div>
         </>

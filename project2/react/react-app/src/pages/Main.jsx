@@ -27,7 +27,7 @@ export function Main() {
         if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
         $('.ham').addClass('on');
         $('.mbox').addClass('on');
-    }, 10000);
+    }, 11000);
     $('.mlist a').on('mouseenter',
       function(){ // over
         const tgEle = $('.preview');
