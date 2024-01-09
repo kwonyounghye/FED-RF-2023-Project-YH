@@ -95,7 +95,7 @@
 }
 .content2 {    
     position: fixed;    
-    left:0%;
+    left:0vw;
     top: 65%;
     font-size: 15vw;
     white-space: nowrap;
@@ -111,7 +111,7 @@
 }
 .introduce {
     position: fixed;
-    top:55%;
+    top:55vh;
     width: 100%;
     font-size: 2.5vw;
     z-index: 9;
