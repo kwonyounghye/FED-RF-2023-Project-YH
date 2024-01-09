@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { yhCon } from "./yhContext";
-import { hamSub } from "../data/hamSub";
+import { hamMenu } from "../data/hamMenu";
 import { img } from "../data/img";
 
 
@@ -41,7 +41,14 @@ export function Ham() {
         let txt = $(this).text().toLowerCase();
         tgEle.attr('class','preview');
         tgEle.addClass(txt+'-menu');
-        console.log('data:',hamSub.main);
+        const selData = Object.keys(hamMenu);
+
+        console.log('원본data:',hamMenu);
+        console.log('변환data:', selData);
+        selData.map(()=>{
+          
+          console.log('이미지 링크: ', txt)
+        })    
         
       })
       $('.mlist a').click((e)=>{
@@ -124,7 +131,7 @@ export function Ham() {
       //   let txt = $(this).text().toLowerCase();
       //   tgEle.removeClass(txt+'-menu');
       // });
-      
+ 
   },[]); /////////// useEffect //////////
 
 
