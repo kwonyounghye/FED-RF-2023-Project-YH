@@ -31,7 +31,9 @@ export function Ham() {
         $('.ham').toggleClass('on')
         if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
         console.log(!$('.mbox').hasClass('on'))
-        $('.mbox').toggleClass('on')
+        $('.mbox').toggleClass('on');
+
+        $(".menubox").fadeOut(100);
       
       $('.mlist a').on('mouseenter',
       function(){ // over

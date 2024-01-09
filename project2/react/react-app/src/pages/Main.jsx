@@ -22,8 +22,18 @@ export function Main() {
     
     
     useEffect(()=>{
+
+    let autoSet;
+
+    $('.ham').click(()=>{
+      console.log('햄클릭');
+      clearTimeout(autoSet);
+    })
+
+
+
     // if(chgPage('/')){
-        setTimeout(() => {
+        autoSet = setTimeout(() => {
         if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
         $('.ham').addClass('on');
         $('.mbox').addClass('on');

@@ -27,6 +27,9 @@ h2 {
     vertical-align: bottom;
     
 }
+.menu>div:nth-child(even) {
+    top: 25vw;
+}
 .menu a {
     display: block;
 }
