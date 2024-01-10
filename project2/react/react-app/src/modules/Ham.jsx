@@ -29,7 +29,7 @@ export function Ham() {
      
       $(".ham").click(() => {
         $('.ham').toggleClass('on')
-        if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview');
+        if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview').attr('style','');
         console.log(!$('.mbox').hasClass('on'))
         $('.mbox').toggleClass('on');
 
@@ -47,7 +47,7 @@ export function Ham() {
         console.log('변환data:', selData);
         console.log('선택클래스:', `.${txt}-menu`);
         selData.map(()=>{
-          $(`.${txt}-menu`).css({background:`url(${selData}) no-repeat center/cover`})
+          $(`.${txt}-menu`).css({background:`#6f9065 url(${selData}) no-repeat center/cover`})
           console.log('이미지 링크: ', txt)
         })    
         

@@ -41,6 +41,7 @@ a {
     font-family: 'Smythe';
     letter-spacing: .5vw;
     /* transition: right 1s; */
+
 }
 
 .mlist.on{
@@ -81,6 +82,7 @@ a {
     /* left: auto; */
     transform:translateX(-300%);
     transition: transform 1.5s;
+    overflow: hidden;
 }
 /* .preview.about-menu{
     background: #6f9065 url(../../public/images/intro3.jpg) no-repeat center/cover;

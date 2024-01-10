@@ -18,12 +18,7 @@
     width: 50%;
     opacity: 0.5;
 }
-  /* 스크롤 등장 초기화 클래스1 */
-  .scroll {
-    /* transform: translateY(100%); */
-    /* opacity: 1; */
-    /* transition: 1.2s ease-in-out; */
-  }
+
   /* 스크롤 등장 클래스 .on */
 .scroll.on{
     /* transform: translateY(30%); */
@@ -32,19 +27,18 @@
 .about {
     position: relative;
     height: 400vw;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         #d6d4c6,
         #d6d4c6
-        /* #d6d4c680 */
-        /* #d6d4c683, */
-
-      );
+        
+        ); */        
+    background-color: #d6d4c6;
 }
 .about1 {
     position: relative;
     z-index: 1;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     text-align: center;
 }
 
@@ -78,33 +72,33 @@
     text-align: center;
 
 }
-
+.layout {
+    /* padding-top: 10%; */
+    position: relative;
+}
 .content1 {
     position: fixed;    
-    left:0vw;
-    bottom: 50vw;
+    left: 0vw;
     font-size: 15vw;
     white-space: nowrap;
-    overflow: hidden;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     /* color:  #d6d4c6; */
     color:  #6f9065;
     /* text-shadow: 0px 0px 5px #6f9065; */
-    padding-left: 80%;
+    padding-left: 80vw;
     font-family: 'Smythe';
     letter-spacing: .7vw;
 }
 .content2 {    
     position: fixed;    
-    left:0vw;
-    top: 65vw;
+    left:150vw;
+    /* top: 65vh; */
     font-size: 15vw;
     white-space: nowrap;
-    overflow: hidden;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     color:  #6f9065;
 
-    padding-left: 150%;
+    padding-left: 100%;
     font-family: 'Smythe';
     letter-spacing: .7vw;
 
@@ -120,6 +114,7 @@
     background: #6f9065;
     color:  #fff;
     font-family: 'Nanum Gothic';
+
 }
 .introduce_ani {
     white-space: nowrap;
@@ -129,6 +124,8 @@
     margin: 0;
     padding: 0;
     animation: introduce1 8s linear infinite;
+    
+
 }
 .introduce_ani li {
     white-space: nowrap;

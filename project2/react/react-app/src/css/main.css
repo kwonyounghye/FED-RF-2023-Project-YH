@@ -7,11 +7,12 @@
 
 /* #6f9065 */
 html,body {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     background:  #fff;
     position: relative;
     /* background:  #d6d4c6; */
+    /* overflow-x: hidden; */
 }
 
 #top_area{

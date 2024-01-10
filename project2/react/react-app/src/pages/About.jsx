@@ -17,11 +17,17 @@ export function About() {
         let scTop = $(window).scrollTop();
         console.log(scTop);
         // 위치 * 크기비율 -> 움질일 범위
-        if (scTop < winW / 0.35)
+        if (scTop < winW)
             // 속도
-            tgEle1.css({ left: -scTop * 0.26 + "px" });
+            tgEle1.css({ left: -scTop * 0.03 + "vw" });
 
-        if (scTop < (winW / 0.7) * 2.0) tgEle2.css({ left: -scTop * 0.5 + "px" });
+        if (+scTop < winW) 
+            tgEle2.css({ left: -scTop * 0.05+ "vw" });
+        // if (scTop < winW / 0.35 )
+        //     // 속도
+        //     tgEle1.css({ left: (-scTop * 0.26 )*0.1+ "vw" });
+
+        // if (scTop < (winW / 0.7) * 2.0) tgEle2.css({ left: (-scTop * 0.5)*0.1 + "vw" });
         // if(scTop< winW/0.3)
         // // 속도
         // tgEle1.css({left:-scTop*0.2+'px'})
@@ -134,38 +140,40 @@ export function About() {
     return (
         <>
             <div className="about">
-                <div className="layout1">
-                    {/* <div className="about1">
-                        <img src="./images/intro1.jpg" className="scroll" />
-                    </div> */}
-                    <div className="content1">pomme</div>
-                </div>
-                {/* 위치 고정 설명 */}
-                <div className="introduce">
-                    <ul className="introduce_ani">
-                        <li>
-                            폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
-                        </li>
-                        <li>
-                            폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
-                        </li>
-                    </ul>
-                </div>
-                <div className="layout2">
-                    <div className="content2">verte</div>
-                    {/* <div className="intro4">
-                            <img src="./images/main3.jpg" className="scroll" />
+                {<div className="layout">
+                    {/* <div className="layout1"> */}
+                        {/* <div className="about1">
+                            <img src="./images/intro1.jpg" className="scroll" />
+                        </div> */}
+                        <div className="content1">pomme</div>
+                    {/* </div> */}
+                    {/* 위치 고정 설명 */}
+                    <div className="introduce">
+                        <ul className="introduce_ani">
+                            <li>
+                                폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
+                            </li>
+                            <li>
+                                폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
+                            </li>
+                        </ul>
+                    </div>
+                    {/* <div className="layout2"> */}
+                        <div className="content2">verte</div>
+                        {/* <div className="intro4">
+                                <img src="./images/main3.jpg" className="scroll" />
+                                </div>
+                                <div className="intro2">
+                                <img src="./images/intro2.jpg" className="scroll" />
+                                </div>
+                            <div className="intro3">
+                            <img src="./images/intro3.jpg" className="scroll" />
                             </div>
-                            <div className="intro2">
-                            <img src="./images/intro2.jpg" className="scroll" />
-                            </div>
-                        <div className="intro3">
-                        <img src="./images/intro3.jpg" className="scroll" />
-                        </div>
-                        <div className="intro5">
-                        <img src="./images/main5.jpg" className="scroll" />
-                    </div> */}
-                </div>
+                            <div className="intro5">
+                            <img src="./images/main5.jpg" className="scroll" />
+                        </div> */}
+                    {/* </div> */}
+                </div>}
                     {selData.map((v, i) => (
                         <div className={selData[i]} key={i}>
                             <img src={about[v].img} alt={about[v]} className="scroll" />
