@@ -37,15 +37,14 @@
 }
 .about1 {
     position: relative;
-    z-index: 1;
-    /* padding-top: 10%; */
+    /* z-index: 1; */
+    padding-top: 10%;
     text-align: center;
 }
 
 .about2 {
     position: relative;
-
-    z-index: 1;
+    /* z-index: 1; */
     margin-top: 20%;
     text-align: right;
 }
@@ -53,21 +52,21 @@
 .about3 {
     position: relative;
 
-    z-index: 1;
+    /* z-index: 1; */
     margin-top: 20%;
     text-align: left;
 }
 .about4 {
     position: relative;
 
-    z-index: 1;
+    /* z-index: 1; */
     margin-top: 20%;
     text-align: justify;
 }
 .about5 {
     position: relative;
 
-    z-index: 1;
+    /* z-index: 1; */
     margin-top: 20%;
     text-align: center;
 
@@ -78,6 +77,7 @@
     width: 100vw;
     height: 50vw;
     outline: 1px solid red;
+    /* z-index: 2; */
 }
 .content1 {
     position: absolute;    
@@ -92,6 +92,7 @@
     /* padding-left: 80vw; */
     font-family: 'Smythe';
     letter-spacing: .7vw;
+    /* z-index: -99; */
 }
 .content2 {    
     position: absolute;    
@@ -109,11 +110,11 @@
     
 }
 .introduce {
-    position: fixed;
+    position: absolute;
     top:55vh;
     width: 100%;
     font-size: 2.5vw;
-    z-index: 9;
+    z-index: 99;
     padding: 1.5vw 0;
     background: #6f9065;
     color:  #fff;
