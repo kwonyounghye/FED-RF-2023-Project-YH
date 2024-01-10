@@ -74,31 +74,35 @@
 }
 .layout {
     /* padding-top: 10%; */
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 50vw;
+    outline: 1px solid red;
 }
 .content1 {
-    position: fixed;    
-    left: 0vw;
+    position: absolute;    
+    top: 8%;
+    left: 80%;
     font-size: 15vw;
     white-space: nowrap;
     /* vertical-align: middle; */
     /* color:  #d6d4c6; */
     color:  #6f9065;
     /* text-shadow: 0px 0px 5px #6f9065; */
-    padding-left: 80vw;
+    /* padding-left: 80vw; */
     font-family: 'Smythe';
     letter-spacing: .7vw;
 }
 .content2 {    
-    position: fixed;    
-    left:150vw;
-    /* top: 65vh; */
+    position: absolute;    
+    left:120%;
+    top: 44%;
     font-size: 15vw;
     white-space: nowrap;
     /* vertical-align: middle; */
     color:  #6f9065;
 
-    padding-left: 100%;
+    /* padding-left: 100%; */
     font-family: 'Smythe';
     letter-spacing: .7vw;
 

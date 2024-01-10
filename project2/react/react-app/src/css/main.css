@@ -12,7 +12,7 @@ html,body {
     background:  #fff;
     position: relative;
     /* background:  #d6d4c6; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 #top_area{

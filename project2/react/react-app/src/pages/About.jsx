@@ -19,10 +19,18 @@ export function About() {
         // 위치 * 크기비율 -> 움질일 범위
         if (scTop < winW)
             // 속도
-            tgEle1.css({ left: -scTop * 0.03 + "vw" });
+            tgEle1.css({ left: 80-scTop * 0.1 + "%" });
 
-        if (+scTop < winW) 
-            tgEle2.css({ left: -scTop * 0.05+ "vw" });
+        if (scTop < winW) 
+            tgEle2.css({ left: 120-scTop * 0.2+ "%" });
+
+
+
+            if(tgEle1.offset().left<=10) 
+            tgEle1.css({ left: "10%" });
+
+            if(tgEle2.offset().left<10) 
+            tgEle2.css({ left: "10%" });
         // if (scTop < winW / 0.35 )
         //     // 속도
         //     tgEle1.css({ left: (-scTop * 0.26 )*0.1+ "vw" });
