@@ -3,34 +3,34 @@ import { useEffect } from "react";
 // DOM 함수 모듈
 
 import $ from "jquery";
-import {about} from '../data/about';
-
+import { about } from "../data/about";
+import { scrolled, setPos } from '../data/smoothScroll24'
 
 export function About() {
     let tgEle1;
     let tgEle2;
     let winW = window.innerWidth;
     const selData = Object.keys(about);
+    // 광실행금지변수
+let prot = [];
+// 광스크롤금지
+prot[0] = 0;
 
 
     const scrollFn = () => {
         let scTop = $(window).scrollTop();
         console.log(scTop);
         // 위치 * 크기비율 -> 움질일 범위
-        if (scTop < winW)
+        if (scTop < winW / 0.01)
             // 속도
-            tgEle1.css({ left: 80-scTop * 0.1 + "%" });
+            tgEle1.css({ left: 80 - scTop * 0.02 + "%" });
 
-        if (scTop < winW) 
-            tgEle2.css({ left: 120-scTop * 0.2+ "%" });
+        if (scTop < winW/0.01) 
+        tgEle2.css({ left: 120 - scTop * 0.04 + "%" });
 
+        if (tgEle1.offset().left < 10) tgEle1.css({ left: "10px" });
 
-
-            if(tgEle1.offset().left<=10) 
-            tgEle1.css({ left: "10%" });
-
-            if(tgEle2.offset().left<10) 
-            tgEle2.css({ left: "10%" });
+        if (tgEle2.offset().left < 10) tgEle2.css({ left: "11px" });
         // if (scTop < winW / 0.35 )
         //     // 속도
         //     tgEle1.css({ left: (-scTop * 0.26 )*0.1+ "vw" });
@@ -67,6 +67,8 @@ export function About() {
             // 옵셋탑값 반환 함수
             getOT: (ele) => ele.offsetTop,
         }; ////////////// domFn 객체 ///////////////////////////
+        $("html,body").animate({ scrollTop: "0px" });
+
 
         // 1. 대상선정 :
         // 스크롤 등장 대상: .scroll
@@ -142,51 +144,35 @@ export function About() {
         //   domFn.addEvt(window,'keyup',()=>{
         //       setPos(window.scrollY);
         //   });
+  
     }, []);
 
     // 리턴코드 ////////////////////////////
     return (
         <>
             <div className="about">
-                {<div className="layout">
-                    {/* <div className="layout1"> */}
-                        {/* <div className="about1">
-                            <img src="./images/intro1.jpg" className="scroll" />
-                        </div> */}
+                {/* 위치 고정 설명 */}
+                <div className="introduce">
+                    <ul className="introduce_ani">
+                        <li>
+                            폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
+                        </li>
+                        <li>
+                            폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
+                        </li>
+                    </ul>
+                </div>
+                {
+                    <div className="content">
                         <div className="content1">pomme</div>
-                    {/* </div> */}
-                    {/* 위치 고정 설명 */}
-                    <div className="introduce">
-                        <ul className="introduce_ani">
-                            <li>
-                                폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
-                            </li>
-                            <li>
-                                폼베르는 매일 아침 유기농밀가루, 천연발효종, 친환경 식재료로 건강하고 맛있는 빵을 만듭니다.{" "}
-                            </li>
-                        </ul>
-                    </div>
-                    {/* <div className="layout2"> */}
                         <div className="content2">verte</div>
-                        {/* <div className="intro4">
-                                <img src="./images/main3.jpg" className="scroll" />
-                                </div>
-                                <div className="intro2">
-                                <img src="./images/intro2.jpg" className="scroll" />
-                                </div>
-                            <div className="intro3">
-                            <img src="./images/intro3.jpg" className="scroll" />
-                            </div>
-                            <div className="intro5">
-                            <img src="./images/main5.jpg" className="scroll" />
-                        </div> */}
-                    {/* </div> */}
-                </div>}
-                    {selData.map((v, i) => (
-                        <div className={selData[i]} key={i}>
-                            <img src={about[v].img} alt={about[v]} className="scroll" />
-                        </div>
-                    ))}
+                    </div>
+                }
+                {selData.map((v, i) => (
+                    <div className={selData[i]} key={i}>
+                        <img src={about[v].img} alt={about[v]} className="scroll" />
+                    </div>
+                ))}
             </div>
         </>
     );

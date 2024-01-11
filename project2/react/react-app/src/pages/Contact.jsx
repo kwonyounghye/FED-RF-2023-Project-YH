@@ -11,7 +11,7 @@ export function Contact() {
     // 컨텍스트 사용
     //   const myCon = useContext(yhCon);
     useEffect(() => {
-        const content = $('.content');
+        const content = $('.inform');
         const layout = $('.layout');
         content.fadeIn(300).addClass('on');
 
@@ -27,7 +27,7 @@ export function Contact() {
     return (
         <>
             <div className="contact">
-                <div className="content">
+                <div className="inform">
                     {/* 설명 */}
                     ❕케이크 및 디저트 예약, 선물 포장, 단체 주문 &<br /> 대관 문의는 전화나 인스타 DM으로 연락바랍니다❕
                 </div>

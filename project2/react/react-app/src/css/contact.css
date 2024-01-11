@@ -7,7 +7,7 @@
     padding: 5%;
     font-family: 'Nanum Gothic';
 }
-.content {
+.inform {
   margin-top: 3%;
     font-size: 3vw;
     text-align: center;
@@ -18,13 +18,13 @@
 
   }
   /* 스크롤 등장 클래스 .on */
-  .content.on{
+  .inform.on{
     transform: translateY(0%);
     opacity: 1;
 
   }
 
-.layout1111 {
+.layout {
     margin: 5%;
     margin-bottom: 0;
     display: flex;
