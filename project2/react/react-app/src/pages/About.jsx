@@ -30,7 +30,7 @@ prot[0] = 0;
 
         if (tgEle1.offset().left < 10) tgEle1.css({ left: "10px" });
 
-        if (tgEle2.offset().left < 10) tgEle2.css({ left: "11px" });
+        if (tgEle2.offset().left < 10) tgEle2.css({ left: "10px" });
         // if (scTop < winW / 0.35 )
         //     // 속도
         //     tgEle1.css({ left: (-scTop * 0.26 )*0.1+ "vw" });
