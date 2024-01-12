@@ -15,7 +15,7 @@
 } */
 
 .about {
-  padding-bottom: 100vh;
+  padding-bottom: 80vh;
 }
 
 .about img {
@@ -80,14 +80,13 @@
   top: 30%;
   width: 100vw;
   height: 40vh;
-  outline: 1px solid red;
   /* z-index: 2; */
+  font-size: 20vh;
 }
 .content1 {
   position: absolute;
   bottom: 50%;
   left: 80%;
-  font-size: 20vh;
   white-space: nowrap;
   /* vertical-align: middle; */
   /* color:  #d6d4c6; */
@@ -102,7 +101,6 @@
   position: absolute;
   left: 120%;
   bottom: 0%;
-  font-size: 20vh;
   white-space: nowrap;
   /* vertical-align: middle; */
   color: #6f9065;
@@ -122,10 +120,26 @@
   font-family: "Nanum Gothic";
 }
 
-@media screen and (max-width: 800px) {
-  .introduce {
-    width: 300%;
-    font-size: 7.5vw;
+@media screen and (max-width: 600px) {
+    .introduce {
+        width: 200%;
+        font-size: 5vw;
+      }
+  .introduce_ani {
+  animation: introduce1 12s linear infinite !important;
+  }
+
+  .content {
+  font-size: 15vh;
+  }
+}
+@media screen and (max-width: 300px) {
+    .introduce {
+        width: 200%;
+        font-size: 5vw;
+      }
+  .content {
+  font-size: 10vh;
   }
 }
 

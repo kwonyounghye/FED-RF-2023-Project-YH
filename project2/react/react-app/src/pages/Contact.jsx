@@ -39,10 +39,13 @@ export function Contact() {
                         </div>
                     </section>
                     <section>
+                    <br />
+
+                            <span className="key">주소</span>
+                            <br />
+
                         <address>
                             {/* 주소 */}
-                            주소
-                            <br />
                             381, World Cup buk-ro, Mapo-gu Seoul, Korea
                             <br />
                             서울 마포구 월드컵북로 381 지층
@@ -50,10 +53,13 @@ export function Contact() {
                             경의중앙수색역 1번 출구에서 840m
                         </address>
                         <br />
+                        <br />
+
 
                         {/* 전화번호 */}
                         <span>
-                            전화번호
+                            <span className="key">전화번호</span>
+
                             <br />
                             02-306-3392
                         </span>
@@ -62,7 +68,8 @@ export function Contact() {
 
                         {/* 영업시간 */}
                         <span>
-                            영업시간(테이블 마감 & 라스트 오더)
+                            <span className="key">영업시간</span>
+                            (테이블 마감 & 라스트 오더)
                             <br />
                             월 08:00 - 22:00(21:30)
                             <br />
@@ -83,12 +90,12 @@ export function Contact() {
                         {/* 버튼1 */}
                         <div className="icon">
                             <a href="https://www.instagram.com/pommesvertess/">
-                                <FontAwesomeIcon icon={faInstagram} className="insta" style={{ fontSize: "5vh", cursor: "pointer" }} />
+                                <FontAwesomeIcon icon={faInstagram} className="insta" style={{ fontSize: "5vw", cursor: "pointer" }} />
                             </a>
                             <a href="https://www.youtube.com/watch?v=0_iSKCXU8cE">
                                 <FontAwesomeIcon icon={faYoutube} style={{
                                     color: '#f00', cursor: "pointer",
-                                    fontSize: '5vh'
+                                    fontSize: '5vw'
                                 }} />
                             </a>
                         </div>

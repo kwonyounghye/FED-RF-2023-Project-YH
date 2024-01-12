@@ -24,7 +24,11 @@ a {
     left:100%;
     transition: left 1s;
 } */
-
+@media screen and (max-width:400px) {
+    .mlist {
+        font-size: 7vw !important;
+    }
+}
 
 /* 메뉴중앙박스 */
 .mlist{

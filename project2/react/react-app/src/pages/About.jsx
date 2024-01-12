@@ -29,10 +29,10 @@ console.log('모바일여부:',mob);
         // 위치 * 크기비율 -> 움질일 범위
         if (scTop < winW / 0.01)
             // 속도
-            tgEle1.css({ left: 80 - scTop * (mob?0.1:0.02) + "%" });
+            tgEle1.css({ left: 80 - scTop * (mob?0.065:0.02) + "%" });
 
         if (scTop < winW/0.01) 
-        tgEle2.css({ left: 120 - scTop * (mob?0.2:0.04) + "%" });
+        tgEle2.css({ left: 120 - scTop * (mob?0.085:0.04) + "%" });
 
         if (tgEle1.offset().left < 10) tgEle1.css({ left: "10px" });
 

@@ -1,7 +1,7 @@
 
 h2 {
-    padding: 5%;
-    margin: 0;
+    padding: 5% ;
+    margin-top: 10vh;
     text-align: center;
     font-size: 5vw;
     font-family: 'Smythe';
@@ -9,6 +9,7 @@ h2 {
 
     /* background: #d6d4c6; */
 }
+
 .menu {
     display: flex;
     flex-wrap: wrap;

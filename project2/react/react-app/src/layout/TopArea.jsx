@@ -23,11 +23,9 @@ export function TopArea() {
     <>
       <div id="top_area">
         <header className="top_area inbox">
-          <div className="logo">
             {/* <Link to='about'> */}
             <Logo />
             {/* </Link> */}
-          </div>
           <div
             className="ham"
             // onClick={(e) => {
