@@ -21,6 +21,9 @@
 .about img {
   width: 50%;
   opacity: 0.5;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* 스크롤 등장 클래스 .on */
@@ -44,6 +47,12 @@
   /* z-index: 1; */
   padding-top: 10%;
   text-align: center;
+  animation: top 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+@keyframes top {
+  0% {
+    /* padding-top: 50%; */
+  }
 }
 
 .about2 {
@@ -96,6 +105,10 @@
   font-family: "Smythe";
   letter-spacing: 0.7vw;
   /* z-index: -99; */
+  animation: left 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+@keyframes left {
+  0% {left: 100%;}
 }
 .content2 {
   position: absolute;
