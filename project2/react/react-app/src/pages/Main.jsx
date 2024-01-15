@@ -6,6 +6,7 @@ import { hamMenu } from "../data/hamMenu";
 
 
 import "../css/main.css";
+import { Popup } from "../modules/Popup";
 
 export function Main() {
   //     const myCon = useContext(yhCon);
@@ -59,7 +60,15 @@ export function Main() {
       // $('.mlist').removeClass('off')
     });
     // }
+    const close = $('.close');
+    const popup = $('.popup');
+    loadFn = {
 
+      popup.fadeIn(600);
+    }
+    close.click(() => {
+      popup.fadeOut(300);
+  }); //////////// click //////
 
 
 
@@ -76,6 +85,7 @@ export function Main() {
   }, []);
   return (
     <>
+    <Popup />
       <Video vsrc="main" />
     </>
   );

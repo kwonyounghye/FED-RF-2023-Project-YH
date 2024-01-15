@@ -1,0 +1,15 @@
+.popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 30vw;
+    background: purple;
+    z-index: 999;
+}
+.title {
+    font-size: 30%;
+}
+.content {
+    font-size: 10%;
+}

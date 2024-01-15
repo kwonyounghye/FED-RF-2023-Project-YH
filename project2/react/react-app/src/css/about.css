@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Gowun+Dodum&family=Nanum+Gothic&family=Purple+Purse&family=Smythe&display=swap");
 /* 
 .about::before {
-    content: '';
+    store: '';
     display: block;
     position: absolute;
     right: 50%;
@@ -82,7 +82,7 @@
   margin-top: 20%;
   text-align: center;
 }
-.content {
+.store {
   /* padding-top: 10%; */
   position: fixed;
   left: 0;
@@ -92,7 +92,7 @@
   /* z-index: 2; */
   font-size: 20vh;
 }
-.content1 {
+.store1 {
   position: absolute;
   bottom: 50%;
   left: 80%;
@@ -110,7 +110,7 @@
 @keyframes left {
   0% {left: 100%;}
 }
-.content2 {
+.store2 {
   position: absolute;
   left: 120%;
   bottom: 0%;
@@ -142,7 +142,7 @@
   animation: introduce1 12s linear infinite !important;
   }
 
-  .content {
+  .store {
   font-size: 15vh;
   }
 }
@@ -151,7 +151,7 @@
         width: 200%;
         font-size: 5vw;
       }
-  .content {
+  .store {
   font-size: 10vh;
   }
 }

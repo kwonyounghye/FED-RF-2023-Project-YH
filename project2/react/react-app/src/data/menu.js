@@ -3,27 +3,27 @@
 export const menu = {
     menu1: {
         name: "stollen",
-        img: "./images/menu1.jpg",
+        img: "./images/menu/menu1.jpg",
         txt: ""
     },
     menu2: {
         name: "Salt bread",
-        img: "./images/menu2.jpg",
+        img: "./images/menu/menu2.jpg",
         txt: ""
     },
     menu3: {
         name: "Canulet",
-        img: "./images/menu3.jpg",
+        img: "./images/menu/menu3.jpg",
         txt: ""
     },
     menu4: {
         name: "Leven Cookies",
-        img: "./images/menu4.jpg",
+        img: "./images/menu/menu4.jpg",
         txt: ""
     },
     menu5: {
         name: "mini cookie",
-        img: "./images/menu5.jpg",
+        img: "./images/menu/menu5.jpg",
         txt: ""
     },
 }

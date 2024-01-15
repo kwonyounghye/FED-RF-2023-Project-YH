@@ -51,8 +51,8 @@ console.log('모바일여부:',mob);
     };
 
     useEffect(() => {
-        tgEle1 = $(".content1");
-        tgEle2 = $(".content2");
+        tgEle1 = $(".store1");
+        tgEle2 = $(".store2");
         $(window).scroll(scrollFn);
 
         // DOM 함수 객체 //////////////
@@ -169,14 +169,14 @@ console.log('모바일여부:',mob);
                     </ul>
                 </div>
                 {
-                    <div className="content">
-                        <div className="content1">pomme</div>
-                        <div className="content2">verte</div>
+                    <div className="store">
+                        <div className="store1">pomme</div>
+                        <div className="store2">verte</div>
                     </div>
                 }
                 {selData.map((v, i) => (
                     <div className={selData[i]} key={i}>
-                        <img src={about[v].img} alt={about[v]} className="scroll" />
+                        <img src={about[v].img} alt={selData[i]} className="scroll" />
                     </div>
                 ))}
             </div>
