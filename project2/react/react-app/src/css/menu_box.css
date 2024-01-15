@@ -1,11 +1,12 @@
+
 .menubox {
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
 
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    height: 80%;
     text-align: center;
     z-index: 99;
     background: #6f9065;
@@ -54,7 +55,6 @@
 .close{
     position: absolute;
     top: 3%;
-    right: 1%;
     /* transform: translateX(-60%); */
     /* border-radius: 50%; */
     font-size: 50px;
@@ -73,16 +73,16 @@
 
 }
 .close span {
-    width: 30px;
-    height: 2px;
-    margin: 5px;
+    width: 2.5vw;
+    height: .1vw;
+    margin: .5vw;
     display: block;
     background: #000;
     transform: rotate(45deg);
 }
 .close span:first-child {
-    transform: rotate(45deg) translate(2px) translateY(2px);
+    transform: rotate(45deg) translate(.2vw) translateY(.2vw);
 }
 .close span:nth-child(2) {
-    transform: rotate(-45deg) translate(2px) translateY(-3px);
+    transform: rotate(-45deg) translate(.2vw) translateY(-.2vw);
 }
