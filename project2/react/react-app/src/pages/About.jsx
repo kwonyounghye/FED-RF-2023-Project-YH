@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import $ from "jquery";
 import { about } from "../data/about";
 import { scrolled, setPos } from '../data/smoothScroll24'
+import { Parallax } from "react-parallax";
+
+
 
 export function About() {
     let tgEle1;
@@ -174,11 +177,14 @@ console.log('모바일여부:',mob);
                         <div className="store2">verte</div>
                     </div>
                 }
+                <div className="parallax">
                 {selData.map((v, i) => (
-                    <div className={selData[i]} key={i}>
-                        <img src={about[v].img} alt={selData[i]} className="scroll" />
-                    </div>
+                    <Parallax className="scroll" idx={selData[i]} key={i} strength={200} 
+                    bgImage={about[v].img} >
+                        <img src={about[v].img} alt={selData[i]}  />
+                    </Parallax>
                 ))}
+                </div>
             </div>
         </>
     );

@@ -6,6 +6,7 @@
     height: 30vw;
     background: purple;
     z-index: 999;
+    display: none;
 }
 .title {
     font-size: 30%;

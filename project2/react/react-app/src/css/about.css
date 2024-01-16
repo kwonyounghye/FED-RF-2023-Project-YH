@@ -23,7 +23,8 @@
   opacity: 0.5;
   aspect-ratio: 3/4;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+ 
 }
 
 /* 스크롤 등장 클래스 .on */
@@ -41,6 +42,11 @@
         
         ); */
   background-color: #d6d4c6;
+}
+.parallax {
+  padding: 3vw !important;
+  position: relative;
+  overflow: hidden;
 }
 .about1 {
   position: relative;

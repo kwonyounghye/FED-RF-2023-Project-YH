@@ -62,10 +62,10 @@ export function Main() {
     // }
     const close = $('.close');
     const popup = $('.popup');
-    loadFn = {
+    // loadFn = {
 
-      popup.fadeIn(600);
-    }
+    //   popup.fadeIn(600);
+    // }
     close.click(() => {
       popup.fadeOut(300);
   }); //////////// click //////
