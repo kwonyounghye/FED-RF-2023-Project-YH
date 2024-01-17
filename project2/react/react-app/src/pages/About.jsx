@@ -177,14 +177,18 @@ console.log('모바일여부:',mob);
                         <div className="store2">verte</div>
                     </div>
                 }
+                
                 <div className="parallax">
-                {selData.map((v, i) => (
-                    <Parallax className="scroll" idx={selData[i]} key={i} strength={200} 
-                    bgImage={about[v].img} >
-                        <img src={about[v].img} alt={selData[i]}  />
-                    </Parallax>
-                ))}
+                    {selData.map((v, i) => (
+                        <div className="scroll scroll1">
+                        <Parallax  key={i} strength={-100}
+                        bgImage={about[v].img} style={{height: '60vw', width:'50vw', border:'3px solid red' }} >
+                            {/* <img src={about[v].img} alt={selData[i]}  /> */}
+                        </Parallax>
+                        </div>
+                    ))}
                 </div>
+               
             </div>
         </>
     );
