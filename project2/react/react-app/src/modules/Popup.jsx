@@ -10,6 +10,7 @@ export function Popup(props) {
                 </button>
                 <div className="title"></div>
                 <div className="content"></div>
+                <div className="checkbox">24시간 열지 않음<input type='checkbox'  /></div>
             </div>
         </>
     )

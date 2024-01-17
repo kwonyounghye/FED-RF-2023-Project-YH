@@ -59,6 +59,9 @@ a {
     box-sizing: border-box;
     line-height: 20vh;
     text-align: center;
+    transition-duration: .3s;
+    transform: translateY(180deg) rotate(50%) skewX() skewY() scaleX() scaleY();
+
 }
 
 .mlist div a:hover{
