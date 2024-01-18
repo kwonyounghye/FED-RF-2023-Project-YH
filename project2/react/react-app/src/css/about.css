@@ -16,6 +16,8 @@
 
 .parallax {
   position: relative;
+  width: 50%;
+  height: 100vh;
 }
 .scroll {
   opacity: 0.5;
