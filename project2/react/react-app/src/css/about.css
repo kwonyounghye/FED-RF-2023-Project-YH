@@ -1,63 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Gowun+Dodum&family=Nanum+Gothic&family=Purple+Purse&family=Smythe&display=swap");
-/* 
-.about::before {
-    store: '';
-    display: block;
-    position: absolute;
-    right: 50%;
-    left: 50%;
-    animation: between 1s ease-out both;
-}
-@keyframes between {
-    from {
-        left: -50%;
-    }
-} */
-
-.parallax {
+.about {
   position: relative;
-  width: 50%;
-  height: 100vh;
+  height: 100%;
+  background-color: #d6d4c6;
+  padding-bottom: 80vh;
+}
+/* 스크롤 등장 클래스 .on */
+.scroll.on {
+  opacity: 1;
+}
+
+/* parallax (o) */
+.parallax {
+  height: 100%;
+  width: 100vw;
 }
 .scroll {
   opacity: 0.5;
-  /* object-fit: cover; */
-  padding: 3vw;
-  /* position: relative; */
   padding-top: 10%;
-  
-  border: 2px solid #000;
+  /* 글자 위에 올리기 */
+  position: relative;
 }
 .scroll:first-child {
   animation: top 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
 }
-.scroll1 {
-  border: 2px solid purple;
-}
-/* 스크롤 등장 클래스 .on */
-.scroll.on {
-  /* transform: translateY(30%); */
-  opacity: 1;
-}
-.about {
-  position: relative;
-  height: 100%;
-  padding-bottom: 80vh;
-  /* background-image: linear-gradient(
-        to bottom,
-        #d6d4c6,
-        #d6d4c6
-        
-        ); */
-  background-color: #d6d4c6;
-}
+.scroll img {
+  width: 40vw;
+  min-height: 50vw !important;
+  object-fit: cover;
 
-#about1 {
-  position: relative;
-  /* z-index: 1; */
-  padding-top: 10%;
-  text-align: center;
+}
+.about1 {
+  /* 공통 */
+  padding-top: 20%;
+  padding-left: 40%;
+  animation: top 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 @keyframes top {
   0% {
@@ -65,30 +43,28 @@
   }
 }
 
-#about2 {
-  position: relative;
-  /* z-index: 1; */
+.about2 {
   margin-top: 20%;
-  text-align: right;
+  padding-left: 20%;
+
 }
 
-#about3 {
-  position: relative;
-  /* z-index: 1; */
+.about3 {
   margin-top: 20%;
-  text-align: left;
+  padding-left: 45%;
+
 }
-#about4 {
-  position: relative;
-  /* z-index: 1; */
+
+.about4 {
   margin-top: 20%;
-  text-align: justify;
+  padding-left: 15%;
+
+
 }
-#about5 {
-  position: relative;
-  /* z-index: 1; */
+.about5 {
   margin-top: 20%;
-  text-align: center;
+  padding-left: 25%;
+
 }
 
 .store {
@@ -98,7 +74,6 @@
   top: 30%;
   width: 100vw;
   height: 40vh;
-  /* z-index: 2; */
   font-size: 20vh;
 }
 .store1 {
@@ -106,14 +81,10 @@
   bottom: 50%;
   left: 80%;
   white-space: nowrap;
-  /* vertical-align: middle; */
-  /* color:  #d6d4c6; */
   color: #6f9065;
   /* text-shadow: 0px 0px 5px #6f9065; */
-  /* padding-left: 80vw; */
   font-family: "Smythe";
   letter-spacing: 0.7vw;
-  /* z-index: -99; */
   animation: left 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 @keyframes left {
@@ -124,9 +95,7 @@
   left: 120%;
   bottom: 0%;
   white-space: nowrap;
-  /* vertical-align: middle; */
   color: #6f9065;
-  /* padding-left: 100%; */
   font-family: "Smythe";
   letter-spacing: 0.7vw;
 }
@@ -135,19 +104,14 @@
   bottom: 10vh;
   width: 100%;
   font-size: 2.5vw;
-  z-index: 1;
   padding: 1.5vw 0;
   background: #6f9065;
   color: #fff;
   font-family: "Nanum Gothic";
+  z-index: 1;
+
 }
 
-.scroll1 img{
-  height: 120% !important;
-}
-.scroll2 img{
-  height: 50% !important;
-}
 
 
 @media screen and (max-width: 600px) {

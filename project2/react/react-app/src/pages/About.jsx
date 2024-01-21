@@ -180,13 +180,13 @@ console.log('모바일여부:',mob);
                 
                 <div className="parallax">
                     {selData.map((v, i) => (
-                        <div className={"scroll scroll"+(i+1)}>
-                        <Parallax  key={i} strength={-100}
-                        bgImage={about[v].img} style={{width:'100%', height:'100vw', border:'3px solid red' }} >
+                        <div className={"scroll about"+(i+1)}>
                             {/* <img src={about[v].img} alt={selData[i]}  /> */}
+                        <Parallax  key={i} strength={-70}
+                        bgImage={about[v].img} style={{width:'40vw', height:'50vw' }} >
                         </Parallax>
 
-                        </div>
+                         </div>
                     ))}
                 </div>
                

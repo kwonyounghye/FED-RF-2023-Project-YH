@@ -1,12 +1,16 @@
 .popup {
     position: absolute;
-    top: 0;
+    top: 1vw;
     right: 0;
     width: 20vw;
     height: 30vw;
-    background: purple;
+    padding: 10%;
+  background-color: #d6d4c6;
     z-index: 999;
-    display: none;
+    /* display: none; */
+}
+.close {
+    cursor: pointer;
 }
 .title {
     font-size: 30%;
