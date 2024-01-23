@@ -11,9 +11,10 @@ export function MenuBox(props) {
                 <span></span>
             </button>
             <div className="style">
-                <div className="menutxt"></div>
+                <div className="menuname"></div>
             </div>
                 <div className="menuimg"></div>
+                <div className="menutxt"></div>
         </div>
         </>
     )

@@ -19,14 +19,14 @@ export function MenuList() {
         console.log("메뉴: ", name, img);
         const menubox = $(".menubox");
         const close = $(".close");
-        const menutxt = $(".menutxt");
+        const menuname = $(".menuname");
         const menuimg = $(".menuimg");
         menubox.fadeIn(300);
         close.click(() => {
             menubox.fadeOut(300);
         }); //////////// click //////
         menuimg.html(`<img src="${img}" alt="${name}">`);
-        menutxt.text(name);
+        menuname.text(name);
     }; /////////// showBox 함수 /////////////
 
     return (

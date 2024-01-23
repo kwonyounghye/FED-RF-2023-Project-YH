@@ -3,7 +3,7 @@ import "../css/popup.css";
 
 import $ from "jquery";
 
-export function Popup(props) {
+export function Popup() {
 
     // 처음에 noShow값이 true/false여부 결정하기
     // 기준: 로컬쓰값이 현재시간과 차가 24시간을 초과한 경우
@@ -11,14 +11,14 @@ export function Popup(props) {
     // 로컬스(24시간후 설정시간초) - 현재시간초 = 24시간초보다 작으면 true
     // 크면 false
 
+    // 팝업창 안보이기
     let setInitBool = false;
 
     // 로컬스에 noPopup 저장된 값이 있다면 체크
     if(localStorage.getItem('noPopup')){
         const today = new Date();
         const today2 = new Date(); // 현재시간용
-        const setDate = today.getDate() + 1;
-        console.log("date: ", setDate);
+
 
         // 현재시간초
         const time1 = today.getTime();
@@ -26,6 +26,7 @@ export function Popup(props) {
         const time2 = today.getTime() - 24 * 60 * 60 * 1000;
         // 하루후시간초
         const time3 = today.getTime() + 24 * 60 * 60 * 1000;
+        // 24시간
         const time24 = 24 * 60 * 60 * 1000;
         // 로컬스(24시간후 설정시간초) - 현재시간초
         let setInit = Number(localStorage.getItem('noPopup')) - today.getTime();
@@ -40,13 +41,14 @@ export function Popup(props) {
         console.log('빼기계산시간초:',setInit);
 
         // 24시간보다 작으면 다시 팝업을 띄우는 불린값을 true 로 변경함!
+        // 로컬쓰에 남은 시간이 0보다 크면 팝업창이 안보이는 것이 true이다.
         if(setInit>0) setInitBool = true;
 
     } /// if ////////////
 
 
-  const [check, setCheck] = useState(false); // 체크 여부
-  const [noShow, setNoShow] = useState(setInitBool);
+  const [check, setCheck] = useState(false); // 체크 안되게 기본값 설정
+  const [noShow, setNoShow] = useState(setInitBool); // 노쇼가 아닌 게 기본값(처음엔 보임)
 
     console.log('체크여부:',check);
   // const today = new Date(); // 오늘 날짜
@@ -62,10 +64,8 @@ export function Popup(props) {
     // // 담을 날짜와 최종날짜
     const today = new Date();
     const today2 = new Date(); // 현재시간용
-    const setDate = today.getDate() + 1;
-    console.log("date: ", setDate);
-    const time = today.getTime() - 24 * 60 * 60 * 1000;
-    const time2 = today.getTime() + 24 * 60 * 60 * 1000;
+    const time2 = today.getTime() - 24 * 60 * 60 * 1000;
+    const time3 = today.getTime() + 24 * 60 * 60 * 1000;
 
     // 위에서 만든 날짜 인스턴스를 업데이트하여 변경함!!!
     // today.setTime(time);
@@ -75,41 +75,40 @@ export function Popup(props) {
       "현재시간간: ",
       today2.getTime(),
       "\n하루전시간:",
-      time,
+      time2,
       "\n24시간초로:",
       24 * 60 * 60 * 1000,
       "\n하루후시간-현재시간:",
-      time2 - today2.getTime(),
+      time3 - today2.getTime(),
 
       "\n하루후시간:",
-      time2
+      time3
     );
 
     // }
-    const checkExpire = () => {
-      const expires = localStorage.getItem("noPopup");
-      if (today.getTime() > expires) {
-        return false;
-      } else {
-        return true;
-      }
-    };
-
-    const timeOut = () => {
-      console.log("닫기: ", time(1));
-    };
-
-    // today.setDate(today.getDate()+day)
-    // return setDay;
+    // 왜 있는건지..?
+    // const checkExpire = () => {
+    //   const expires = localStorage.getItem("noPopup");
+    //   if (today.getTime() > expires) {
+    //     return false;
+    //   } else {
+    //     return true;
+    //   }
     // };
-    // const closePopup = (props) => {
-    //     props(false);
-    // }
-    // console.log('뭐야:', closePopup);
-    // const popup = (props) => {
-    //     today = today.setHours(today.getHours()+24);
-    //     localStorage.setItem('oneDay', today);
-    //     props(false);
+    // const checkExpire = () => {
+    //   const expires = localStorage.getItem("noPopup");
+    //   if (expires < 0) {
+    //     return false;
+    //   } else {
+    //     return true;
+    //   }
+    // };
+
+    // const timeOut = () => {
+    //   console.log("닫기: ", time2(1));
+    // };
+
+   
   },[check]);
 
   const chgChecked = () => {
@@ -121,23 +120,21 @@ export function Popup(props) {
     $('.popup').hide();
     const today = new Date();
     // 하루후 시간!
-    const time2 = today.getTime() + 24 * 60 * 60 * 1000;
-    if(check) localStorage.setItem("noPopup", time2);
+    const time3 = today.getTime() + 24 * 60 * 60 * 1000;
+    if(check) localStorage.setItem("noPopup", time3);
   }
   return (
     <>
       {!noShow && (
         <div className="popup">
-          <button className="pop-close" onClick={closePopup}>
-            <span></span>
-            <span></span>
-            X
-          </button>
           <div className="title"></div>
           <div className="content"></div>
           <div className="checkbox">
             하루 열지 않기
             <input type="checkbox" onChange={chgChecked} />
+          <button className="pop-close" onClick={closePopup}>
+            x
+          </button>
           </div>
         </div>
       )}

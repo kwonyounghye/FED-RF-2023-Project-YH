@@ -72,7 +72,7 @@ export function Main() {
 
 
 
-    $('html,body').css({overflow:'hidden'});
+    // $('html,body').css({overflow:'hidden'});
     
     // 소멸자
     return(()=>{
