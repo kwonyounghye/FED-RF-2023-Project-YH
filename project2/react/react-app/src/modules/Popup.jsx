@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../css/popup.css";
+import { popup } from "../data/popup";
 
 import $ from "jquery";
 
@@ -86,23 +87,16 @@ export function Popup() {
     );
 
     // }
-    // 왜 있는건지..?
-    // const checkExpire = () => {
-    //   const expires = localStorage.getItem("noPopup");
-    //   if (today.getTime() > expires) {
-    //     return false;
-    //   } else {
-    //     return true;
-    //   }
-    // };
-    // const checkExpire = () => {
-    //   const expires = localStorage.getItem("noPopup");
-    //   if (expires < 0) {
-    //     return false;
-    //   } else {
-    //     return true;
-    //   }
-    // };
+
+    const checkExpire = () => {
+      const expires = localStorage.getItem("noPopup");
+      if (today.getTime() > expires) {
+        return false;
+      } else {
+        return true;
+      }
+    };
+
 
     // const timeOut = () => {
     //   console.log("닫기: ", time2(1));
@@ -127,8 +121,8 @@ export function Popup() {
     <>
       {!noShow && (
         <div className="popup">
-          <div className="title"></div>
-          <div className="content"></div>
+          <div className="title" props={popup.title}></div>
+          <div className="content" props={popup.content}></div>
           <div className="checkbox">
             하루 열지 않기
             <input type="checkbox" onChange={chgChecked} />

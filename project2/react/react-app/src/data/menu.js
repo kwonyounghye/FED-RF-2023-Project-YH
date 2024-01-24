@@ -9,7 +9,7 @@ export const menu = {
     menu2: {
         name: "Salt bread",
         img: "./images/menu/menu2.jpg",
-        txt: ""
+        txt: "건강한 통밀, 최상급 프랑스산 버터, 소금으로 만든 프리미엄 소금빵"
     },
     menu3: {
         name: "Canulet",

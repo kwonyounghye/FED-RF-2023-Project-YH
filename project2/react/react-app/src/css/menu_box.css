@@ -52,6 +52,11 @@
     object-fit: cover;
     opacity: 1;
 }
+.menutxt {
+    position: absolute;
+    top: 0;
+    
+}
 .close{
     position: absolute;
     top: 3%;
