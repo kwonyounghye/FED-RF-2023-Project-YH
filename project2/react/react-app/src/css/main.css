@@ -14,6 +14,9 @@ html,body {
     /* background:  #d6d4c6; */
     overflow-x: hidden;
 }
+#root {
+    height: 100%;
+}
 
 #top_area{
     position: fixed;
@@ -132,6 +135,7 @@ header {
     }
   }
 main {
+    height: 100%;
     margin-top: 5vh;
 }
 

@@ -6,7 +6,6 @@ import { hamMenu } from "../data/hamMenu";
 
 
 import "../css/main.css";
-import { Popup } from "../modules/Popup";
 
 export function Main() {
   //     const myCon = useContext(yhCon);
@@ -72,7 +71,7 @@ export function Main() {
 
 
 
-    // $('html,body').css({overflow:'hidden'});
+    $('html,body').css({overflow:'hidden'});
     
     // 소멸자
     return(()=>{
@@ -85,7 +84,6 @@ export function Main() {
   }, []);
   return (
     <>
-    <Popup />
       <Video vsrc="main" />
     </>
   );

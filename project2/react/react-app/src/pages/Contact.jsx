@@ -102,6 +102,7 @@ export function Contact() {
                         {/* 버튼2 */}
                     </section>
                 </div>
+
             </div>
         </>
     );

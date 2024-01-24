@@ -189,7 +189,6 @@ console.log('모바일여부:',mob);
                          </div>
                     ))}
                 </div>
-               
             </div>
         </>
     );
