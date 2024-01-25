@@ -1,7 +1,23 @@
+import { useEffect } from 'react';
 import '../css/menu_box.css';
+import $ from 'jquery';
 
 export function MenuBox(props) {
-    
+    useEffect(()=> {
+            $('.menuimg').mouseover(()=>{
+
+                $('.menutxt').stop().fadeTo(300,1);
+            });
+            $('.menuimg').mouseout(()=>{
+
+                $('.menutxt').stop().fadeTo(300,0);
+            });
+
+        //     $('.menuimg').hover(()=>{
+        //         // console.log('여기야.');
+        //     });
+
+    }); ///////// useEffect /////////////
     return (
         <>
         <div className="menubox" menu={props.menu}>

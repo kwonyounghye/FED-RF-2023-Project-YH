@@ -54,8 +54,13 @@
 }
 .menutxt {
     position: absolute;
-    top: 0;
-    
+    top: 40%;
+    right: 0;
+    width: 80%;
+    height: 50%;
+    font-family: 'Nanum Gothic';
+    font-size: 4vw;
+    display: none;
 }
 .close{
     position: absolute;

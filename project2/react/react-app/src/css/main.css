@@ -145,3 +145,8 @@ main video {
     object-fit: cover;
     object-position: 50% 50%;
 }
+svg {
+    position: absolute;
+    top: 30%;
+    border: 3px solid green;
+}

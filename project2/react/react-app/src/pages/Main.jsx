@@ -84,6 +84,7 @@ export function Main() {
   }, []);
   return (
     <>
+      <svg xmlns="http://www.w3.org/2000/svg"  width="295" height="188" viewBox="0 0 295 188"></svg>
       <Video vsrc="main" />
     </>
   );

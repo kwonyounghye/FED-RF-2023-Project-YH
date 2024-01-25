@@ -1,6 +1,5 @@
 import { MenuList } from "../modules/MenuList";
 import "../css/menu.css";
-import { Popup } from "../modules/Popup";
 export function Menu() {
     return (
     <>
