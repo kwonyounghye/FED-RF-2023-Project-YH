@@ -4,18 +4,18 @@ import $ from 'jquery';
 
 export function MenuBox(props) {
     useEffect(()=> {
-        if($('.menuimg')){
-            $('.menuimg').mouseover(()=>{
+        // if($('.menuimg')){
+        // }
+        // else {}
+        $('.menuimg').mouseover(()=>{
 
-                $('.menutxt').stop().fadeTo(300,1);
-                $(".menuimg").css({opacity:'.5'})
+            $('.menutxt').stop().fadeTo(300,1);
+            $(".menuimg").css({opacity:'.5'})
+        });
+            $('.menuimg').mouseout(()=>{
+
+                $('.menutxt').stop().fadeTo(300,0);
             });
-        }
-        else {}
-            // $('.menuimg').mouseout(()=>{
-
-            //     $('.menutxt').stop().fadeTo(300,0);
-            // });
 
        
 
