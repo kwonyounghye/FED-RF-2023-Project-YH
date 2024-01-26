@@ -1,93 +1,10 @@
-import { useCallback, useEffect } from "react";
-import { Video } from "../modules/Video";
-import $ from "jquery";
-import { useNavigate } from "react-router-dom";
-import { hamMenu } from "../data/hamMenu";
-
-
-import "../css/main.css";
-
-export function Main() {
-  //     const myCon = useContext(yhCon);
-  const goNav = useNavigate();
-
-  const chgPage = useCallback(() => {
-    goNav();
-  });
-  // $('.ham').click((e)=>{
-  //   $(e.target).is('.on');
-
-  // })
-
-  useEffect(() => {
-    let autoSet;
-
-    $(".ham").click(() => {
-      console.log("햄클릭");
-      clearTimeout(autoSet);
-    });
-
-    // if(chgPage('/')){
-    autoSet = setTimeout(() => {
-      if (!$(".mbox").hasClass("on")) $(".preview").attr("class", "preview").attr('style','');
-      $(".ham").addClass("on");
-      $(".mbox").addClass("on");
-    }, 11000);
-    $(".mlist a").on("mouseenter", function () {
-      // over
-      const tgEle = $(".preview");
-      let txt = $(this).text().toLowerCase();
-      tgEle.attr("class", "preview");
-      tgEle.addClass(txt + "-menu");
-      const selData = hamMenu[txt];
-
-        console.log('원본data:',hamMenu);
-        console.log('변환data:', selData);
-        console.log('선택클래스:', `.${txt}-menu`);
-        selData.map(()=>{
-          $(`.${txt}-menu`).css({background:`url(${selData}) no-repeat center/cover`})
-          console.log('이미지 링크: ', txt)
-        })    
-
-    });
-    $(".mlist a").click((e) => {
-      // setTimeout(() => {
-      $(".preview").addClass("off");
-      // $('.mbox').toggleClass('on')
-      // }, 1000);
-      // $('.preview').removeClass('off')
-      // $('.mlist').removeClass('off')
-    });
-    // }
-    const close = $('.close');
-    const popup = $('.popup');
-    // loadFn = {
-
-    //   popup.fadeIn(600);
-    // }
-    close.click(() => {
-      popup.fadeOut(300);
-  }); //////////// click //////
-
-
-
-    $('html,body').css({overflow:'hidden'});
-    
-    // 소멸자
-    return(()=>{
-      $('html,body').attr('style','');
-
-    })
-
-
-
-  }, []);
-  return (
-    <>
-  
-<svg id="Layer_1"  x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
 <path class="st0" d="M354.48,402.15c0.14-0.1,0.45-0.34,0.88-0.71c0.15-0.13,1.24-1.1,2.19-2.36c1.37-1.82,1.62-3.15,2.85-5.27
 	c1.55-2.65,2.17-2.28,3.51-4.61c0.52-0.91,1.75-3.1,1.98-5.93c0.35-4.48-2.06-7.45-0.66-8.78c0.69-0.65,1.48-0.14,2.2-0.88
 	c1.03-1.07,0.34-3.18-0.22-5.27c-1.64-6.12-0.41-5.84-1.76-9.44c-1.41-3.77-2.25-2.74-5.05-8.12c-2.36-4.54-2.63-6.95-5.05-7.9
@@ -176,8 +93,3 @@ export function Main() {
 	c-0.96-3.33-2.46-5.68-3.07-6.59c-1.44-2.12-2.89-3.44-4.24-4.68c-1.07-0.98-2.37-1.97-4.98-3.95c-1.89-1.43-2.83-2.15-3.37-2.49
 	c-0.54-0.34-2.66-1.63-7.17-2.78c-3.58-0.92-7.1-1.34-9.37-1.61C292.67,404.76,290.99,404.78,290.6,403.76z"/>
 </svg>
-
-      <Video vsrc="main" />
-    </>
-  );
-}
