@@ -15,19 +15,21 @@ export function MenuList() {
     console.log('원본데이터:',menu);
     console.log('변환데이터:',selData);
     // 메뉴박스 보이기 함수
-    const showBox = (name, img, txt) => {
-        console.log("메뉴: ", name, img, txt);
+    const showBox = (Ename, Kname, img, txt) => {
+        console.log("메뉴: ", Ename, Kname, img, txt);
         const menubox = $(".menubox");
         const close = $(".close");
-        const menuname = $(".menuname");
+        const menuEname = $(".menuEname");
+        const menuKname = $(".menuKname");
         const menuimg = $(".menuimg");
         const menutxt = $(".menutxt");
         menubox.fadeIn(300);
         close.click(() => {
             menubox.fadeOut(300);
         }); //////////// click //////
-        menuimg.html(`<img src="${img}" alt="${name}">`);
-        menuname.text(name);
+        menuimg.html(`<img src="${img}" alt="${Ename}">`);
+        menuEname.text(Ename);
+        menuKname.text(Kname);
         menutxt.text(txt);
     }; /////////// showBox 함수 /////////////
 
@@ -36,8 +38,8 @@ export function MenuList() {
             <div className="menu">
                 {selData.map((v,i) => (
                     <div className={v}  key={i}>
-                        <a href="#" onClick={(e)=>{e.preventDefault(); showBox(menu[v].name,menu[v].img,menu[v].txt)}}>
-                            <img src={menu[v].img} alt={menu[v].name} />
+                        <a href="#" onClick={(e)=>{e.preventDefault(); showBox(menu[v].Ename, menu[v].Kname, menu[v].img,menu[v].txt)}}>
+                            <img src={menu[v].img} alt={menu[v].Ename} />
                         </a>
                     </div>
                 

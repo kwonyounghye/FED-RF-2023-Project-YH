@@ -16,15 +16,14 @@
     overflow: hidden;
 
 }
-.style {
+.name {
     mix-blend-mode:overlay;
     display: inline-block;
     height: 100%;
     width: 20%;
     
 }
-.menuname {
-    /* isolation: isolate; */
+.menuEname {
     position: absolute;
     
     top: 90%;
@@ -33,16 +32,35 @@
     transform: rotate(-90deg);
     font-size: 7vw;
     color: #000;
-    opacity: 1 ;
     font-family: 'Smythe';
     letter-spacing: .3vw;
     text-overflow: ellipsis;
+}
+.menuKname {
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    transform-origin: left top;
+    transform: rotate(-90deg);
+    font-size: 7vw;
+    color: #000000;
+    opacity: 0;
+    font-family: 'Nanum Gothic';
+    letter-spacing: .3vw;
+    text-overflow: ellipsis;
+    z-index: 9;
 
 }
+.menucontent {
+    width: 80%;
+    height: 100%;
+    float: right;
+    background: #ffffff7f;
 
+}
 .menuimg {
     float: right;
-    width: 80%;
+    /* width: 80%; */
     height: 100%;
     opacity: 1;
 }
@@ -57,10 +75,12 @@
     top: 40%;
     right: 0;
     width: 80%;
-    height: 50%;
+    /* height: 10%; */
     font-family: 'Nanum Gothic';
     font-size: 4vw;
     display: none;
+    /* mix-blend-mode: overlay; */
+
 }
 .close{
     position: absolute;

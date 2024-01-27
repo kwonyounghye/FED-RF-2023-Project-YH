@@ -7,14 +7,44 @@ export function MenuBox(props) {
         // if($('.menuimg')){
         // }
         // else {}
-        $('.menuimg').mouseover(()=>{
+        const imgover = $('.menuimg').mouseover(()=>{
 
-            $('.menutxt').stop().fadeTo(300,1);
-            $(".menuimg").css({opacity:'.5'})
+            $('.menutxt').stop().fadeTo(600,1);
+            $(".menuimg").css({opacity:'.8'})
+            $('.menuKname').css({opacity:'1'});
+            // $('.name').css({opacity:'0'});
+            $('.menuKname').css({mixBlendMode:'overlay'})
+            $('.menuEname').css({opacity:'0'});
+            
         });
-            $('.menuimg').mouseout(()=>{
+        const txtover = $('.menutxt').mouseover(()=>{
+            
+            $('.menutxt').stop().fadeTo(600,1);
+            $(".menuimg").css({opacity:'.8'})
+            $('.menuKname').css({opacity:'1'});
+            $('.menuKname').css({mixBlendMode:'overlay'})
 
-                $('.menutxt').stop().fadeTo(300,0);
+            // $('.name').css({opacity:'0'});
+            $('.menuEname').css({opacity:'0'});
+        });
+        // 오버시 Ename 숨기기 / 아웃시 Kname 숨기고 Ename보이기
+        $('.menuimg').mouseout(()=>{
+            
+            $('.menutxt').stop().fadeTo(300,0);
+            $(".menuimg").css({opacity:'1'})
+            $('.menuKname').css({opacity:'0'});
+            // $('.name').css({opacity:'1'});
+
+            $('.menuEname').css({opacity:'1'});
+            
+        });
+        $('.menutxt').mouseout(()=>{
+            
+            $('.menutxt').stop().fadeTo(300,0);
+            $(".menuimg").css({opacity:'1'})
+            $('.menuKname').css({opacity:'0'});
+            $('.menuEname').css({opacity:'1'});
+
             });
 
        
@@ -28,11 +58,14 @@ export function MenuBox(props) {
                 <span></span>
                 <span></span>
             </button>
-            <div className="style">
-                <div className="menuname"></div>
+                <div className="menuKname"></div>
+            <div className="name">
+                <div className="menuEname"></div>
             </div>
-                <div className="menuimg"></div>
-                <div className="menutxt"></div>
+                <div className="menucontent">
+                    <div className="menuimg"></div>
+                    <div className="menutxt"></div>
+                </div>
         </div>
         </>
     )
