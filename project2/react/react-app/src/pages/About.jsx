@@ -52,8 +52,9 @@ console.log('모바일여부:',mob);
         // if(scTop<winW/0.7*2.0)
         // tgEle2.css({left:-scTop*0.5+'px'})
     };
-
+  
     useEffect(() => {
+     
         tgEle1 = $(".store1");
         tgEle2 = $(".store2");
         $(window).scroll(scrollFn);
@@ -153,7 +154,7 @@ console.log('모바일여부:',mob);
         //   domFn.addEvt(window,'keyup',()=>{
         //       setPos(window.scrollY);
         //   });
-  
+       
     }, []);
 
     // 리턴코드 ////////////////////////////

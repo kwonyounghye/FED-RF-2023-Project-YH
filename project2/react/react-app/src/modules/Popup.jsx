@@ -4,7 +4,7 @@ import { popup } from "../data/popup";
 
 import $ from "jquery";
 
-export function Popup(props) {
+export function Popup() {
     
     // 처음에 noShow값이 true/false여부 결정하기
     // 기준: 로컬쓰값이 현재시간과 차가 24시간을 초과한 경우
@@ -133,7 +133,8 @@ export function Popup(props) {
             <input type="checkbox" onChange={chgChecked} />
             </label>
           <button className="pop-close" onClick={closePopup}>
-            x
+                <span></span>
+                <span></span>
           </button>
           </div>
           <h4 className="content">{selData.content}</h4>

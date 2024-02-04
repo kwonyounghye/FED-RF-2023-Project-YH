@@ -4,6 +4,8 @@ import React from "react";
 import { img } from "../data/img";
 import { yhCon } from "./yhContext";
 import { useContext } from "react";
+import $ from 'jquery';
+import { useNavigate } from "react-router-dom";
 export const Logo = () => {
      // 컨텍스트 API 사용하기
      const myCon = useContext(yhCon);
@@ -17,7 +19,10 @@ export const Logo = () => {
      // 예) goNav('/') -> 첫페이지 이동
      // 이동 주소는 대소문자 구분없음!
  
+   // pCon에 Provider value 속성에 공개한 변수/함수를 사용함!
+   const goNav = useNavigate();
 
+   
     return (
         <div className="logo"
         onClick={() =>  

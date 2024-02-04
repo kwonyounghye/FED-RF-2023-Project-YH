@@ -4,7 +4,6 @@ import $ from "jquery";
 import { useNavigate } from "react-router-dom";
 import { hamMenu } from "../data/hamMenu";
 
-
 import "../css/main.css";
 
 export function Main() {
@@ -18,8 +17,8 @@ export function Main() {
   //   $(e.target).is('.on');
 
   // })
-
   useEffect(() => {
+
     let autoSet;
 
     $(".ham").click(() => {
@@ -77,25 +76,27 @@ export function Main() {
     return(()=>{
       $('html,body').attr('style','');
 
-    })
-
+    });
+   
 
 
   }, []);
   return (
     <>
-		<div style={{
+		{/* <div style={{
 			position:'absolute',
 			width:'50px',
 			height:'50px',
 			zIndex:'9999999',
-			top:'300px',
-			left:'50px',
+			top:'0%',
+			left:'40%',
+      transform:'translate(-50%)'
 		}}>
 
-		<img style={{width:'200px'}} src="./images/logo_sample.svg" alt="로고" />
-		</div>
-      <Video vsrc="main" />
+		<img className="svg_logo"style={{width:'200px', color:'#6f9065 !important'}} src="./images/logo_sample.svg" alt="로고" />
+		</div> */}
+        <Video vsrc="main" />
+    <div className="show"></div>
     </>
   );
 }

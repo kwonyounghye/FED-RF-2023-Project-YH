@@ -21,17 +21,34 @@
 
 }
 .checkbox {
-    display: inline;
     float: right;
+    display: inline-flex;
+   
     
 }
 .checkbox > label, input {
     cursor: pointer;
-
+    display: flex;
 }
+
 .pop-close {
     border: 0;
     background: none;
     cursor: pointer;
     font-size: 100%;
+
+}
+.pop-close span {
+    width: 2vw;
+    height: .1vw;
+    margin: .5vw;
+    display: block;
+    background: #000;
+    transform: rotate(45deg);
+}
+.pop-close span:first-child {
+    transform: rotate(45deg) translate(.2vw) translateY(.2vw);
+}
+.pop-close span:nth-child(2) {
+    transform: rotate(-45deg) translate(.2vw) translateY(-.2vw);
 }

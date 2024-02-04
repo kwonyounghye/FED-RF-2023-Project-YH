@@ -77,6 +77,15 @@ address {
     white-space: nowrap;
     display: inline;
 }
+.map {
+  transition: transform 3s;
+
+}
+.map:hover {
+  transform: scale(1.5) translateX(30%);
+  transition-duration: 3s;
+   
+}
 
 .map iframe {
     width: 50vw;

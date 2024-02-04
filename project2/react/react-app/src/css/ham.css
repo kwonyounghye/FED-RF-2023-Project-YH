@@ -11,9 +11,10 @@ a {
     left: 100%;
     width: 100vw;
     height: 100vh;
-    z-index: 99;
     transition: left 1.5s;
-    overflow: hidden;
+    /* 있어야 하나..?? */
+    /* overflow: hidden; */
+    /* z-index: 99; */
 }
 .mbox.on{
     left: 0;
@@ -55,22 +56,53 @@ a {
 } 
 
 .mlist div{
-    padding: 0 5vw;
+    height: 5vw;
+    margin: 10vh 5vw;
     box-sizing: border-box;
-    line-height: 20vh;
     text-align: center;
-    transition-duration: .3s;
-    transform: translateY(180deg) rotate(50%) skewX() skewY() scaleX() scaleY();
-
+    /* transition-duration: .3s; */
+    /* transform: translateY(180deg) rotate(50%) skewX() skewY() scaleX() scaleY(); */
+    cursor: pointer;
+    
 }
-
-.mlist div a:hover{
+.mlist div:hover > span {
+    
+    transform-style: preserve-3d;
+    transform: translateY(-5px) rotateX(-90deg);
+    transition: transform .5s;
+    transform-origin: 0 0;
+}
+.mlist div:hover a>span  {
+    opacity: 1;
+    animation: mlist-txt .7s ease;
     font-style: italic;
     text-transform: uppercase;
+    
+}
+@keyframes mlist-txt {
+    from {
+        margin-top: 30%;
+
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+.mlist div>span {
     cursor: pointer;
+    /* display: block; */
+    transform-origin: 0 0;
+    /* right: 50vw; */
+    margin-bottom: -23%;
+    
+}
+.mlist div a>span {
+    opacity: 0;
 
 }
-
+.mlist span {
+    display: block;
+}
 
 .preview {
     position: absolute;

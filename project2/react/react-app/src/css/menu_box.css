@@ -55,7 +55,8 @@
     width: 80%;
     height: 100%;
     float: right;
-    background: #ffffff7f;
+    background: #d4795f57;
+    background-blend-mode: darken;
 
 }
 .menuimg {
@@ -63,6 +64,7 @@
     /* width: 80%; */
     height: 100%;
     opacity: 1;
+
 }
 .menuimg img{
     width: 100%;

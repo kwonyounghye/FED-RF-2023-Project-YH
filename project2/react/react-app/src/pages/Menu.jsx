@@ -1,6 +1,8 @@
 import { MenuList } from "../modules/MenuList";
 import "../css/menu.css";
+import $ from 'jquery';
 export function Menu() {
+
     return (
     <>
     <h2>Best Menu</h2>

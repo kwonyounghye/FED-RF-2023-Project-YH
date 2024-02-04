@@ -30,12 +30,12 @@ export function Ham() {
       $(".ham").click(() => {
         $('.ham').toggleClass('on')
         if(!$('.mbox').hasClass('on'))$('.preview').attr('class','preview').attr('style','');
-        console.log(!$('.mbox').hasClass('on'))
+        console.log(!$('.mbox').hasClass('on'));
         $('.mbox').toggleClass('on');
 
         $(".menubox").fadeOut(100);
       
-      $('.mlist a').on('mouseenter',
+      $('.mlist span').on('mouseenter',
       function(){ // over
         const tgEle = $('.preview');
         let txt = $(this).text().toLowerCase();
@@ -142,9 +142,9 @@ export function Ham() {
 
       <div className="mbox">
         <nav className="mlist">
-             <div className="nav1"><a href="#" onClick={(e)=>{e.preventDefault();goPage('About')}}>About</a></div>     
-             <div className="nav2"><a href="#" onClick={(e)=>{e.preventDefault();goPage('Menu')}}>Menu</a></div>     
-             <div className="nav3"><a href="#" onClick={(e)=>{e.preventDefault();goPage('Contact')}}>Contact</a></div>     
+             <div className="nav1"><span>About</span><a href="#" onClick={(e)=>{e.preventDefault();goPage('About')}}><span>About</span></a></div>     
+             <div className="nav2"><span>Menu</span><a href="#" onClick={(e)=>{e.preventDefault();goPage('Menu')}}><span>Menu</span></a></div>     
+             <div className="nav3"><span>Contact</span><a href="#" onClick={(e)=>{e.preventDefault();goPage('Contact')}}><span>Contact</span></a></div>     
         </nav>
         <div className="preview"></div>
       </div>
