@@ -39,6 +39,8 @@ h2 {
     height: 100%;
     cursor: pointer;
     object-fit: cover;
+    filter:contrast(120%);
+
 }
 
 .menu img:hover {

@@ -11,18 +11,18 @@ export function MenuBox(props) {
 
             $('.menutxt').stop().fadeTo(600,1);
             $(".menuimg").css({opacity:'.8'})
-            $('.menuKname').css({opacity:'1'});
+            // $('.menuKname').css({opacity:'1'});
             // $('.name').css({opacity:'0'});
-            $('.menuKname').css({mixBlendMode:'overlay'})
-            $('.menuEname').css({opacity:'0'});
+            // $('.menuKname').css({mixBlendMode:'overlay'})
+            // $('.menuEname').css({opacity:'0'});
             
         });
         const txtover = $('.menutxt').mouseover(()=>{
             
             $('.menutxt').stop().fadeTo(600,1);
             $(".menuimg").css({opacity:'.8'})
-            $('.menuKname').css({opacity:'1'});
-            $('.menuKname').css({mixBlendMode:'overlay'})
+            // $('.menuKname').css({opacity:'1'});
+            // $('.menuKname').css({mixBlendMode:'overlay'})
 
             // $('.name').css({opacity:'0'});
             $('.menuEname').css({opacity:'0'});
@@ -32,7 +32,7 @@ export function MenuBox(props) {
             
             $('.menutxt').stop().fadeTo(300,0);
             $(".menuimg").css({opacity:'1'})
-            $('.menuKname').css({opacity:'0'});
+            // $('.menuKname').css({opacity:'0'});
             // $('.name').css({opacity:'1'});
 
             $('.menuEname').css({opacity:'1'});
@@ -42,7 +42,7 @@ export function MenuBox(props) {
             
             $('.menutxt').stop().fadeTo(300,0);
             $(".menuimg").css({opacity:'1'})
-            $('.menuKname').css({opacity:'0'});
+            // $('.menuKname').css({opacity:'0'});
             $('.menuEname').css({opacity:'1'});
 
             });
@@ -58,7 +58,7 @@ export function MenuBox(props) {
                 <span></span>
                 <span></span>
             </button>
-                <div className="menuKname"></div>
+                {/* <div className="menuKname"></div> */}
             <div className="name">
                 <div className="menuEname"></div>
             </div>

@@ -183,8 +183,8 @@ console.log('모바일여부:',mob);
                     {selData.map((v, i) => (
                         <div className={"scroll about"+(i+1)}>
                             {/* <img src={about[v].img} alt={selData[i]}  /> */}
-                        <Parallax  key={i} strength={-70}
-                        bgImage={about[v].img} style={{width:'40vw', height:'50vw' }} >
+                        <Parallax  key={i} strength={-100}
+                        bgImage={about[v].img} style={{width:'50vh', height:'60vh' }} >
                         </Parallax>
 
                          </div>

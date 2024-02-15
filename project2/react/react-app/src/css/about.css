@@ -23,13 +23,13 @@
 }
 .scroll:first-child {
   animation: top 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-
+  
 }
 .scroll img {
-  width: 40vw;
-  min-height: 50vw !important;
+  width: 50vh;
+  min-height: 70vh !important;
   object-fit: cover;
-
+  
 }
 .about1 {
   /* 공통 */
@@ -57,7 +57,7 @@
 
 .about4 {
   margin-top: 20%;
-  padding-left: 15%;
+  padding-left: 10%;
 
 
 }
@@ -71,14 +71,15 @@
   /* padding-top: 10%; */
   position: fixed;
   left: 0;
-  top: 30%;
+  top: 0%;
   width: 100vw;
-  height: 40vh;
-  font-size: 20vh;
+  height: 100vh;
+  margin-bottom: 20vh;
+  font-size: 30vw;
 }
 .store1 {
   position: absolute;
-  bottom: 50%;
+  bottom: 45%;
   left: 80%;
   white-space: nowrap;
   color: #6f9065;
@@ -93,7 +94,7 @@
 .store2 {
   position: absolute;
   left: 120%;
-  bottom: 0%;
+  bottom: 15%;
   white-space: nowrap;
   color: #6f9065;
   font-family: "Smythe";
@@ -101,7 +102,7 @@
 }
 .introduce {
   position: fixed;
-  bottom: 10vh;
+  bottom: 5vh;
   width: 100%;
   font-size: 2.5vw;
   padding: 1.5vw 0;
@@ -124,7 +125,7 @@
   }
 
   .store {
-  font-size: 15vh;
+  font-size: 25vw;
   }
 }
 @media screen and (max-width: 300px) {
@@ -133,7 +134,7 @@
         font-size: 5vw;
       }
   .store {
-  font-size: 10vh;
+  font-size: 20vw;
   }
 }
 

@@ -25,9 +25,9 @@ a {
     left:100%;
     transition: left 1s;
 } */
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     .mlist {
-        font-size: 7vw !important;
+        font-size: 6vw !important;
     }
 }
 
@@ -65,19 +65,22 @@ a {
     cursor: pointer;
     
 }
-.mlist div:hover > span {
+@media (hover:hover) {
     
-    transform-style: preserve-3d;
-    transform: translateY(-5px) rotateX(-90deg);
-    transition: transform .5s;
-    transform-origin: 0 0;
-}
-.mlist div:hover a>span  {
-    opacity: 1;
-    animation: mlist-txt .7s ease;
-    font-style: italic;
-    text-transform: uppercase;
-    
+    .mlist div:hover > span {
+        
+        transform-style: preserve-3d;
+        transform: translateY(-5px) rotateX(-90deg);
+        transition: transform .5s;
+        transform-origin: 0 0;
+    }
+    .mlist div:hover a>span  {
+        opacity: 1;
+        animation: mlist-txt .7s ease;
+        font-style: italic;
+        text-transform: uppercase;
+        
+    }
 }
 @keyframes mlist-txt {
     from {

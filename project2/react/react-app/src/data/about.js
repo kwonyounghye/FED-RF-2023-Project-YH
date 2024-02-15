@@ -13,6 +13,6 @@ export const about = {
         img: "./images/about/about4.jpg",
     },
     about5: {
-        img: "./images/about/about5.jpg",
+        img: "./images/about/about7.jpeg",
     },
 }

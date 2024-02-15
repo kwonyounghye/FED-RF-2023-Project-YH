@@ -77,7 +77,7 @@ address {
     white-space: nowrap;
     display: inline;
 }
-.map {
+/* .map {
   transition: transform 3s;
 
 }
@@ -85,7 +85,7 @@ address {
   transform: scale(1.5) translateX(30%);
   transition-duration: 3s;
    
-}
+} */
 
 .map iframe {
     width: 50vw;
