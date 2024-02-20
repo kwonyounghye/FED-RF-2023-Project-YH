@@ -27,9 +27,9 @@ export const menu = {
         txt: `레몬 알갱이가 콕콕 박혀있는 새콤달콤한 레몬 파운드 케이크`
     },
     menu5: {
-        Ename: `cookies`,
-        Kname: `쿠키`,
-        img: `./images/menu/cookies.jpeg`,
-        txt: `르뱅쿠키, 버터쿠키, 비스코티, `
+        Ename: `macadamia cookie`,
+        Kname: `마카다미아쿠키`,
+        img: `./images/menu/Cookie.jpeg`,
+        txt: `마카다미아, 크랜베리, 초코칩 듬뿍 들어간 르뱅쿠키`
     },
 }
