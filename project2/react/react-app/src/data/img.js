@@ -1,7 +1,7 @@
 // 이미지 경로 정보
 export const img = {
     // 각 서브페이지 이미지 경로
-    "logo": ["./images/logo.png"],
+    "logo": ["./images/logo_img.jpg"],
     // "main": [
     //     "./images/main1.jpg",
     //     "./images/main2.jpg",

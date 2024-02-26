@@ -22,7 +22,7 @@ export function TopArea() {
   return (
     <>
       <div id="top_area">
-        <header className="top_area inbox">
+        <header>
             {/* <Link to='about'> */}
             <Logo />
             {/* </Link> */}

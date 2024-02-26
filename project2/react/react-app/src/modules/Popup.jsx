@@ -133,9 +133,13 @@ export function Popup() {
             <input type="checkbox" onChange={chgChecked} />
             </label>
           <button className="pop-close" onClick={closePopup}>
-                <span></span>
-                <span></span>
+                {/* <span></span>
+                <span></span> */}
+                Close
           </button>
+          </div>
+        <div className="img">
+          <img src={selData.img} style={{width:'100%', maxHeight:'80vh', objectFit:'cover', objectPosition:'center'}}/>
           </div>
           <h4 className="content">{selData.content}</h4>
         </div>

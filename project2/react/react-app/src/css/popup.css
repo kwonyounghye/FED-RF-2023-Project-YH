@@ -16,6 +16,9 @@
 .title {
     display: inline;
 }
+.img {
+    object-fit: cover;
+}
 .content {
     padding: 1%;
     font-size: 3vh;
@@ -25,6 +28,7 @@
 .checkbox {
     float: right;
     display: inline-flex;
+    align-items: center;
    
     
 }

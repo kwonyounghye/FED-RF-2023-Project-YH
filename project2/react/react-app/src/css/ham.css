@@ -79,8 +79,8 @@ a {
         animation: mlist-txt .7s ease;
         font-style: italic;
         text-transform: uppercase;
-        
     }
+    
 }
 @keyframes mlist-txt {
     from {

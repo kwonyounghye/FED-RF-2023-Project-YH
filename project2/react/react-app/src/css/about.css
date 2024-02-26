@@ -3,7 +3,8 @@
   position: relative;
   height: 100%;
   background-color: #d6d4c6;
-  padding-bottom: 80vh;
+  padding-bottom: 50vh;
+  /* padding: 1vh; */
 }
 /* 스크롤 등장 클래스 .on */
 .scroll.on {
@@ -19,15 +20,15 @@
   opacity: 0.5;
   padding-top: 10%;
   /* 글자 위에 올리기 */
-  position: relative;
+  /* position: relative; */
 }
 .scroll:first-child {
   animation: top 2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   
 }
 .scroll img {
-  width: 50vh;
-  min-height: 70vh !important;
+  width: 50vw;
+  min-height: 70vw !important;
   object-fit: cover;
   
 }
@@ -71,15 +72,15 @@
   /* padding-top: 10%; */
   position: fixed;
   left: 0;
-  top: 0%;
+  top: 7vh;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin-bottom: 20vh;
-  font-size: 30vw;
+  font-size: 35vw;
 }
 .store1 {
   position: absolute;
-  bottom: 45%;
+  bottom: 55%;
   left: 80%;
   white-space: nowrap;
   color: #6f9065;
@@ -94,11 +95,35 @@
 .store2 {
   position: absolute;
   left: 120%;
-  bottom: 15%;
+  bottom: 20%;
   white-space: nowrap;
   color: #6f9065;
   font-family: "Smythe";
   letter-spacing: 0.7vw;
+}
+@media(hover:hover) {
+  .store2 {
+    position: absolute;
+    left: 120%;
+    /* top: 7vw; */
+    /* bottom: 17vw; */
+    white-space: nowrap;
+    color: #6f9065;
+    font-family: "Smythe";
+    letter-spacing: 0.7vw;
+  }
+  .introduce {
+    position: fixed;
+    bottom: 5vh;
+    width: 100%;
+    font-size: 2.5vw;
+    padding: 1.5vw 0;
+    background: #6f9065;
+    color: #fff;
+    font-family: "Nanum Gothic";
+    z-index: 1;
+  
+  }
 }
 .introduce {
   position: fixed;
@@ -112,10 +137,13 @@
   z-index: 1;
 
 }
+@media screen and (max-width: 1300px){
+  .store {
+    font-size: 40vw;
+    }
+}
 
-
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .introduce {
         width: 200%;
         font-size: 5vw;
@@ -125,7 +153,7 @@
   }
 
   .store {
-  font-size: 25vw;
+  font-size: 35vw;
   }
 }
 @media screen and (max-width: 300px) {

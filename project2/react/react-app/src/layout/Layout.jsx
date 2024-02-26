@@ -41,8 +41,8 @@ export function Layout() {
     return (
       // 담은 것이 여러개일지라도 다 전달됨
       <yhCon.Provider value={{chgPage}}> 
-        <TopArea cat={chgPage} />
-        <MainArea />
+        <TopArea />
+        <MainArea cat={chgPage} />
         <FooterArea />  
       </yhCon.Provider>
     );

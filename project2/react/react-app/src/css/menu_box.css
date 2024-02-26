@@ -35,6 +35,30 @@
     letter-spacing: .3vw;
     text-overflow: ellipsis;
 }
+@media screen and (max-width:1700px) {
+    .menuEname {
+        font-size: 4vw;
+        top: 90%;
+        left: 16%;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .menuEname {
+        font-size: 4vw;
+        top: 90%;
+        left: 16%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .menuEname {
+        font-size: 12vw;
+        top: 90%;
+        left: 9%;
+    }
+    
+}
 /* .menuKname {
     position: absolute;
     top: 90%;
@@ -60,7 +84,7 @@
 }
 .menuimg {
     float: right;
-    /* width: 80%; */
+    width: 100%;
     height: 100%;
     opacity: 1;
 

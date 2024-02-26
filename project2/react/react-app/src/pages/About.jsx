@@ -33,6 +33,7 @@ console.log('모바일여부:',mob);
         if (scTop < winW / 0.01)
             // 속도
             tgEle1.css({ left: 80 - scTop * (mob?0.065:0.02) + "%" });
+            
 
         if (scTop < winW/0.01) 
         tgEle2.css({ left: 120 - scTop * (mob?0.085:0.04) + "%" });
@@ -184,7 +185,7 @@ console.log('모바일여부:',mob);
                         <div className={"scroll about"+(i+1)}>
                             {/* <img src={about[v].img} alt={selData[i]}  /> */}
                         <Parallax  key={i} strength={-100}
-                        bgImage={about[v].img} style={{width:'50vh', height:'60vh' }} >
+                        bgImage={about[v].img} style={{width:'50vw', height:'70vw' }} >
                         </Parallax>
 
                          </div>

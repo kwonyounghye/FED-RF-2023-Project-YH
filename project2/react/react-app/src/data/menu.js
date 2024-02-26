@@ -29,7 +29,7 @@ export const menu = {
     menu5: {
         Ename: `macadamia cookie`,
         Kname: `마카다미아쿠키`,
-        img: `./images/menu/Cookie.jpeg`,
+        img: `./images/menu/cookie.jpeg`,
         txt: `마카다미아, 크랜베리, 초코칩 듬뿍 들어간 르뱅쿠키`
     },
 }
