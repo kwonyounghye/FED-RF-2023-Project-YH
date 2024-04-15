@@ -139,9 +139,9 @@ export function Popup() {
           </button>
           </div>
         <div className="img">
-          <img src={selData.img} style={{width:'100%', maxHeight:'80vh', objectFit:'cover', objectPosition:'center'}}/>
-          </div>
+          <img src={selData.img} />
           <h4 className="content">{selData.content}</h4>
+          </div>
         </div>
       )}
     </>

@@ -22,7 +22,27 @@ export const Logo = () => {
    // pCon에 Provider value 속성에 공개한 변수/함수를 사용함!
    const goNav = useNavigate();
 
-   
+   let mob = 0;
+   let logo=img.logo;
+   let winW = window.innerWidth;
+
+if($(window).width()< 800) mob = 1;
+
+console.log('모바일여부:',mob);
+
+
+    // const scrollFn = () => {
+    //     let scTop = $(window).scrollTop();
+    //     console.log(scTop);
+    //     // 위치 * 크기비율 -> 움질일 범위
+    //     if (scTop < winW / 0.01)
+    //         // 속도
+    //         logo.css({padding:10+'%'});            
+
+
+  
+    // };
+  
     return (
         <div className="logo"
         onClick={() =>  
