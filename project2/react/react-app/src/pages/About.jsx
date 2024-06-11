@@ -39,9 +39,9 @@ console.log('모바일여부:',mob);
         if (scTop < winW/0.01) 
         tgEle2.css({ left: 120 - scTop * (mob?0.085:0.04) + "%" });
 
-        if (tgEle1.offset().left < 10) tgEle1.css({ left: "10px" });
+        if (tgEle1.offset().left < 10) tgEle1.css({ left: "10vw" });
 
-        if (tgEle2.offset().left < 10) tgEle2.css({ left: "10px" });
+        if (tgEle2.offset().left < 10) tgEle2.css({ left: "10vw" });
         // if (scTop < winW / 0.35 )
         //     // 속도
         //     tgEle1.css({ left: (-scTop * 0.26 )*0.1+ "vw" });
