@@ -16,6 +16,7 @@
 .title {
     display: inline;
     margin: 1%;
+    font-size: 3.2vw;
 }
 .img {
     object-fit: cover;
@@ -41,7 +42,7 @@
 }
 .content {
     position: absolute;
-    font-size: 5vh;
+    font-size: 3vw;
     white-space: pre-wrap;
     margin: 0;
     z-index: 1;
@@ -73,6 +74,7 @@
     background: none;
     cursor: pointer;
     font-size: 100%;
+    color: #000;
 
 }
 .pop-close span {
