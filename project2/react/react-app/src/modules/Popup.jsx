@@ -103,11 +103,6 @@ export function Popup() {
         return true;
       }
     };
-
-   
-    
-
-   
   },[check]);
 
   const chgChecked = () => {
@@ -127,7 +122,6 @@ export function Popup() {
     {/* {조건식 && 코드 }*/}
       {!noShow && (
         <div className="popup">
-          <h1 className="title">{selData.title}</h1>
           <div className="checkbox">
             <label>하루동안 열지 않기
             <input type="checkbox" onChange={chgChecked} />
@@ -140,6 +134,7 @@ export function Popup() {
           </div>
         <div className="img">
           <img src={selData.img} />
+          <h1 className="title">{selData.title}</h1>
           <h4 className="content">{selData.content}</h4>
           </div>
         </div>
