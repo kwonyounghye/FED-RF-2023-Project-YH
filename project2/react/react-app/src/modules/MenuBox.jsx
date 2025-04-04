@@ -10,22 +10,22 @@ export function MenuBox(props) {
         const imgover = $('.menuimg').mouseover(()=>{
 
             $('.menutxt').stop().fadeTo(600,1);
-            $(".menuimg").css({opacity:'.8'})
+            $(".menuimg").css({opacity:'.6'})
             // $('.menuKname').css({opacity:'1'});
             // $('.name').css({opacity:'0'});
             // $('.menuKname').css({mixBlendMode:'overlay'})
-            // $('.menuEname').css({opacity:'0'});
+            $('.menuEname').css({opacity:'1'});
             
         });
         const txtover = $('.menutxt').mouseover(()=>{
             
             $('.menutxt').stop().fadeTo(600,1);
-            $(".menuimg").css({opacity:'.8'})
+            $(".menuimg").css({opacity:'.6'})
             // $('.menuKname').css({opacity:'1'});
             // $('.menuKname').css({mixBlendMode:'overlay'})
 
             // $('.name').css({opacity:'0'});
-            $('.menuEname').css({opacity:'0'});
+            $('.menuEname').css({opacity:'1'});
         });
         // 오버시 Ename 숨기기 / 아웃시 Kname 숨기고 Ename보이기
         $('.menuimg').mouseout(()=>{

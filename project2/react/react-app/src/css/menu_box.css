@@ -106,6 +106,8 @@
     /* height: 10%; */
     font-family: 'Nanum Gothic';
     font-size: 2vw;
+    /* background: #6f9065; */
+    color: #000;
     font-weight: bold;
     display: none;
     white-space: pre-wrap;
