@@ -8,15 +8,14 @@
 /* #6f9065 */
 html,body {
     width: 100%;
-    /* main.jsx에 넣음 */
-    /* height: 100%; */
+    /* main 페이지 스크롤 없애기 */
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 #root {
     position: relative;
     overflow-x: hidden;
-    height: 100%;
 }
 
 #top_area{
