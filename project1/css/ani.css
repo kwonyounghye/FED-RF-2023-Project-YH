@@ -67,9 +67,6 @@
     */
     /* 원근 설정과 연결되는 3D설정! */
     transform-style: preserve-3d;
-
-    
-
     transform: rotateX(-21deg);
 }
 /* 큐브 */
@@ -103,12 +100,11 @@
 .slide2_1 span:nth-child(1) {
     outline: none;
     white-space: nowrap;
-    line-height: 200px;
     font-weight: bold;
     font-size: var(--h5-size);
-    transform: rotateY(0deg) translateY(-30%);
+    /* transform: rotateY(0deg) translateY(-30%); */
     
-    animation: rotate-ani2 10s linear infinite;
+    animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_1 span:nth-child(2) {
@@ -166,12 +162,12 @@
 .slide2_2 span:nth-child(1) {
     outline: none;
     white-space: nowrap;
-    line-height: 200px;
     font-weight: bold;
     font-size: var(--h5-size);
-    transform: rotateY(0deg) translateY(-30%);
+    /* 책이랑 같이 회전 */
+    /* transform: rotateY(0deg) translateY(-30%); */
     
-    animation: rotate-ani2 10s linear infinite;
+    animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_2 span:nth-child(2) {
@@ -228,11 +224,10 @@
 .slide2_3 span:nth-child(1) {
     outline: none;
     white-space: nowrap;
-    line-height: 200px;
     font-weight: bold;
     font-size: var(--h5-size);
-    transform: rotateY(0deg) translateY(-30%);
-    animation: rotate-ani2 10s linear infinite;
+    /* transform: rotateY(0deg) translateY(-30%); */
+    animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_3 span:nth-child(2) {
@@ -280,7 +275,7 @@
 }
 @keyframes rotate-ani2 {
     to {
-        transform: rotateY(360deg) translateY(-30%);
+        transform: rotateY(360deg);
         /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
     }
 }
