@@ -197,16 +197,16 @@ section {
 }
 .slide1 {
     height: 670px;
-    overflow: hidden;
     position: relative;
-    animation: Scroll 1s infinite top;
+    overflow: hidden;
+}
+.scroll-track {
     /* 원근설정 */
     perspective: 100vh;
+    flex-direction: column;
 }
-
 .slide1 > img
 {    
-    /* position: absolute; */
     top: 0;
     transform: 
     rotateX(30deg);
