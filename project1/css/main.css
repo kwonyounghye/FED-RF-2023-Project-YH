@@ -196,31 +196,26 @@ section {
     line-height: 40px;
 }
 .slide1 {
-    height: 670px;
-    overflow: hidden;
-<<<<<<< HEAD
+    /* height: 670px;
     position: relative;
-    animation: Scroll 1s infinite top;
-=======
-}
-.scroll-track {
->>>>>>> parent of ac5659d (🚀 Feat: Implement auto-loop scroll)
+    overflow: hidden;
     /* 원근설정 */
     perspective: 100vh;
+    flex-direction: column; */
 }
-<<<<<<< HEAD
-
-.slide1 > img
+.scroll-track {
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+    /* 원근설정 */
+    perspective: 100vh;
+    flex-direction: column;
+}
+.scroll-track > img
 {    
-    /* position: absolute; */
-=======
-.slide1 > img
-{    
->>>>>>> parent of ac5659d (🚀 Feat: Implement auto-loop scroll)
-    top: 0;
     transform: 
     rotateX(30deg);
-    /* transform-origin: top; */
+    transform-origin: top left;
       
 }
 section>button {
