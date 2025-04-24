@@ -197,16 +197,26 @@ section {
 }
 .slide1 {
     height: 670px;
-    position: relative;
     overflow: hidden;
+<<<<<<< HEAD
+    position: relative;
+    animation: Scroll 1s infinite top;
+=======
 }
 .scroll-track {
+>>>>>>> parent of ac5659d (🚀 Feat: Implement auto-loop scroll)
     /* 원근설정 */
     perspective: 100vh;
-    flex-direction: column;
 }
+<<<<<<< HEAD
+
 .slide1 > img
 {    
+    /* position: absolute; */
+=======
+.slide1 > img
+{    
+>>>>>>> parent of ac5659d (🚀 Feat: Implement auto-loop scroll)
     top: 0;
     transform: 
     rotateX(30deg);
