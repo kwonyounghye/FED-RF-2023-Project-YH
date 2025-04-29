@@ -196,31 +196,34 @@ section {
     line-height: 40px;
 }
 .slide1 {
-    height: 670px;
+    height: 1000px;
     position: relative;
     overflow: hidden;
     /* 원근설정 */
     perspective: 100vh;
     flex-direction: column;
-
 }
 .scroll-track {
+    /* height: 670px; */
+    transform: 
+    rotateX(30deg);
+    transform-origin: top left;
 }
 @keyframes scroll-top {
     0% {
-        transform: translateY(0%);
+        transform: rotateX(30deg) translateY(0%);
     }
     100% {
-        transform: translateY(-100%);
+        transform: rotateX(30deg) translateY(-200%);
     }
 }
 .scroll-track > img
 {    
-    animation: scroll-top 5s linear infinite;
-    transform: 
-    rotateX(30deg);
-    transform-origin: top left;
-      
+    animation: scroll-top 10s linear infinite;
+    transform-style: preserve-3d;
+    display: block;       /* 공백 제거 */
+  margin: 0;            /* 여백 초기화 */
+  padding: 0;
 }
 section>button {
     position: relative;
