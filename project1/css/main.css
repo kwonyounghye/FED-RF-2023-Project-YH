@@ -268,13 +268,13 @@ section>button {
     display: block;
     z-index: 1;
 }
+.content5 img {
+    scale: 70%;
+}
 .index_img {
     position: relative;
     margin: 10%;
     margin-top: 0;
-}
-.content5 img {
-    scale: 70%;
 }
 .index_img1 {
     position: relative;

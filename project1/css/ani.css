@@ -332,7 +332,7 @@ section {
     }
 }
 .index_img2 {
-    animation: show1 .5s linear 0s 1;
+    animation: show1 .5s linear 0.1s 1;
 }
 @keyframes show2 {
     0% {
