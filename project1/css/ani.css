@@ -317,6 +317,16 @@ section {
     transform: translateY(30%);
     opacity: 1;
   }
+  .index_img.on {
+    animation: bounce 0.8s ease-out;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-20px); }
+    60%  { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+  }
 @keyframes show1 {
     0% {
         scale: 0;
@@ -332,7 +342,7 @@ section {
     }
 }
 .index_img2 {
-    animation: show1 .5s linear 0.1s 1;
+    animation: show1 .5s linear 0.5s 1;
 }
 @keyframes show2 {
     0% {
@@ -349,7 +359,7 @@ section {
     }
 }
 .index_img3 {
-    animation: show2 .5s linear .5s 1;
+    animation: show2 .5s linear .75s 1;
 }
 @keyframes show3 {
     0% {
@@ -383,7 +393,7 @@ section {
     }
 }
 .index_img5 {
-    animation: show4 .5s linear 1.5s 1;
+    animation: show4 .5s linear 1.25s 1;
 }
 @keyframes chating {
     0% {

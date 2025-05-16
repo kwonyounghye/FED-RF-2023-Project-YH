@@ -101,23 +101,23 @@ function loadFn() {
 
 // const targets = document.querySelectorAll('.hide-el');
 
-// function handleScroll() {
-//   scAct.forEach(el => {
-//     const rect = el.getBoundingClientRect();
-//     const windowHeight = window.innerHeight;
+function handleScroll() {
+  scAct.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
 
-//     if (rect.top < windowHeight - 100) {
-//       if (!el.classList.contains('bounce-image')) {
-//         el.classList.add('on');
-//       } else {
-//         el.classList.add('bounce-once');
-//       }
-//     } else {
-//       // 화면 밖으로 나가면 애니메이션 클래스 제거 → 다시 들어올 때 실행되게 함
-//       el.classList.remove('on', 'bounce-once');
-//     }
-//   });
-// }
+    if (rect.top < windowHeight - 100) {
+      if (!el.classList.contains('bounce-image')) {
+        el.classList.add('on');
+      } else {
+        el.classList.add('bounce-once');
+      }
+    } else {
+      // 화면 밖으로 나가면 애니메이션 클래스 제거 → 다시 들어올 때 실행되게 함
+      el.classList.remove('on', 'bounce-once');
+    }
+  });
+}
 
 // window.addEventListener('scroll', handleScroll);
 // handleScroll();
