@@ -3,43 +3,43 @@
 @import url(./main.css);
 
 @keyframes intro1 {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-30%);
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30%);
+  }
 }
 .intro1 {
-    transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 @keyframes content2_1 {
-    from {
-        display: block;
-    }
-    to {
-        display: none;
-    }
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
 }
 .mtitle2 {
-    animation: content2_1 1s linear 0 1 forwards;
+  animation: content2_1 1s linear 0 1 forwards;
 }
 .content3_s {
-    display: flex;
-    /********************************
+  display: flex;
+  /********************************
       position이랑 overflow 때문에 안됨
     ********************************/
 
-    /* 1. 화면 고정 필수 (fixed) */
-    /* position: fixed; */
-    /* 2. 화면과 같은 크기 설정 */
-    width: 100%;
-    height: 45vh;
-    /* 3. 스크롤 셋팅 */
-    /* overflow: auto; */
-    /* 4. 원근 설정 */
-    /* perspective: 100vh; */
+  /* 1. 화면 고정 필수 (fixed) */
+  /* position: fixed; */
+  /* 2. 화면과 같은 크기 설정 */
+  width: 100%;
+  height: 45vh;
+  /* 3. 스크롤 셋팅 */
+  /* overflow: auto; */
+  /* 4. 원근 설정 */
+  /* perspective: 100vh; */
 }
 /* preserve-3d 적용범위박스 + 높이값설정박스 */
 /* .pivot {
@@ -47,16 +47,16 @@
     width: 100px;
     height: 100px;
 } */
-.slide-perspective{
-    position: relative;
-    flex: 1;
-    /* 4. 원근 설정 */
-    perspective: 100vh;
+.slide-perspective {
+  position: relative;
+  flex: 1;
+  /* 4. 원근 설정 */
+  perspective: 100vh;
 }
 .slide2 {
-    /* height: 300vh; */
+  /* height: 300vh; */
 
-     /* 
+  /* 
         [ 입체로 설정하기 ]
         - 입체로 설정할 요소의 부모박스에
         아래와 같이 설정해준다!
@@ -65,231 +65,231 @@
         - 기본값은 flat : 2D
         - preserve-3d : 3D
     */
-    /* 원근 설정과 연결되는 3D설정! */
-    transform-style: preserve-3d;
-    transform: rotateX(-21deg);
+  /* 원근 설정과 연결되는 3D설정! */
+  transform-style: preserve-3d;
+  transform: rotateX(-21deg);
 }
 /* 큐브 */
 .slide2_1 {
-    position: absolute;
-    top: 100px;
-    left: 30%;
-    width: var(--box-width);
-    height: var(--box-height);
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  width: var(--box-width);
+  height: var(--box-height);
 
-    /* 하위 span을 위한 3d 설정 */
-    transform-style: preserve-3d;
-    
-    /* 입체를 잘 보이게 하기 위해 약간 회전함 */
-    /* transform: rotateY(30deg); */
-    /* outline: 2px solid red; */
+  /* 하위 span을 위한 3d 설정 */
+  transform-style: preserve-3d;
+
+  /* 입체를 잘 보이게 하기 위해 약간 회전함 */
+  /* transform: rotateY(30deg); */
+  /* outline: 2px solid red; */
 }
 
 /* 큐브 각면 공통 */
-.slide2_1 span, .slide2_2 span, .slide2_3 span {
-    position: absolute;
-    /* 앱솔루트는 자동 block! */
-    width: 100%;
-    height: 100%;
-    /* 투명도 */
-    opacity: .7;
-    outline: 1px solid gray;
+.slide2_1 span,
+.slide2_2 span,
+.slide2_3 span {
+  position: absolute;
+  /* 앱솔루트는 자동 block! */
+  width: 100%;
+  height: 100%;
+  /* 투명도 */
+  opacity: 0.7;
+  outline: 1px solid gray;
 }
 
 /* 1번 */
 .slide2_1 span:nth-child(1) {
-    outline: none;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: var(--h5-size);
-    /* transform: rotateY(0deg) translateY(-30%); */
-    
-    animation: rotate-ani2 10s linear;
+  outline: none;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: var(--h5-size);
+  /* transform: rotateY(0deg) translateY(-30%); */
+
+  animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_1 span:nth-child(2) {
-    background: url(../images/book1.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(200px);
+  background: url(../images/book1.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_1 span:nth-child(3) {
-    background: url(../images/book2.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(200px);
+  background: url(../images/book2.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_1 span:nth-child(4) {
-    background: url(../images/book3.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(200px);
+  background: url(../images/book3.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_1 span:nth-child(5) {
-    background: url(../images/book4.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(200px);
+  background: url(../images/book4.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_1 span:nth-child(6) {
-    background: url(../images/book5.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(200px);
+  background: url(../images/book5.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_1 span:nth-child(7) {
-    background: url(../images/book6.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(200px);
+  background: url(../images/book6.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 6)) translateZ(200px);
 }
 
 /* 큐브 */
 .slide2_2 {
-    position: absolute;
-    top: 100px;
-    left: 30%;
-    width: var(--box-width);
-    height: var(--box-height);
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  width: var(--box-width);
+  height: var(--box-height);
 
-    /* 하위 span을 위한 3d 설정 */
-    transform-style: preserve-3d;
-    
-    /* 입체를 잘 보이게 하기 위해 약간 회전함 */
-    /* transform: rotateY(30deg); */
-    /* outline: 2px solid red; */
+  /* 하위 span을 위한 3d 설정 */
+  transform-style: preserve-3d;
+
+  /* 입체를 잘 보이게 하기 위해 약간 회전함 */
+  /* transform: rotateY(30deg); */
+  /* outline: 2px solid red; */
 }
 /* 1번 */
 .slide2_2 span:nth-child(1) {
-    outline: none;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: var(--h5-size);
-    /* 책이랑 같이 회전 */
-    /* transform: rotateY(0deg) translateY(-30%); */
-    
-    animation: rotate-ani2 10s linear;
+  outline: none;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: var(--h5-size);
+  /* 책이랑 같이 회전 */
+  /* transform: rotateY(0deg) translateY(-30%); */
+
+  animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_2 span:nth-child(2) {
-    background: url(../images/book7.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(200px);
+  background: url(../images/book7.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_2 span:nth-child(3) {
-    background: url(../images/book8.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(200px);
+  background: url(../images/book8.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_2 span:nth-child(4) {
-    background: url(../images/book9.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(200px);
+  background: url(../images/book9.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_2 span:nth-child(5) {
-    background: url(../images/book10.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(200px);
+  background: url(../images/book10.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(6) {
-    background: url(../images/book11.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(200px);
+  background: url(../images/book11.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_2 span:nth-child(7) {
-    background: url(../images/book12.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(200px);
+  background: url(../images/book12.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 6)) translateZ(200px);
 }
 /* 큐브 */
 .slide2_3 {
-    position: absolute;
-    top: 100px;
-    left: 30%;
-    width: var(--box-width);
-    height: var(--box-height);
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  width: var(--box-width);
+  height: var(--box-height);
 
-    /* 하위 span을 위한 3d 설정 */
-    transform-style: preserve-3d;
-    
-    /* 입체를 잘 보이게 하기 위해 약간 회전함 */
-    /* transform: rotateY(30deg); */
-    /* outline: 2px solid red; */
+  /* 하위 span을 위한 3d 설정 */
+  transform-style: preserve-3d;
+
+  /* 입체를 잘 보이게 하기 위해 약간 회전함 */
+  /* transform: rotateY(30deg); */
+  /* outline: 2px solid red; */
 }
 /* 1번 */
 .slide2_3 span:nth-child(1) {
-    outline: none;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: var(--h5-size);
-    /* transform: rotateY(0deg) translateY(-30%); */
-    animation: rotate-ani2 10s linear;
+  outline: none;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: var(--h5-size);
+  /* transform: rotateY(0deg) translateY(-30%); */
+  animation: rotate-ani2 10s linear;
 }
 /* 2번 */
 .slide2_3 span:nth-child(2) {
-    background: url(../images/book13.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*1)) translateZ(200px);
+  background: url(../images/book13.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 1)) translateZ(200px);
 }
 /* 3번 */
 .slide2_3 span:nth-child(3) {
-    background: url(../images/book14.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*2)) translateZ(200px);
+  background: url(../images/book14.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 2)) translateZ(200px);
 }
 /* 4번 */
 .slide2_3 span:nth-child(4) {
-    background: url(../images/book15.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*3)) translateZ(200px);
+  background: url(../images/book15.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 3)) translateZ(200px);
 }
 /* 5번 */
 .slide2_3 span:nth-child(5) {
-    background: url(../images/book16.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*4)) translateZ(200px);
+  background: url(../images/book16.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 4)) translateZ(200px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(6) {
-    background: url(../images/book17.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*5)) translateZ(200px);
+  background: url(../images/book17.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 5)) translateZ(200px);
 }
 /* 6번 */
 .slide2_3 span:nth-child(7) {
-    background: url(../images/book18.jpg) no-repeat center/cover;
-    /* 화면방향 : z축 */
-    transform: rotateY(calc(60deg*6)) translateZ(200px);
+  background: url(../images/book18.jpg) no-repeat center/cover;
+  /* 화면방향 : z축 */
+  transform: rotateY(calc(60deg * 6)) translateZ(200px);
 }
 
 /* 큐브 회전 키프레임 */
 @keyframes rotate-ani {
-    to {
-        transform: rotateY(-360deg);
-        /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
-    }
+  to {
+    transform: rotateY(-360deg);
+    /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
+  }
 }
 @keyframes rotate-ani2 {
-    to {
-        transform: rotateY(360deg);
-        /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
-    }
+  to {
+    transform: rotateY(360deg);
+    /* transform: rotateX(370deg) rotateY(390deg) rotateZ(360deg); */
+  }
 }
 /* 큐브 회전 클래스 */
 .rotate {
-    /* 애니메이션 */
-    animation: rotate-ani 10s linear infinite;
-    /* 애니메이션 멈춤 상태 */
-    /* animation-play-state: paused; */
+  /* 애니메이션 */
+  animation: rotate-ani 10s linear infinite;
+  /* 애니메이션 멈춤 상태 */
+  /* animation-play-state: paused; */
 }
 
-
-
-  /* 
+/* 
             x축 양의 방향으로 10도에서 출발
             양의 방향 360도+10도=370도
             음의 방향 -360도+10도=-350도
@@ -300,130 +300,130 @@
             음의 방향 -360도+30도=-330도
         */
 
-
 section {
-    height: 100%;
-  }
+  height: 100%;
+}
 
-  
-  /* 스크롤 등장 초기화 클래스1 */
+/* 스크롤 등장 초기화 클래스1 */
 .hide-el {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: 1.2s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+/* 스크롤 등장 클래스 .on */
+.hide-el.on {
+  transform: translateY(30%);
+  opacity: 1;
+}
+
+.bounce-once {
+  animation: bounce 0.8s ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  /* 스크롤 등장 클래스 .on */
-.hide-el.on{
-    transform: translateY(30%);
-    opacity: 1;
+  30% {
+    transform: translateY(-20px);
   }
-  .index_img.on {
-    animation: bounce 0.8s ease-out;
+  60% {
+    transform: translateY(10px);
   }
-  
-  @keyframes bounce {
-    0%   { transform: translateY(0); }
-    30%  { transform: translateY(-20px); }
-    60%  { transform: translateY(10px); }
-    100% { transform: translateY(0); }
+  100% {
+    transform: translateY(0);
   }
+}
 @keyframes show1 {
-    0% {
-        scale: 0;
-    }
-    20% {
-        scale: .7;
-    }
-    50% {
-        scale: .5;
-    }
-    90% {
-        scale: .7;
-    }
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0.7;
+  }
+  50% {
+    scale: 0.5;
+  }
+  90% {
+    scale: 0.7;
+  }
 }
 .index_img2 {
-    animation: show1 .5s linear 0.5s 1;
+  animation: show1 0.5s linear 0.5s 1;
 }
 @keyframes show2 {
-    0% {
-        scale: 0;
-    }
-    20% {
-        scale: .7;
-    }
-    50% {
-        scale: .5;
-    }
-    90% {
-        scale: .7;
-    }
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0.7;
+  }
+  50% {
+    scale: 0.5;
+  }
+  90% {
+    scale: 0.7;
+  }
 }
 .index_img3 {
-    animation: show2 .5s linear .75s 1;
+  animation: show2 0.5s linear 1s 1;
 }
 @keyframes show3 {
-    0% {
-        scale: 0;
-    }
-    20% {
-        scale: .7;
-    }
-    50% {
-        scale: .5;
-    }
-    90% {
-        scale: .7;
-    }
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0.7;
+  }
+  50% {
+    scale: 0.5;
+  }
+  90% {
+    scale: 0.7;
+  }
 }
 .index_img4 {
-    animation: show3 .5s linear 1s 1;
+  animation: show3 0.5s linear 1.5s 1;
 }
 @keyframes show4 {
-    0% {
-        scale: 0;
-    }
-    20% {
-        scale: .7;
-    }
-    50% {
-        scale: .5;
-    }
-    90% {
-        scale: .7;
-    }
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0.7;
+  }
+  50% {
+    scale: 0.5;
+  }
+  90% {
+    scale: 0.7;
+  }
 }
 .index_img5 {
-    animation: show4 .5s linear 1.25s 1;
+  animation: show4 0.5s linear 2s 1;
 }
 @keyframes chating {
-    0% {
-        height: 0;
-    }
-    10% {
-        height: 20px;
-    }
-    30% {
-        height: 50px;
-    }
-    50% {
-        height: 80px;
-    }
-    70% {
-        height: 110px;
-    }
+  0% {
+    height: 0;
+  }
+  10% {
+    height: 20px;
+  }
+  30% {
+    height: 50px;
+  }
+  50% {
+    height: 80px;
+  }
+  70% {
+    height: 110px;
+  }
 }
-.content7>img {
-    transition: chating .5s linear;
-    aspect-ratio: 1080/900;
-    /* height: 40px; */
-    overflow: hidden;
-    width: 1080px;
-    object-fit: cover;
-}  
-  
-  
-  
-  
-  
-
-
+.content7 > img {
+  transition: chating 0.5s linear;
+  aspect-ratio: 1080/900;
+  /* height: 40px; */
+  overflow: hidden;
+  width: 1080px;
+  object-fit: cover;
+}

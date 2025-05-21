@@ -98,16 +98,18 @@ function loadFn() {
 
 
 
-
 // const targets = document.querySelectorAll('.hide-el');
 
 function handleScroll() {
   scAct.forEach(el => {
     const rect = el.getBoundingClientRect();
     const windowHeight = window.innerHeight;
-
-    if (rect.top < windowHeight - 100) {
-      if (!el.classList.contains('bounce-image')) {
+    
+    if (rect.top < windowHeight * 0.6) {
+      if (el.classList.contains('.index_img2') ||
+      el.classList.contains('.index_img3') ||
+      el.classList.contains('.index_img4') ||
+      el.classList.contains('.index_img5')) {
         el.classList.add('on');
       } else {
         el.classList.add('bounce-once');
@@ -118,16 +120,18 @@ function handleScroll() {
     }
   });
 }
-
+console.log('rect.top:', rect.top);
+console.log('window.innerHeight - 100:', window.innerHeight - 100);
 // window.addEventListener('scroll', handleScroll);
 // handleScroll();
+
+
 
 
 // 1. 대상선정 : 
 // 스크롤 등장 대상: .hide-el
 const scAct = domFn.qsa(".hide-el");
 console.log('대상: ', scAct);
-
 // 2. 전체 window에 스크롤 이벤트 셋팅하기
 // 2-1. 스크롤 등장 액션 이벤트 설정
 domFn.addEvt(window,'scroll',showIt);
