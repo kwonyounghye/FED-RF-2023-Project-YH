@@ -90,6 +90,17 @@ function loadFn() {
 
 
 
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.hide-el').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    console.log('rect.top:', rect.top);
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('on');
+    } else {
+      el.classList.remove('on');
+    }
+  });
+});
 
 
 
@@ -97,6 +108,15 @@ function loadFn() {
 
 
 
+
+
+// 1. 대상선정 : 
+// 스크롤 등장 대상: .hide-el
+const scAct = domFn.qsa(".hide-el");
+console.log('대상: ', scAct);
+// 2. 전체 window에 스크롤 이벤트 셋팅하기
+// 2-1. 스크롤 등장 액션 이벤트 설정
+domFn.addEvt(window,'scroll',showIt);
 
 // const targets = document.querySelectorAll('.hide-el');
 
@@ -105,7 +125,7 @@ function handleScroll() {
     const rect = el.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     
-    if (rect.top < windowHeight * 0.6) {
+    if (rect.top > windowHeight * 0.75) {
       if (el.classList.contains('.index_img2') ||
       el.classList.contains('.index_img3') ||
       el.classList.contains('.index_img4') ||
@@ -126,15 +146,6 @@ console.log('window.innerHeight - 100:', window.innerHeight - 100);
 // handleScroll();
 
 
-
-
-// 1. 대상선정 : 
-// 스크롤 등장 대상: .hide-el
-const scAct = domFn.qsa(".hide-el");
-console.log('대상: ', scAct);
-// 2. 전체 window에 스크롤 이벤트 셋팅하기
-// 2-1. 스크롤 등장 액션 이벤트 설정
-domFn.addEvt(window,'scroll',showIt);
 
 // 각 요소 옵셋top값 구하기
 const posTop = [];
