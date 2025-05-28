@@ -120,30 +120,39 @@ domFn.addEvt(window,'scroll',showIt);
 
 // const targets = document.querySelectorAll('.hide-el');
 
+
 function handleScroll() {
+  const scAct = document.querySelectorAll('.scAct'); 
   scAct.forEach(el => {
     const rect = el.getBoundingClientRect();
     const windowHeight = window.innerHeight;
-    
-    if (rect.top > windowHeight * 0.75) {
-      if (el.classList.contains('.index_img2') ||
-      el.classList.contains('.index_img3') ||
-      el.classList.contains('.index_img4') ||
-      el.classList.contains('.index_img5')) {
+
+    console.log('rect.top:', rect.top);
+    console.log('기준값:', windowHeight * 0.75);
+
+    if (rect.top < windowHeight * 0.75) {
+      // 화면 안에 들어온 경우 (위에서 내려오거나 아래에서 올라올 때)
+      if (
+        el.classList.contains('index_img2') ||
+        el.classList.contains('index_img3') ||
+        el.classList.contains('index_img4') ||
+        el.classList.contains('index_img5')
+      ) {
         el.classList.add('on');
       } else {
         el.classList.add('bounce-once');
       }
     } else {
-      // 화면 밖으로 나가면 애니메이션 클래스 제거 → 다시 들어올 때 실행되게 함
+      // 화면 밖으로 나간 경우 → 다시 들어오면 애니메이션 다시 실행 가능
       el.classList.remove('on', 'bounce-once');
     }
   });
 }
-console.log('rect.top:', rect.top);
-console.log('window.innerHeight - 100:', window.innerHeight - 100);
-// window.addEventListener('scroll', handleScroll);
-// handleScroll();
+
+// 초기 호출 & 이벤트 등록
+handleScroll(); // 새로고침시 처음부터 작동
+window.addEventListener('scroll', handleScroll);
+
 
 
 
