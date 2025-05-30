@@ -118,39 +118,38 @@ console.log('대상: ', scAct);
 // 2-1. 스크롤 등장 액션 이벤트 설정
 domFn.addEvt(window,'scroll',showIt);
 
-// const targets = document.querySelectorAll('.hide-el');
+
+
 
 
 function handleScroll() {
-  const scAct = document.querySelectorAll('.scAct'); 
-  scAct.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+  const trigger = document.querySelector('.index_img2');
+  const group = document.querySelectorAll('.index_img2, .index_img3, .index_img4, .index_img5');
+  const windowHeight = window.innerHeight;
+  const rect = trigger.getBoundingClientRect();
 
-    console.log('rect.top:', rect.top);
-    console.log('기준값:', windowHeight * 0.75);
+  // 뷰포트 중앙쯤 들어왔는지 체크
+  const isVisible = rect.top < windowHeight * 0.8;
 
-    if (rect.top < windowHeight * 0.75) {
-      // 화면 안에 들어온 경우 (위에서 내려오거나 아래에서 올라올 때)
-      if (
-        el.classList.contains('index_img2') ||
-        el.classList.contains('index_img3') ||
-        el.classList.contains('index_img4') ||
-        el.classList.contains('index_img5')
-      ) {
-        el.classList.add('on');
-      } else {
-        el.classList.add('bounce-once');
-      }
-    } else {
-      // 화면 밖으로 나간 경우 → 다시 들어오면 애니메이션 다시 실행 가능
-      el.classList.remove('on', 'bounce-once');
-    }
-  });
+  if (isVisible) {
+    group.forEach(el => {
+      // 중복 방지: 이미 on이 있으면 리셋
+      el.classList.remove('on');
+      void el.offsetWidth; // 리플로우로 트리거 초기화
+      el.classList.add('on');
+
+      // 애니메이션 끝나면 자동으로 on 제거
+      el.addEventListener(
+        'animationend',
+        () => {
+          el.classList.remove('on');
+        },
+        { once: true }
+      );
+    });
+  }
 }
 
-// 초기 호출 & 이벤트 등록
-handleScroll(); // 새로고침시 처음부터 작동
 window.addEventListener('scroll', handleScroll);
 
 

@@ -316,9 +316,16 @@ section {
   opacity: 1;
 }
 
-.bounce-once {
-  animation: bounce 0.8s ease-out;
+.index_img2,
+.index_img3,
+.index_img4,
+.index_img5 {
+  transition: transform 0.6s ease;
+  transform: scale(1);
 }
+
+
+
 
 @keyframes bounce {
   0% {
@@ -348,7 +355,7 @@ section {
     scale: 0.7;
   }
 }
-.index_img2 {
+.index_img2.on {
   animation: show1 0.5s linear 0.5s 1;
 }
 @keyframes show2 {
@@ -365,7 +372,7 @@ section {
     scale: 0.7;
   }
 }
-.index_img3 {
+.index_img3.on {
   animation: show2 0.5s linear 1s 1;
 }
 @keyframes show3 {
@@ -382,7 +389,7 @@ section {
     scale: 0.7;
   }
 }
-.index_img4 {
+.index_img4.on {
   animation: show3 0.5s linear 1.5s 1;
 }
 @keyframes show4 {
@@ -399,7 +406,7 @@ section {
     scale: 0.7;
   }
 }
-.index_img5 {
+.index_img5.on {
   animation: show4 0.5s linear 2s 1;
 }
 @keyframes chating {
